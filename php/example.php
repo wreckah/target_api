@@ -1,5 +1,5 @@
 <?php
-require_once 'target_api_client.php';
+require_once './target_api_client.php';
 
 use MailRu\TargetApi as Api;
 
