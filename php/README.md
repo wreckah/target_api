@@ -51,21 +51,29 @@ $new_campaign = $client->request('POST', 'campaigns.json', $data);
 printf("New campaign has id: %d\n", $new_campaign['id']);
 ```
 
-Handling errors:
+## Handling errors
+
+Validation error (HTTP 400 code):
 ```php
 try {
     $client->request('POST', 'campaigns.json', array('name'=>'aaa'));
 } catch (Api\Error $e) {
     print($e);
 }
+```
 
+Authentication error (HTTP 401 code):
+```php
 try {
     $client2 = new Api\Client('123', '456');
     $client2->request('GET', 'campaigns.json');
 } catch (Api\Error $e) {
     print($e);
 }
+```
 
+Not found error (HTTP 404 code):
+```php
 try {
     $client->request('GET', 'bad.json');
 } catch (Api\Error $e) {
