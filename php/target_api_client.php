@@ -90,7 +90,8 @@ class Client
         fclose($f);
 
         if (isset($meta['wrapper_data']) && sizeof($meta['wrapper_data'])) {
-            $code = intval(explode(' ', $meta['wrapper_data'][0])[1]);
+            $tmp = explode(' ', $meta['wrapper_data'][0]);
+            $code = sizeof($tmp) > 1 ? intval($tmp[1]) : null;
         } else {
             $code = null;
         }
