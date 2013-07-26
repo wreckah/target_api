@@ -1,3 +1,5 @@
+## Using
+
 Initialize client:
 ```php
 require_once 'target_api_client.php';
