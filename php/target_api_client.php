@@ -89,16 +89,15 @@ class Client
         $meta = stream_get_meta_data($f);
         fclose($f);
 
+        $code = null;
         if (isset($meta['wrapper_data']) && sizeof($meta['wrapper_data'])) {
             $tmp = explode(' ', $meta['wrapper_data'][0]);
             $code = sizeof($tmp) > 1 ? intval($tmp[1]) : null;
-        } else {
-            $code = null;
         }
-        if ($code == 200) {
+        if ($code === 200) {
             return $resp;
         }
-        if ($code == 400) {
+        if ($code === 400) {
             throw new Error('Validation failed', 400, null, $resp);
         }
         throw new Error($resp, $code);
