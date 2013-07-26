@@ -1,6 +1,5 @@
 Initialize client:
-```
-<?php
+```php
 require_once 'target_api_client.php';
 
 use MailRu\TargetApi as Api;
@@ -12,18 +11,22 @@ $client = new Api\Client($access_id, $private_key);
 ```
 
 Getting campaigns:
-```
-<?php
+```php
 $params = array('fields' => 'id,name,created,budget_limit');
 $campaigns = $client->request('GET', 'campaigns.json', null, $params);
 foreach ($campaigns as $campaign) {
-    printf("New campaign has id: %d\n", $new_campaign['id']);
+    printf(
+        "Campaign %s (#%d, created at %s) has budget limit %d\n",
+        $campaign['name'],
+        $campaign['id'],
+        $campaign['created'],
+        $campaign['budget_limit']
+    );
 }
 ```
 
 Getting packages:
-```
-<?php
+```php
 $packages = $client->request('GET', 'packages.json');
 foreach ($packages as $package) {
     if ($package['status'] === 'active') {
@@ -33,8 +36,7 @@ foreach ($packages as $package) {
 ```
 
 Creating campaign:
-```
-<?php
+```php
 $data = array(
     'name' => 'Test campaign',
     'package' => array('id' => $package['id']),
@@ -50,8 +52,7 @@ printf("New campaign has id: %d\n", $new_campaign['id']);
 ```
 
 Handling errors:
-```
-<?php
+```php
 try {
     $client->request('POST', 'campaigns.json', array('name'=>'aaa'));
 } catch (Api\Error $e) {
