@@ -1,6 +1,6 @@
 Initialize client:
 ```
-<?
+<?php
 require_once 'target_api_client.php';
 
 use MailRu\TargetApi as Api;
@@ -13,6 +13,7 @@ $client = new Api\Client($access_id, $private_key);
 
 Getting campaigns:
 ```
+<?php
 $params = array('fields' => 'id,name,created,budget_limit');
 $campaigns = $client->request('GET', 'campaigns.json', null, $params);
 foreach ($campaigns as $campaign) {
@@ -22,6 +23,7 @@ foreach ($campaigns as $campaign) {
 
 Getting packages:
 ```
+<?php
 $packages = $client->request('GET', 'packages.json');
 foreach ($packages as $package) {
     if ($package['status'] === 'active') {
@@ -32,6 +34,7 @@ foreach ($packages as $package) {
 
 Creating campaign:
 ```
+<?php
 $data = array(
     'name' => 'Test campaign',
     'package' => array('id' => $package['id']),
@@ -48,6 +51,7 @@ printf("New campaign has id: %d\n", $new_campaign['id']);
 
 Handling errors:
 ```
+<?php
 try {
     $client->request('POST', 'campaigns.json', array('name'=>'aaa'));
 } catch (Api\Error $e) {
