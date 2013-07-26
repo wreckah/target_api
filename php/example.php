@@ -11,7 +11,13 @@ $client = new Api\Client($access_id, $private_key);
 $params = array('fields' => 'id,name,created,budget_limit');
 $campaigns = $client->request('GET', 'campaigns.json', null, $params);
 foreach ($campaigns as $campaign) {
-    printf("New campaign has id: %d\n", $new_campaign['id']);
+    printf(
+        "Campaign %s (#%d, created at %s) has budget limit %d\n",
+        $campaign['name'],
+        $campaign['id'],
+        $campaign['created'],
+        $campaign['budget_limit']
+    );
 }
 
 $packages = $client->request('GET', 'packages.json');
@@ -37,23 +43,18 @@ printf("New campaign has id: %d\n", $new_campaign['id']);
 try {
     $client->request('POST', 'campaigns.json', array('name'=>'aaa'));
 } catch (Api\Error $e) {
-    printf("HTTP code: %d, message: %s\n", $e->getCode(), $e->getMessage());
-    printf("Errors:\n");
-    foreach ($e->getFields() as $field => $error) {
-        printf("%s - %s\n", $field, $error);
-    }
+    print($e);
 }
 
 try {
     $client2 = new Api\Client('123', '456');
     $client2->request('GET', 'campaigns.json');
 } catch (Api\Error $e) {
-    printf("HTTP code: %d, message: %s\n", $e->getCode(), $e->getMessage());
+    print($e);
 }
-print str_pad('', 80, '-') . "\n";
 
 try {
     $client->request('GET', 'bad.json');
 } catch (Api\Error $e) {
-    printf("HTTP code: %d, message: %s\n", $e->getCode(), $e->getMessage());
+    print($e);
 }

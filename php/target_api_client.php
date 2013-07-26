@@ -7,9 +7,25 @@ class Error extends \Exception {
     public function __construct($error, $code = 400, $previous = null, $fields = null)
     {
         parent::__construct($error, $code, $previous);
-        if (!is_null($fields)) {
+        if ($fields) {
             $this->fields = $fields;
         }
+    }
+
+    public function __toString()
+    {
+        $res = sprintf(
+            "Target API error: %s (#%d)\n",
+            $this->getMessage(),
+            $this->getCode()
+        );
+        if ($this->fields) {
+            foreach ($this->fields as $field => $error) {
+                $res .= sprintf("  #%s: %s\n", $field, $error);
+            }
+        }
+        return $res . $this->getTraceAsString() .
+            sprintf("\n  thrown in %s on line %d\n", $this->getFile(), $this->getLine());
     }
 
     public function getFields()

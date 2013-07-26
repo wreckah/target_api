@@ -56,24 +56,19 @@ Handling errors:
 try {
     $client->request('POST', 'campaigns.json', array('name'=>'aaa'));
 } catch (Api\Error $e) {
-    printf("HTTP code: %d, message: %s\n", $e->getCode(), $e->getMessage());
-    printf("Errors:\n");
-    foreach ($e->getFields() as $field => $error) {
-        printf("%s - %s\n", $field, $error);
-    }
+    print($e);
 }
 
 try {
     $client2 = new Api\Client('123', '456');
     $client2->request('GET', 'campaigns.json');
 } catch (Api\Error $e) {
-    printf("HTTP code: %d, message: %s\n", $e->getCode(), $e->getMessage());
+    print($e);
 }
-print str_pad('', 80, '-') . "\n";
 
 try {
     $client->request('GET', 'bad.json');
 } catch (Api\Error $e) {
-    printf("HTTP code: %d, message: %s\n", $e->getCode(), $e->getMessage());
+    print($e);
 }
 ```
