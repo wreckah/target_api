@@ -1,4 +1,3 @@
-target_api
-==========
+# Target@Mail.Ru
 
-Public API of Target@Mail.ru
+API documentation and clients for different platforms.
