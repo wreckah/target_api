@@ -2,40 +2,37 @@ from binascii import b2a_base64
 from hashlib import sha1
 from hmac import new
 from json import dumps, loads
-from urllib import quote, urlencode
 try:
     # For Python 3.0 and later.
-    from urllib.request import urlopen
+    from urllib.parse import quote, urlencode
+    from urllib.request import HTTPError, Request, urlopen
 except ImportError:
     # Fall back to Python 2's urllib2.
     from urllib2 import HTTPError, Request, urlopen
+    from urllib import quote, urlencode
 
 
-class Error(Exception):
-    def __init__(self, message, fields=None):
-        super(Error, self).__init__(message)
+class TargetApiError(Exception):
+    def __init__(self, message, code=500, fields=None):
+        self.message = message
+        self.code = code
         if fields:
             self.fields = fields
 
-    def __unicode__(self):
-        return super(Error, self).__unicode__()
-#     {
-#         $res = sprintf(
-#             "Target API error: %s (#%d)\n",
-#             $this->getMessage(),
-#             $this->getCode()
-#         );
-#         if ($this->fields) {
-#             foreach ($this->fields as $field => $error) {
-#                 $res .= sprintf("  #%s: %s\n", $field, $error);
-#             }
-#         }
-#         return $res . $this->getTraceAsString() .
-#             sprintf("\n  thrown in %s on line %d\n", $this->getFile(), $this->getLine());
-#     }
+    def __str__(self):
+        if self.code == 400:
+            return 'TargetApiError %s: %s\n  %s' % (
+                self.code,
+                self.message,
+                '\n  '.join(
+                    '#%s: %s' % (f, e) for f, e in self.fields.items()
+                )
+            )
+        else:
+            return 'TargetApiError %s: %s' % (self.code, self.message)
 
 
-class Client(object):
+class TargetApiClient(object):
     HTTP_METHODS = {'GET', 'POST', 'DELETE'}
     PRODUCTION_HOST = 'target.mail.ru'
     SANDBOX_HOST = 'target-sandbox.mail.ru'
@@ -45,7 +42,7 @@ class Client(object):
 
     def __init__(self, access_id, private_key, is_sandbox=True, version=1):
         self.access_id = access_id
-        self.private_key = private_key
+        self.private_key = private_key.encode()
         host = self.SANDBOX_HOST if is_sandbox else self.PRODUCTION_HOST
         self.url = 'https://%s/api/v%d/' % (host, version)
 
@@ -56,6 +53,8 @@ class Client(object):
                 method,
                 ', '.join(self.HTTP_METHODS)
             )
+
+        # Prepare authentication signature.
         data = dumps(post_data) if post_data else ''
         url = self.url + resource.lstrip('/')
         string = '%s&%s&%s' % (
@@ -64,12 +63,13 @@ class Client(object):
             quote(data, safe='~')
         )
         signature = b2a_base64(
-            new(self.private_key, string, sha1).digest()
-        ).rstrip('\n')
+            new(self.private_key, string.encode(), sha1).digest()
+        ).decode().rstrip('\n')
 
+        # Perform HTTP request.
         if get_params:
             url += '?' + urlencode(get_params)
-        req = Request(url, data or None)
+        req = Request(url, data.encode() if data else None)
         req.add_header(
             'Authorization',
             'AuthHMAC %s:%s' % (self.access_id, signature)
@@ -77,22 +77,13 @@ class Client(object):
         if data:
             req.add_header('Content-Type', 'application/json')
         try:
-            res = urlopen(req).read()
-        except HTTPError:
-            raise
-        return loads(res)
-# 
-#         $code = null;
-#         if (isset($meta['wrapper_data']) && sizeof($meta['wrapper_data'])) {
-#             $tmp = explode(' ', $meta['wrapper_data'][0]);
-#             $code = sizeof($tmp) > 1 ? intval($tmp[1]) : null;
-#         }
-#         if ($code === 200) {
-#             return $resp;
-#         }
-#         if ($code === 400) {
-#             throw new Error('Validation failed', 400, null, $resp);
-#         }
-#         throw new Error($resp, $code);
-#     }
-# }
+            return loads(urlopen(req).read().decode())
+        except HTTPError as e:
+            message = loads(e.read().decode())
+            if e.code == 400:
+                raise TargetApiError(
+                    'ValidationError',
+                    code=400,
+                    fields=message
+                )
+            raise TargetApiError(message, e.code)
