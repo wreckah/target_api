@@ -9,7 +9,7 @@ $private_key = 'u2bZIGvCJXxieTI';
 $client = new Api\Client($access_id, $private_key);
 
 $params = array('fields' => 'id,name,created,budget_limit');
-$campaigns = $client->request('GET', 'campaigns.json', null, $params);
+$campaigns = $client->request('campaigns.json', 'GET', null, $params);
 foreach ($campaigns as $campaign) {
     printf(
         "Campaign %s (#%d, created at %s) has budget limit %d\n",
@@ -20,7 +20,7 @@ foreach ($campaigns as $campaign) {
     );
 }
 
-$packages = $client->request('GET', 'packages.json');
+$packages = $client->request('packages.json');
 foreach ($packages as $package) {
     if ($package['status'] === 'active') {
         break;
@@ -37,24 +37,25 @@ $data = array(
         'pads' => $package['targetings']['pads'],
     )
 );
-$new_campaign = $client->request('POST', 'campaigns.json', $data);
+$new_campaign = $client->request('campaigns.json', 'POST', $data);
 printf("New campaign has id: %d\n", $new_campaign['id']);
 
 try {
-    $client->request('POST', 'campaigns.json', array('name'=>'aaa'));
+    $client->request('campaigns.json', 'POST', array('name'=>'aaa'));
 } catch (Api\Error $e) {
     print($e);
+    print_r($e->getFields());
 }
 
 try {
     $client2 = new Api\Client('123', '456');
-    $client2->request('GET', 'campaigns.json');
+    $client2->request('campaigns.json');
 } catch (Api\Error $e) {
     print($e);
 }
 
 try {
-    $client->request('GET', 'bad.json');
+    $client->request('bad.json');
 } catch (Api\Error $e) {
     print($e);
 }

@@ -1,8 +1,12 @@
 <?php
 namespace MailRu\TargetApi;
 
-class Error extends \Exception {
-   protected $fields = array();
+/**
+* Exception class for all HTTP errors throwed by client.
+*/
+class Error extends \Exception
+{
+    protected $fields = array();
 
     public function __construct($error, $code = 400, $previous = null, $fields = null)
     {
@@ -12,6 +16,11 @@ class Error extends \Exception {
         }
     }
 
+    /**
+     * Overrides parent's __toString to add fields' errors for Validation Error.
+     *
+     * @return array
+     */
     public function __toString()
     {
         $res = sprintf(
@@ -28,6 +37,11 @@ class Error extends \Exception {
             sprintf("\n  thrown in %s on line %d\n", $this->getFile(), $this->getLine());
     }
 
+    /**
+     * Returns fields' errors for API's Validation Error.
+     *
+     * @return array All validation errors occured during processing API request.
+     */
     public function getFields()
     {
         return $this->fields;
@@ -35,6 +49,14 @@ class Error extends \Exception {
 
 }
 
+/**
+* Target@Mail.Ru API's HTTP client.
+*/
+/**
+  * @param boolean $hi when true 'Hello world' is echo-ed.
+  *
+  * @return void
+  */
 class Client
 {
     protected static $HTTP_METHODS = array('GET', 'POST', 'DELETE');
@@ -52,13 +74,15 @@ class Client
         $this->url = sprintf('https://%s/api/v%d/', $host, $version);
     }
 
-    public function request($method, $resource, $post_data=null, $get_params=null)
+    public function request($resource, $method='GET', $post_data=null, $get_params=null)
     {
         $method = strtoupper($method);
         if (!in_array($method, self::$HTTP_METHODS)) {
             throw new Exception('Unsupported HTTP method: ' . $method);
 
         }
+
+        // Prepare authentication signature.
         $data = $post_data ? json_encode($post_data) : '';
         $url = $this->url . ltrim($resource, '/');
         $string = sprintf('%s&%s&%s', $method, rawurlencode($url), rawurlencode($data));
@@ -73,6 +97,8 @@ class Client
                 'ignore_errors' => true,
             )
         );
+
+        // Perform HTTP request.
         if ($method == 'POST') {
             $opts['http']['header'][] = 'Content-type: application/json';
             $opts['http']['content'] = $data;
@@ -89,6 +115,7 @@ class Client
         $meta = stream_get_meta_data($f);
         fclose($f);
 
+        // Process the result.
         $code = null;
         if (isset($meta['wrapper_data']) && sizeof($meta['wrapper_data'])) {
             $tmp = explode(' ', $meta['wrapper_data'][0]);
