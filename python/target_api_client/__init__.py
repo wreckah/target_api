@@ -33,7 +33,7 @@ class TargetApiError(Exception):
 
 
 class TargetApiClient(object):
-    HTTP_METHODS = {'GET', 'POST', 'DELETE'}
+    HTTP_METHODS = frozenset(('GET', 'POST', 'DELETE'))
     PRODUCTION_HOST = 'target.mail.ru'
     SANDBOX_HOST = 'target-sandbox.mail.ru'
     access_id = None
