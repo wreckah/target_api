@@ -79,7 +79,6 @@ class Client
         $method = strtoupper($method);
         if (!in_array($method, self::$HTTP_METHODS)) {
             throw new Exception('Unsupported HTTP method: ' . $method);
-
         }
 
         // Prepare authentication signature.
