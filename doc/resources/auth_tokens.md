@@ -120,6 +120,3 @@ Curl-запрос:
       "username": "kgorilla@mail.ru"
     }
 
-
-
-*Generated automatically at 2013-09-23 00:28:14.749368*

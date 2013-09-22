@@ -65,6 +65,3 @@ RemarketingCounterForm.
 Обратите внимание на то, что в качестве идентификатора счётчика метод
 использует `id`, а не `counter_id`.
 
-
-
-*Generated automatically at 2013-09-23 00:28:14.749368*
