@@ -191,6 +191,3 @@ JSON (тип ответа-ошибки — ``application/json``).
 *[JSON]: JavaScript Object Notation
 *[REST]: REpresentational State Transfer
 *[SHA1]: Secure Hash Algorithm 1
-
-
-*Generated automatically at 2013-09-23 00:27:11.101332*
