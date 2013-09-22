@@ -15,4 +15,6 @@
 В случае успешного создания также возвращает объект UserForm. username у
 автоматически созданного клиента имеет формат {hash}@agency_client.
 
-*Generated automatically at 2013-09-23 00:26:16.062876*
+
+
+*Generated automatically at 2013-09-23 00:27:11.101332*
