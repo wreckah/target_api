@@ -32,3 +32,4 @@ Curl-запрос:
     -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:hViM17RQNg1Izv8pwmmZktMkoHQ=' \
     'https://target-sandbox.mail.ru/api/v1/transactions/to/username@mail.ru.json'
 
+*Generated automatically at 2013-09-23 00:26:16.062876*
