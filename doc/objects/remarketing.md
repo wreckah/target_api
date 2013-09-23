@@ -22,15 +22,14 @@
         </tr><tr>
             <td><p><code>disjunctions</code></p></td>
             <td><p><code>List of ``Targetings</code>
-<code>json
-{
-  "remarketing_counters": "List",
-  "remarketing_game_payers": "List",
-  "remarketing_game_players": "List",
-  "remarketing_payers": "List",
-  "remarketing_players": "List",
-  "remarketing_groups": "List"
-}</code></p></td>
+    {
+      "remarketing_counters": "List",
+      "remarketing_game_payers": "List",
+      "remarketing_game_players": "List",
+      "remarketing_payers": "List",
+      "remarketing_players": "List",
+      "remarketing_groups": "List"
+    }</p></td>
             <td><p>Список таргетингов аудитории, которые срабатывают по
 принципу «хотя бы один» (логическая дизъюнкция). Каждый из элементов списка
 позволяет указать, в свою очередь, от одного до пяти таргетингов, которые
@@ -58,13 +57,12 @@
         </tr><tr>
             <td><p><code>campaigns</code></p></td>
             <td><p><code>List of ``Campaigns</code>
-<code>json
-{
-  "id": "Integer, Идентификатор кампании",
-  "name": "String, Имя кампании",
-  "edit_url": "String",
-  "status": "String"
-}</code></p></td>
+    {
+      "id": "Integer, Идентификатор кампании",
+      "name": "String, Имя кампании",
+      "edit_url": "String",
+      "status": "String"
+    }</p></td>
             <td><p>Список рекламных кампаний, в которых используется аудитория</p></td>
         </tr>
     </tbody>

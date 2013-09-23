@@ -56,29 +56,27 @@ Email</p></td>
             <td><p>Список прав пользователя</p></td>
         </tr><tr>
             <td><p><code>account</code></p></td>
-            <td><p><code>UserAccount`</code>json
-{
-  "id": "Integer",
-  "balance": "Decimal",
-  "flags": "List"
-}
-```</p></td>
+            <td><p><code>``UserAccount</code>
+    {
+      "id": "Integer",
+      "balance": "Decimal",
+      "flags": "List"
+    }</p></td>
             <td><p>Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
             <td><p><code>agency</code></p></td>
-            <td><p><code>UserAccount`</code>json
-{
-  "id": "Integer",
-  "balance": "Decimal",
-  "flags": "List"
-}
-<code>`Agency`</code>json
-{
-  "is_buyer": "Boolean",
-  "buyer_commission": "Decimal",
-  "overriding_commission": "Decimal"
-}
-```</p></td>
+            <td><p><code>``UserAccount</code>
+    {
+      "id": "Integer",
+      "balance": "Decimal",
+      "flags": "List"
+    }
+<code>Agency</code>
+    {
+      "is_buyer": "Boolean",
+      "buyer_commission": "Decimal",
+      "overriding_commission": "Decimal"
+    }</p></td>
             <td><p>Информация о агентском аккаунте пользователя</p></td>
         </tr><tr>
             <td><p><code>agency_username</code></p></td>

@@ -72,11 +72,10 @@
             <td><p>Формат баннера</p></td>
         </tr><tr>
             <td><p><code>targetings</code></p></td>
-            <td><p><code>Targetings`</code>json
-{
-  "pads": "List"
-}
-```</p></td>
+            <td><p><code>``Targetings</code>
+    {
+      "pads": "List"
+    }</p></td>
             <td><p>Доступные таргетинги</p></td>
         </tr><tr>
             <td><p><code>eye_urls</code></p></td>

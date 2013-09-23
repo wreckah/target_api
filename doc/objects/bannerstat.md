@@ -75,24 +75,21 @@
         </tr><tr>
             <td><p><code>user</code></p></td>
             <td><p><code>String``User</code>
-<code>json
-{
-  "id": "Integer, Идентификатор пользователя"
-}</code></p></td>
+    {
+      "id": "Integer, Идентификатор пользователя"
+    }</p></td>
             <td><p>Пользователь-владелец баннера</p></td>
         </tr><tr>
             <td><p><code>campaign</code></p></td>
             <td><p><code>String``User</code>
-<code>json
-{
-  "id": "Integer, Идентификатор пользователя"
-}
-````CampaignBase`</code>json
-{
-  "id": "Integer, Идентификатор кампании",
-  "url": "String"
-}
-```</p></td>
+    {
+      "id": "Integer, Идентификатор пользователя"
+    }
+<code>CampaignBase</code>
+    {
+      "id": "Integer, Идентификатор кампании",
+      "url": "String"
+    }</p></td>
             <td><p>Кампания баннера</p></td>
         </tr><tr>
             <td><p><code>moderation_reason_display</code></p></td>

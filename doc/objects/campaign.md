@@ -72,38 +72,37 @@
         </tr><tr>
             <td><p><code>targetings</code></p></td>
             <td><p><code>String``CampaignTargetings</code>
-<code>json
-{
-  "pads": "List",
-  "age": "IntegerList",
-  "regions": "IntegerList",
-  "regions_names": "List",
-  "grouped_regions_names": "List",
-  "sex": "String",
-  "week_days": "List",
-  "day_hours": "IntegerList",
-  "education": "List",
-  "salary": "List",
-  "language": "Language",
-  "profession": "List",
-  "paid": "String",
-  "birthday": "Birthday",
-  "projects": "List",
-  "tree": "IntegerList",
-  "user_geo": "Dict",
-  "fulltime": "Fulltime",
-  "remarketing": "List",
-  "current_game": "Boolean",
-  "current_group": "Boolean",
-  "gaming_paid": "String",
-  "thematics": "IntegerList",
-  "mobile_types": "List",
-  "mobile_operation_systems": "IntegerList",
-  "mobile_operators": "IntegerList",
-  "mobile_vendors": "IntegerList",
-  "phrases": "Dict",
-  "binmask": ""
-}</code></p></td>
+    {
+      "pads": "List",
+      "age": "IntegerList",
+      "regions": "IntegerList",
+      "regions_names": "List",
+      "grouped_regions_names": "List",
+      "sex": "String",
+      "week_days": "List",
+      "day_hours": "IntegerList",
+      "education": "List",
+      "salary": "List",
+      "language": "Language",
+      "profession": "List",
+      "paid": "String",
+      "birthday": "Birthday",
+      "projects": "List",
+      "tree": "IntegerList",
+      "user_geo": "Dict",
+      "fulltime": "Fulltime",
+      "remarketing": "List",
+      "current_game": "Boolean",
+      "current_group": "Boolean",
+      "gaming_paid": "String",
+      "thematics": "IntegerList",
+      "mobile_types": "List",
+      "mobile_operation_systems": "IntegerList",
+      "mobile_operators": "IntegerList",
+      "mobile_vendors": "IntegerList",
+      "phrases": "Dict",
+      "binmask": ""
+    }</p></td>
             <td><p>Структура таргетингов</p></td>
         </tr><tr>
             <td><p><code>url</code></p></td>
