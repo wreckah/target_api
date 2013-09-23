@@ -11,15 +11,15 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><br />Уникальный целочисленный идентификатор</td>
+            <td><p><br />Уникальный целочисленный идентификатор</p></td>
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Название тематики</td>
+            <td><p><em>255 символов</em> <br />Название тематики</p></td>
         </tr><tr>
             <td><code>groups_cnt</code></td>
             <td><code>Integer</code></td>
-            <td><br />Количество групп данной тематики</td>
+            <td><p><br />Количество групп данной тематики</p></td>
         </tr>
     </tbody>
 </table>

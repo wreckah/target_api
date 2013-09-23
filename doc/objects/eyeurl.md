@@ -10,11 +10,11 @@
         <tr>
             <td><code>url</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> </td>
+            <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>description</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> </td>
+            <td><p><em>255 символов</em> </p></td>
         </tr>
     </tbody>
 </table>

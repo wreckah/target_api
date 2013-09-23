@@ -12,11 +12,11 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><br />Уникальный целочисленный идентификатор</td>
+            <td><p><br />Уникальный целочисленный идентификатор</p></td>
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><em>Обязательный</em> <em>255 символов</em> <br />Название аудитории</td>
+            <td><p><em>Обязательный</em> <em>255 символов</em> <br />Название аудитории</p></td>
         </tr><tr>
             <td><code>disjunctions</code></td>
             <td>List of <code>Targetings</code>
@@ -31,29 +31,30 @@
 }
 ```
 </td>
-            <td><br />Список таргетингов аудитории, которые срабатывают по
+            <td><p><br />Список таргетингов аудитории, которые срабатывают по
 принципу «хотя бы один» (логическая дизъюнкция). Каждый из элементов списка
 позволяет указать, в свою очередь, от одного до пяти таргетингов, которые
-срабатывают по принципу «каждый» (логическая конъюнкция):
-
-* `remarketing_counters` — посетители на основании данных ремаркетинговых
-счётчиков в виде списка объектов targeting.RemarketingCounterIntervalForm;
-* `remarketing_game_payers` — посетители, платившие за приложение в соцсетях
-[Мой Мир](http://my.mail.ru) и [Одноклассники](http://odnoklassniki.ru/),
-в виде списка объектов targeting.RemarketingGameIntervalForm;
-* `remarketing_game_players` — посетители, пользовавшиеся приложением в
-соцсетях [Мой Мир](http://my.mail.ru) и
-[Одноклассники](http://odnoklassniki.ru/), в виде списка объектов
-targeting.RemarketingGameIntervalForm;
-* `remarketing_payers` — посетители, в принципе платившие в приложениях
+срабатывают по принципу «каждый» (логическая конъюнкция):</p>
+<ul>
+<li><code>remarketing_counters</code> — посетители на основании данных ремаркетинговых
+счётчиков в виде списка объектов <a href="#object_remarketingcounterinterval">RemarketingCounterInterval</a>;</li>
+<li><code>remarketing_game_payers</code> — посетители, платившие за приложение в соцсетях
+<a href="http://my.mail.ru">Мой Мир</a> и <a href="http://odnoklassniki.ru/">Одноклассники</a>,
+в виде списка объектов <a href="#object_remarketinggameinterval">RemarketingGameInterval</a>;</li>
+<li><code>remarketing_game_players</code> — посетители, пользовавшиеся приложением в
+соцсетях <a href="http://my.mail.ru">Мой Мир</a> и
+<a href="http://odnoklassniki.ru/">Одноклассники</a>, в виде списка объектов
+<a href="#object_remarketinggameinterval">RemarketingGameInterval</a>;</li>
+<li><code>remarketing_payers</code> — посетители, в принципе платившие в приложениях
 соцсетей Мой Мир и Одноклассники, в виде списка объектов
-targeting.RemarketingIntervalForm;
-* `remarketing_payers` — посетители, в принципе пользовавшиеся приложениями
+<a href="#object_remarketinginterval">RemarketingInterval</a>;</li>
+<li><code>remarketing_payers</code> — посетители, в принципе пользовавшиеся приложениями
 соцсетей Мой Мир и Одноклассники, в виде списка объектов
-targeting.RemarketingIntervalForm;
-* `remarketing_group` — посетители, являющиеся участниками групп в соцсети
-[Одноклассники](http://odnoklassniki.ru/), в виде списка объектов
-targeting.RemarketingGroupMembershipForm.</td>
+<a href="#object_remarketinginterval">RemarketingInterval</a>;</li>
+<li><code>remarketing_group</code> — посетители, являющиеся участниками групп в соцсети
+<a href="http://odnoklassniki.ru/">Одноклассники</a>, в виде списка объектов
+<a href="#object_remarketinggroupmembership">RemarketingGroupMembership</a>.</li>
+</ul></td>
         </tr><tr>
             <td><code>campaigns</code></td>
             <td>List of <code>Campaigns</code>
@@ -66,7 +67,7 @@ targeting.RemarketingGroupMembershipForm.</td>
 }
 ```
 </td>
-            <td><br />Список рекламных кампаний, в которых используется аудитория</td>
+            <td><p><br />Список рекламных кампаний, в которых используется аудитория</p></td>
         </tr>
     </tbody>
 </table>

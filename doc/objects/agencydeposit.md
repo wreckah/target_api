@@ -10,7 +10,7 @@
         <tr>
             <td><code>amount</code></td>
             <td><code>Decimal</code></td>
-            <td><br />Сумма перевода</td>
+            <td><p><br />Сумма перевода</p></td>
         </tr>
     </tbody>
 </table>

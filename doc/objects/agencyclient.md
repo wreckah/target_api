@@ -10,43 +10,43 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><br />Идентификатор пользователя</td>
+            <td><p><br />Идентификатор пользователя</p></td>
         </tr><tr>
             <td><code>username</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Имя пользователя. Может не совпадать с email</td>
+            <td><p><em>255 символов</em> <br />Имя пользователя. Может не совпадать с email</p></td>
         </tr><tr>
             <td><code>firstname</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Имя</td>
+            <td><p><em>255 символов</em> <br />Имя</p></td>
         </tr><tr>
             <td><code>lastname</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Фамилия</td>
+            <td><p><em>255 символов</em> <br />Фамилия</p></td>
         </tr><tr>
             <td><code>email</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Email</td>
+            <td><p><em>255 символов</em> <br />Email</p></td>
         </tr><tr>
             <td><code>types</code></td>
             <td><code>Strings</code></td>
-            <td><em>255 символов</em> <br />Массив ролей пользователя</td>
+            <td><p><em>255 символов</em> <br />Массив ролей пользователя</p></td>
         </tr><tr>
             <td><code>status</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Статус</td>
+            <td><p><em>255 символов</em> <br />Статус</p></td>
         </tr><tr>
             <td><code>additional_info</code></td>
             <td><code>[AdditionalUserInfo](additionaluserinfo)</code></td>
-            <td><br />структура AdditionalUserInfo</td>
+            <td><p><br />структура AdditionalUserInfo</p></td>
         </tr><tr>
             <td><code>mailings</code></td>
             <td><code>Strings</code></td>
-            <td><em>255 символов</em> <em>news, finance, event, moderation, other</em></td>
+            <td><p><em>255 символов</em> <em>news, finance, event, moderation, other</em></p></td>
         </tr><tr>
             <td><code>permissions</code></td>
             <td><code></code></td>
-            <td><br />Список прав пользователя</td>
+            <td><p><br />Список прав пользователя</p></td>
         </tr><tr>
             <td><code>account</code></td>
             <td><code></code><code>UserAccount</code>
@@ -58,7 +58,7 @@
 }
 ```
 </td>
-            <td><br />Информация о финансовом аккаунте пользователя</td>
+            <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
             <td><code>agency</code></td>
             <td><code></code><code>UserAccount</code>
@@ -78,15 +78,15 @@
 }
 ```
 </td>
-            <td><br />Информация о агентском аккаунте пользователя</td>
+            <td><p><br />Информация о агентском аккаунте пользователя</p></td>
         </tr><tr>
             <td><code>agency_username</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Username родительского агентства, если таковое есть</td>
+            <td><p><em>255 символов</em> <br />Username родительского агентства, если таковое есть</p></td>
         </tr><tr>
             <td><code>branch_username</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Username родительского представительства, если таковое есть</td>
+            <td><p><em>255 символов</em> <br />Username родительского представительства, если таковое есть</p></td>
         </tr><tr>
             <td><code>bf</code></td>
             <td><code>Integer</code></td>
@@ -94,11 +94,11 @@
         </tr><tr>
             <td><code>flags</code></td>
             <td><code>Strings</code></td>
-            <td><em>255 символов</em> </td>
+            <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>is_red_client</code></td>
             <td><code>Boolean</code></td>
-            <td><br />Является ли пользователь 'красным' клиентом</td>
+            <td><p><br />Является ли пользователь 'красным' клиентом</p></td>
         </tr><tr>
             <td><code>is_msk_allowed</code></td>
             <td><code>Boolean</code></td>

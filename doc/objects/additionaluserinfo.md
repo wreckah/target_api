@@ -10,23 +10,23 @@
         <tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Имя и фамилия</td>
+            <td><p><em>255 символов</em> <br />Имя и фамилия</p></td>
         </tr><tr>
             <td><code>email</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Email</td>
+            <td><p><em>255 символов</em> <br />Email</p></td>
         </tr><tr>
             <td><code>phone</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Телефон</td>
+            <td><p><em>255 символов</em> <br />Телефон</p></td>
         </tr><tr>
             <td><code>address</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Адрес</td>
+            <td><p><em>255 символов</em> <br />Адрес</p></td>
         </tr><tr>
             <td><code>client_name</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Название клиента</td>
+            <td><p><em>255 символов</em> <br />Название клиента</p></td>
         </tr>
     </tbody>
 </table>

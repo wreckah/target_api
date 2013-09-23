@@ -11,19 +11,19 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><br />Целочисленный идентификатор</td>
+            <td><p><br />Целочисленный идентификатор</p></td>
         </tr><tr>
             <td><code>total</code></td>
             <td><code>[BaseStat](basestat)</code></td>
-            <td><br />Суммарная статистика за весь запрашиваемый период</td>
+            <td><p><br />Суммарная статистика за весь запрашиваемый период</p></td>
         </tr><tr>
             <td><code>detailed_stat</code></td>
             <td><code>[DateHourStats](datehourstat)</code></td>
-            <td><br />Детализация статистики по запрашиваемому периоду</td>
+            <td><p><br />Детализация статистики по запрашиваемому периоду</p></td>
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Название</td>
+            <td><p><em>255 символов</em> <br />Название</p></td>
         </tr>
     </tbody>
 </table>

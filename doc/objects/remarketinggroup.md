@@ -13,23 +13,23 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><br />Уникальный целочисленный идентификатор</td>
+            <td><p><br />Уникальный целочисленный идентификатор</p></td>
         </tr><tr>
             <td><code>type</code></td>
             <td><code>String</code></td>
-            <td><em>Обязательный</em> <em>20 символов</em> <em>group, scope</em><br />Тип сущности: группа или тематика групп</td>
+            <td><p><em>Обязательный</em> <em>20 символов</em> <em>group, scope</em><br />Тип сущности: группа или тематика групп</p></td>
         </tr><tr>
             <td><code>object_id</code></td>
             <td><code>Integer</code></td>
-            <td><em>Обязательный</em> <br />Уникальный целочисленный идентификатор
+            <td><p><em>Обязательный</em> <br />Уникальный целочисленный идентификатор
 группы или тематики групп в соцсети
-[Одноклассники](http://odnoklassniki.ru/). Например, 50476261114004
-([Группы на Одноклассниках](http://www.odnoklassniki.ru/gruppa)) или 4
-(тематика «спорт и активный отдых»).</td>
+<a href="http://odnoklassniki.ru/">Одноклассники</a>. Например, 50476261114004
+(<a href="http://www.odnoklassniki.ru/gruppa">Группы на Одноклассниках</a>) или 4
+(тематика «спорт и активный отдых»).</p></td>
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> <br />Название группы или тематики</td>
+            <td><p><em>255 символов</em> <br />Название группы или тематики</p></td>
         </tr>
     </tbody>
 </table>

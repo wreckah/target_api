@@ -10,7 +10,7 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><em>Обязательный</em> </td>
+            <td><p><em>Обязательный</em> </p></td>
         </tr><tr>
             <td><code>height</code></td>
             <td><code>Integer</code></td>
@@ -30,15 +30,15 @@
         </tr><tr>
             <td><code>type</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> </td>
+            <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>url</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> </td>
+            <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>preview_url</code></td>
             <td><code>String</code></td>
-            <td><em>255 символов</em> </td>
+            <td><p><em>255 символов</em> </p></td>
         </tr>
     </tbody>
 </table>
