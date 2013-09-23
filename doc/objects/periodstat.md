@@ -9,20 +9,20 @@
     </thead>
     <tbody>
         <tr>
-            <td>`clicks`</td>
-            <td>`Integer`</td>
+            <td><p><code>clicks</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Количество кликов</p></td>
         </tr><tr>
-            <td>`shows`</td>
-            <td>`Integer`</td>
+            <td><p><code>shows</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Количество показов</p></td>
         </tr><tr>
-            <td>`amount`</td>
-            <td>`Decimal`</td>
+            <td><p><code>amount</code></p></td>
+            <td><p><code>Decimal</code></p></td>
             <td><p>Сумма списаний</p></td>
         </tr><tr>
-            <td>`date`</td>
-            <td>`Date`</td>
+            <td><p><code>date</code></p></td>
+            <td><p><code>Date</code></p></td>
             <td><p>Дата, за которую предоставлена статистика
 в формате ДД.ММ.ГГГГ</p></td>
         </tr>

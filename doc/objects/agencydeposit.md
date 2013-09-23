@@ -8,8 +8,8 @@
     </thead>
     <tbody>
         <tr>
-            <td>`amount`</td>
-            <td>`Decimal`</td>
+            <td><p><code>amount</code></p></td>
+            <td><p><code>Decimal</code></p></td>
             <td><p>Сумма перевода</p></td>
         </tr>
     </tbody>

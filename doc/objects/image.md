@@ -8,41 +8,37 @@
     </thead>
     <tbody>
         <tr>
-            <td>`id`</td>
-            <td>`Integer`</td>
-            <td>*Обязательный*
-</td>
+            <td><p><code>id</code></p></td>
+            <td><p><code>Integer</code></p></td>
+            <td><p><em>Обязательный</em></p></td>
         </tr><tr>
-            <td>`height`</td>
-            <td>`Integer`</td>
+            <td><p><code>height</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`width`</td>
-            <td>`Integer`</td>
+            <td><p><code>width</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`size`</td>
-            <td>`Integer`</td>
+            <td><p><code>size</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`is_animated`</td>
-            <td>`Boolean`</td>
+            <td><p><code>is_animated</code></p></td>
+            <td><p><code>Boolean</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`type`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>type</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr><tr>
-            <td>`url`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>url</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr><tr>
-            <td>`preview_url`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>preview_url</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr>
     </tbody>
 </table>

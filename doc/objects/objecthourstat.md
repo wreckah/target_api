@@ -9,21 +9,21 @@
     </thead>
     <tbody>
         <tr>
-            <td>`id`</td>
-            <td>`Integer`</td>
+            <td><p><code>id</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Целочисленный идентификатор</p></td>
         </tr><tr>
-            <td>`name`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Название</p></td>
+            <td><p><code>name</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Название</p></td>
         </tr><tr>
-            <td>`total`</td>
-            <td>`[BaseStat](basestat)`</td>
+            <td><p><code>total</code></p></td>
+            <td><p><code>[BaseStat](basestat)</code></p></td>
             <td><p>Суммарная статистика за весь запрашиваемый период</p></td>
         </tr><tr>
-            <td>`detailed_stat`</td>
-            <td>`[DateHourStats](datehourstat)`</td>
+            <td><p><code>detailed_stat</code></p></td>
+            <td><p><code>[DateHourStats](datehourstat)</code></p></td>
             <td><p>Детализация статистики по запрашиваемому периоду</p></td>
         </tr>
     </tbody>

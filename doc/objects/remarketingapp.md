@@ -11,23 +11,23 @@
     </thead>
     <tbody>
         <tr>
-            <td>`id`</td>
-            <td>`Integer`</td>
+            <td><p><code>id</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Уникальный целочисленный идентификатор</p></td>
         </tr><tr>
-            <td>`app_id`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Уникальный символьный или целочисленный идентификатор
+            <td><p><code>app_id</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Уникальный символьный или целочисленный идентификатор
 приложения в соцсетях <a href="http://my.mail.ru">Мой Мир</a> и
 <a href="http://odnoklassniki.ru/">Одноклассники</a>. Например, 259003 (Мой Мир)
 или shakhmaty (Одноклассники).</p></td>
         </tr><tr>
-            <td>`app_type`</td>
-            <td>`String`</td>
-            <td>*64 символа*
-*odkl_app, mir_app*
-<p>Платформа приложения</p></td>
+            <td><p><code>app_type</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>64 символа</em>
+<em>odkl_app, mir_app</em>
+Платформа приложения</p></td>
         </tr>
     </tbody>
 </table>

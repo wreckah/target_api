@@ -8,112 +8,107 @@
     </thead>
     <tbody>
         <tr>
-            <td>`id`</td>
-            <td>`Integer`</td>
+            <td><p><code>id</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Идентификатор пользователя</p></td>
         </tr><tr>
-            <td>`username`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Имя пользователя. Может не совпадать с email</p></td>
+            <td><p><code>username</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Имя пользователя. Может не совпадать с email</p></td>
         </tr><tr>
-            <td>`firstname`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Имя</p></td>
+            <td><p><code>firstname</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Имя</p></td>
         </tr><tr>
-            <td>`lastname`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Фамилия</p></td>
+            <td><p><code>lastname</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Фамилия</p></td>
         </tr><tr>
-            <td>`email`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Email</p></td>
+            <td><p><code>email</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Email</p></td>
         </tr><tr>
-            <td>`types`</td>
-            <td>`Strings`</td>
-            <td>*255 символов*
-<p>Массив ролей пользователя</p></td>
+            <td><p><code>types</code></p></td>
+            <td><p><code>Strings</code></p></td>
+            <td><p><em>255 символов</em>
+Массив ролей пользователя</p></td>
         </tr><tr>
-            <td>`status`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Статус</p></td>
+            <td><p><code>status</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Статус</p></td>
         </tr><tr>
-            <td>`additional_info`</td>
-            <td>`[AdditionalUserInfo](additionaluserinfo)`</td>
+            <td><p><code>additional_info</code></p></td>
+            <td><p><code>[AdditionalUserInfo](additionaluserinfo)</code></p></td>
             <td><p>структура AdditionalUserInfo</p></td>
         </tr><tr>
-            <td>`mailings`</td>
-            <td>`Strings`</td>
-            <td>*255 символов*
-*news, finance, event, moderation, other*
-</td>
+            <td><p><code>mailings</code></p></td>
+            <td><p><code>Strings</code></p></td>
+            <td><p><em>255 символов</em>
+<em>news, finance, event, moderation, other</em></p></td>
         </tr><tr>
-            <td>`permissions`</td>
-            <td>``</td>
+            <td><p><code>permissions</code></p></td>
+            <td><p>``</p></td>
             <td><p>Список прав пользователя</p></td>
         </tr><tr>
-            <td>`account`</td>
-            <td>```UserAccount`
-```json
+            <td><p><code>account</code></p></td>
+            <td><p><code>UserAccount`</code>json
 {
   "id": "Integer",
   "balance": "Decimal",
   "flags": "List"
 }
-```</td>
+```</p></td>
             <td><p>Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
-            <td>`agency`</td>
-            <td>```UserAccount`
-```json
+            <td><p><code>agency</code></p></td>
+            <td><p><code>UserAccount`</code>json
 {
   "id": "Integer",
   "balance": "Decimal",
   "flags": "List"
 }
-````Agency`
-```json
+<code>`Agency`</code>json
 {
   "is_buyer": "Boolean",
   "buyer_commission": "Decimal",
   "overriding_commission": "Decimal"
 }
-```</td>
+```</p></td>
             <td><p>Информация о агентском аккаунте пользователя</p></td>
         </tr><tr>
-            <td>`agency_username`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Username родительского агентства, если таковое есть</p></td>
+            <td><p><code>agency_username</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Username родительского агентства, если таковое есть</p></td>
         </tr><tr>
-            <td>`branch_username`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Username родительского представительства, если таковое есть</p></td>
+            <td><p><code>branch_username</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Username родительского представительства, если таковое есть</p></td>
         </tr><tr>
-            <td>`bf`</td>
-            <td>`Integer`</td>
+            <td><p><code>bf</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`flags`</td>
-            <td>`Strings`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>flags</code></p></td>
+            <td><p><code>Strings</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr><tr>
-            <td>`is_red_client`</td>
-            <td>`Boolean`</td>
+            <td><p><code>is_red_client</code></p></td>
+            <td><p><code>Boolean</code></p></td>
             <td><p>Является ли пользователь 'красным' клиентом</p></td>
         </tr><tr>
-            <td>`is_msk_allowed`</td>
-            <td>`Boolean`</td>
+            <td><p><code>is_msk_allowed</code></p></td>
+            <td><p><code>Boolean</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`is_spb_allowed`</td>
-            <td>`Boolean`</td>
+            <td><p><code>is_spb_allowed</code></p></td>
+            <td><p><code>Boolean</code></p></td>
             <td></td>
         </tr>
     </tbody>

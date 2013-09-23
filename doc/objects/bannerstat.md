@@ -9,137 +9,129 @@
     </thead>
     <tbody>
         <tr>
-            <td>`id`</td>
-            <td>`Integer`</td>
+            <td><p><code>id</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Идентификатор баннера</p></td>
         </tr><tr>
-            <td>`status`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-*active, deleted, blocked*
-<p>Статус</p></td>
+            <td><p><code>status</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+<em>active, deleted, blocked</em>
+Статус</p></td>
         </tr><tr>
-            <td>`system_status`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-*active, deleted, blocked*
-<p>Системный статус</p></td>
+            <td><p><code>system_status</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+<em>active, deleted, blocked</em>
+Системный статус</p></td>
         </tr><tr>
-            <td>`created`</td>
-            <td>`DateTime`</td>
+            <td><p><code>created</code></p></td>
+            <td><p><code>DateTime</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`updated`</td>
-            <td>`DateTime`</td>
+            <td><p><code>updated</code></p></td>
+            <td><p><code>DateTime</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`moderation_status`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-<p>Статус модерации</p></td>
+            <td><p><code>moderation_status</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em>
+Статус модерации</p></td>
         </tr><tr>
-            <td>`title`</td>
-            <td>`AllowedChars`</td>
-            <td>*255 символов*
-<p>Заголовок баннера</p></td>
+            <td><p><code>title</code></p></td>
+            <td><p><code>AllowedChars</code></p></td>
+            <td><p><em>255 символов</em>
+Заголовок баннера</p></td>
         </tr><tr>
-            <td>`text`</td>
-            <td>`AllowedChars`</td>
-            <td>*90 символов*
-<p>Текст баннера</p></td>
+            <td><p><code>text</code></p></td>
+            <td><p><code>AllowedChars</code></p></td>
+            <td><p><em>90 символов</em>
+Текст баннера</p></td>
         </tr><tr>
-            <td>`telephone`</td>
-            <td>`String`</td>
-            <td>*64 символа*
-</td>
+            <td><p><code>telephone</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>64 символа</em></p></td>
         </tr><tr>
-            <td>`company_name`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>company_name</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr><tr>
-            <td>`url`</td>
-            <td>`URL`</td>
-            <td>*1024 символа*
-<p>Ссылка в баннере</p></td>
+            <td><p><code>url</code></p></td>
+            <td><p><code>URL</code></p></td>
+            <td><p><em>1024 символа</em>
+Ссылка в баннере</p></td>
         </tr><tr>
-            <td>`json_url`</td>
-            <td>`String`</td>
-            <td>*1024 символа*
-</td>
+            <td><p><code>json_url</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>1024 символа</em></p></td>
         </tr><tr>
-            <td>`edit_url`</td>
-            <td>`String`</td>
-            <td>*1024 символа*
-</td>
+            <td><p><code>edit_url</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>1024 символа</em></p></td>
         </tr><tr>
-            <td>`preview_image_url`</td>
-            <td>`String`</td>
-            <td>*1024 символа*
-</td>
+            <td><p><code>preview_image_url</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>1024 символа</em></p></td>
         </tr><tr>
-            <td>`user`</td>
-            <td>`String``User`
-```json
+            <td><p><code>user</code></p></td>
+            <td><p><code>String``User</code>
+<code>json
 {
   "id": "Integer, Идентификатор пользователя"
-}
-```</td>
+}</code></p></td>
             <td><p>Пользователь-владелец баннера</p></td>
         </tr><tr>
-            <td>`campaign`</td>
-            <td>`String``User`
-```json
+            <td><p><code>campaign</code></p></td>
+            <td><p><code>String``User</code>
+<code>json
 {
   "id": "Integer, Идентификатор пользователя"
 }
-````CampaignBase`
-```json
+````CampaignBase`</code>json
 {
   "id": "Integer, Идентификатор кампании",
   "url": "String"
 }
-```</td>
+```</p></td>
             <td><p>Кампания баннера</p></td>
         </tr><tr>
-            <td>`moderation_reason_display`</td>
-            <td>`String`</td>
-            <td>*1024 символа*
-<p>Причина модерации</p></td>
+            <td><p><code>moderation_reason_display</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>1024 символа</em>
+Причина модерации</p></td>
         </tr><tr>
-            <td>`banner_moderation`</td>
-            <td>`[BannerModeration](bannermoderation)`</td>
+            <td><p><code>banner_moderation</code></p></td>
+            <td><p><code>[BannerModeration](bannermoderation)</code></p></td>
             <td></td>
         </tr><tr>
-            <td>`image`</td>
-            <td>`[Image](image)`</td>
+            <td><p><code>image</code></p></td>
+            <td><p><code>[Image](image)</code></p></td>
             <td><p>Структура изображения</p></td>
         </tr><tr>
-            <td>`banner_fields`</td>
-            <td>`Strings`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>banner_fields</code></p></td>
+            <td><p><code>Strings</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr><tr>
-            <td>`stats`</td>
-            <td>`[PeriodStat](periodstat)`</td>
+            <td><p><code>stats</code></p></td>
+            <td><p><code>[PeriodStat](periodstat)</code></p></td>
             <td><p>Статистика за всё время</p></td>
         </tr><tr>
-            <td>`stats_today`</td>
-            <td>`[PeriodStat](periodstat)`</td>
+            <td><p><code>stats_today</code></p></td>
+            <td><p><code>[PeriodStat](periodstat)</code></p></td>
             <td><p>Статистика за сегодняшний день</p></td>
         </tr><tr>
-            <td>`stats_yesterday`</td>
-            <td>`[PeriodStat](periodstat)`</td>
+            <td><p><code>stats_yesterday</code></p></td>
+            <td><p><code>[PeriodStat](periodstat)</code></p></td>
             <td><p>Статистика за вчерашний день</p></td>
         </tr><tr>
-            <td>`stats_full`</td>
-            <td>`[PeriodStats](periodstat)`</td>
+            <td><p><code>stats_full</code></p></td>
+            <td><p><code>[PeriodStats](periodstat)</code></p></td>
             <td><p>Статистика за последние 2 недели</p></td>
         </tr><tr>
-            <td>`ctr_status`</td>
-            <td>`String`</td>
-            <td>*60 символов*
-<p>CTR-статус</p></td>
+            <td><p><code>ctr_status</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>60 символов</em>
+CTR-статус</p></td>
         </tr>
     </tbody>
 </table>

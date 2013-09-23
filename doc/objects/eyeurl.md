@@ -8,15 +8,13 @@
     </thead>
     <tbody>
         <tr>
-            <td>`url`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>url</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr><tr>
-            <td>`description`</td>
-            <td>`String`</td>
-            <td>*255 символов*
-</td>
+            <td><p><code>description</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>255 символов</em></p></td>
         </tr>
     </tbody>
 </table>

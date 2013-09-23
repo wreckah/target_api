@@ -10,19 +10,19 @@
     </thead>
     <tbody>
         <tr>
-            <td>`id`</td>
-            <td>`Integer`</td>
+            <td><p><code>id</code></p></td>
+            <td><p><code>Integer</code></p></td>
             <td><p>Уникальный целочисленный идентификатор</p></td>
         </tr><tr>
-            <td>`name`</td>
-            <td>`String`</td>
-            <td>*Обязательный*
-*255 символов*
-<p>Название аудитории</p></td>
+            <td><p><code>name</code></p></td>
+            <td><p><code>String</code></p></td>
+            <td><p><em>Обязательный</em>
+<em>255 символов</em>
+Название аудитории</p></td>
         </tr><tr>
-            <td>`disjunctions`</td>
-            <td>`List of ``Targetings`
-```json
+            <td><p><code>disjunctions</code></p></td>
+            <td><p><code>List of ``Targetings</code>
+<code>json
 {
   "remarketing_counters": "List",
   "remarketing_game_payers": "List",
@@ -30,8 +30,7 @@
   "remarketing_payers": "List",
   "remarketing_players": "List",
   "remarketing_groups": "List"
-}
-```</td>
+}</code></p></td>
             <td><p>Список таргетингов аудитории, которые срабатывают по
 принципу «хотя бы один» (логическая дизъюнкция). Каждый из элементов списка
 позволяет указать, в свою очередь, от одного до пяти таргетингов, которые
@@ -57,16 +56,15 @@
 <a href="#object_remarketinggroupmembership">RemarketingGroupMembership</a>.</li>
 </ul></td>
         </tr><tr>
-            <td>`campaigns`</td>
-            <td>`List of ``Campaigns`
-```json
+            <td><p><code>campaigns</code></p></td>
+            <td><p><code>List of ``Campaigns</code>
+<code>json
 {
   "id": "Integer, Идентификатор кампании",
   "name": "String, Имя кампании",
   "edit_url": "String",
   "status": "String"
-}
-```</td>
+}</code></p></td>
             <td><p>Список рекламных кампаний, в которых используется аудитория</p></td>
         </tr>
     </tbody>
