@@ -8,94 +8,93 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Идентификатор пользователя</p></td>
+            <td><code>id</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Идентификатор пользователя</td>
         </tr><tr>
-            <td><p><code>username</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Имя пользователя. Может не совпадать с email</p></td>
+            <td><code>username</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Имя пользователя. Может не совпадать с email</td>
         </tr><tr>
-            <td><p><code>firstname</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Имя</p></td>
+            <td><code>firstname</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Имя</td>
         </tr><tr>
-            <td><p><code>lastname</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Фамилия</p></td>
+            <td><code>lastname</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Фамилия</td>
         </tr><tr>
-            <td><p><code>email</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Email</p></td>
+            <td><code>email</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Email</td>
         </tr><tr>
-            <td><p><code>types</code></p></td>
-            <td><p><code>Strings</code></p></td>
-            <td><p><em>255 символов</em>
-Массив ролей пользователя</p></td>
+            <td><code>types</code></td>
+            <td><code>Strings</code></td>
+            <td><em>255 символов</em> <br />Массив ролей пользователя</td>
         </tr><tr>
-            <td><p><code>status</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Статус</p></td>
+            <td><code>status</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Статус</td>
         </tr><tr>
-            <td><p><code>additional_info</code></p></td>
-            <td><p><code>[AdditionalUserInfo](additionaluserinfo)</code></p></td>
-            <td><p>структура AdditionalUserInfo</p></td>
+            <td><code>additional_info</code></td>
+            <td><code>[AdditionalUserInfo](additionaluserinfo)</code></td>
+            <td><br />структура AdditionalUserInfo</td>
         </tr><tr>
-            <td><p><code>mailings</code></p></td>
-            <td><p><code>Strings</code></p></td>
-            <td><p><em>255 символов</em>
-<em>news, finance, event, moderation, other</em></p></td>
+            <td><code>mailings</code></td>
+            <td><code>Strings</code></td>
+            <td><em>255 символов</em> <em>news, finance, event, moderation, other</em></td>
         </tr><tr>
-            <td><p><code>permissions</code></p></td>
-            <td><p>``</p></td>
-            <td><p>Список прав пользователя</p></td>
+            <td><code>permissions</code></td>
+            <td><code></code></td>
+            <td><br />Список прав пользователя</td>
         </tr><tr>
-            <td><p><code>account</code></p></td>
-            <td><p><code>``UserAccount</code>
-    {
-      "id": "Integer",
-      "balance": "Decimal",
-      "flags": "List"
-    }</p></td>
-            <td><p>Информация о финансовом аккаунте пользователя</p></td>
+            <td><code>account</code></td>
+            <td><code></code><code>UserAccount</code>
+```json
+{
+  "id": "Integer",
+  "balance": "Decimal",
+  "flags": "List"
+}
+```
+</td>
+            <td><br />Информация о финансовом аккаунте пользователя</td>
         </tr><tr>
-            <td><p><code>agency</code></p></td>
-            <td><p><code>``UserAccount</code>
-    {
-      "id": "Integer",
-      "balance": "Decimal",
-      "flags": "List"
-    }
+            <td><code>agency</code></td>
+            <td><code></code><code>UserAccount</code>
+```json
+{
+  "id": "Integer",
+  "balance": "Decimal",
+  "flags": "List"
+}
+```
 <code>Agency</code>
-    {
-      "is_buyer": "Boolean",
-      "buyer_commission": "Decimal",
-      "overriding_commission": "Decimal"
-    }</p></td>
-            <td><p>Информация о агентском аккаунте пользователя</p></td>
+```json
+{
+  "is_buyer": "Boolean",
+  "buyer_commission": "Decimal",
+  "overriding_commission": "Decimal"
+}
+```
+</td>
+            <td><br />Информация о агентском аккаунте пользователя</td>
         </tr><tr>
-            <td><p><code>agency_username</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Username родительского агентства, если таковое есть</p></td>
+            <td><code>agency_username</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Username родительского агентства, если таковое есть</td>
         </tr><tr>
-            <td><p><code>branch_username</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Username родительского представительства, если таковое есть</p></td>
+            <td><code>branch_username</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Username родительского представительства, если таковое есть</td>
         </tr><tr>
-            <td><p><code>bf</code></p></td>
-            <td><p><code>Integer</code></p></td>
+            <td><code>bf</code></td>
+            <td><code>Integer</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>flags</code></p></td>
-            <td><p><code>Strings</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>flags</code></td>
+            <td><code>Strings</code></td>
+            <td><em>255 символов</em> </td>
         </tr>
     </tbody>
 </table>

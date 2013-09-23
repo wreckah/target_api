@@ -9,22 +9,21 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Целочисленный идентификатор</p></td>
+            <td><code>id</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Целочисленный идентификатор</td>
         </tr><tr>
-            <td><p><code>name</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Название</p></td>
+            <td><code>name</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Название</td>
         </tr><tr>
-            <td><p><code>total</code></p></td>
-            <td><p><code>[BaseStat](basestat)</code></p></td>
-            <td><p>Суммарная статистика за весь запрашиваемый период</p></td>
+            <td><code>total</code></td>
+            <td><code>[BaseStat](basestat)</code></td>
+            <td><br />Суммарная статистика за весь запрашиваемый период</td>
         </tr><tr>
-            <td><p><code>detailed_stat</code></p></td>
-            <td><p><code>[DateStats](datestat)</code></p></td>
-            <td><p>Детализация статистики по запрашиваемому периоду</p></td>
+            <td><code>detailed_stat</code></td>
+            <td><code>[DateStats](datestat)</code></td>
+            <td><br />Детализация статистики по запрашиваемому периоду</td>
         </tr>
     </tbody>
 </table>

@@ -9,90 +9,91 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Идентификатор пакета</p></td>
+            <td><code>id</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Идентификатор пакета</td>
         </tr><tr>
-            <td><p><code>name</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Имя пакета</p></td>
+            <td><code>name</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Имя пакета</td>
         </tr><tr>
-            <td><p><code>status</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>status</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr><tr>
-            <td><p><code>system_status</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>system_status</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr><tr>
-            <td><p><code>description</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Описание пакета</p></td>
+            <td><code>description</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Описание пакета</td>
         </tr><tr>
-            <td><p><code>price_per_show</code></p></td>
-            <td><p><code>Decimal</code></p></td>
-            <td><p>Минимальная цена за показ</p></td>
+            <td><code>price_per_show</code></td>
+            <td><code>Decimal</code></td>
+            <td><br />Минимальная цена за показ</td>
         </tr><tr>
-            <td><p><code>price_per_click</code></p></td>
-            <td><p><code>Decimal</code></p></td>
-            <td><p>Минимальна цена за клик</p></td>
+            <td><code>price_per_click</code></td>
+            <td><code>Decimal</code></td>
+            <td><br />Минимальна цена за клик</td>
         </tr><tr>
-            <td><p><code>base_price_per_show</code></p></td>
-            <td><p><code>Decimal</code></p></td>
+            <td><code>base_price_per_show</code></td>
+            <td><code>Decimal</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>base_price_per_click</code></p></td>
-            <td><p><code>Decimal</code></p></td>
+            <td><code>base_price_per_click</code></td>
+            <td><code>Decimal</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>max_price_per_unit</code></p></td>
-            <td><p><code>Decimal</code></p></td>
+            <td><code>max_price_per_unit</code></td>
+            <td><code>Decimal</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>highest_price_per_unit</code></p></td>
-            <td><p><code>Decimal</code></p></td>
+            <td><code>highest_price_per_unit</code></td>
+            <td><code>Decimal</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>eye_url</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>1024 символа</em></p></td>
+            <td><code>eye_url</code></td>
+            <td><code>String</code></td>
+            <td><em>1024 символа</em> </td>
         </tr><tr>
-            <td><p><code>base_cpm_limit</code></p></td>
-            <td><p><code>Decimal</code></p></td>
+            <td><code>base_cpm_limit</code></td>
+            <td><code>Decimal</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>features</code></p></td>
-            <td><p>``</p></td>
-            <td><p>Свойста пакета</p></td>
+            <td><code>features</code></td>
+            <td><code></code></td>
+            <td><br />Свойста пакета</td>
         </tr><tr>
-            <td><p><code>banner_format</code></p></td>
-            <td><p>``</p></td>
-            <td><p>Формат баннера</p></td>
+            <td><code>banner_format</code></td>
+            <td><code></code></td>
+            <td><br />Формат баннера</td>
         </tr><tr>
-            <td><p><code>targetings</code></p></td>
-            <td><p><code>``Targetings</code>
-    {
-      "pads": "List"
-    }</p></td>
-            <td><p>Доступные таргетинги</p></td>
+            <td><code>targetings</code></td>
+            <td><code></code><code>Targetings</code>
+```json
+{
+  "pads": "List"
+}
+```
+</td>
+            <td><br />Доступные таргетинги</td>
         </tr><tr>
-            <td><p><code>eye_urls</code></p></td>
-            <td><p><code>[EyeUrls](eyeurl)</code></p></td>
+            <td><code>eye_urls</code></td>
+            <td><code>[EyeUrls](eyeurl)</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>is_external</code></p></td>
-            <td><p><code>Boolean</code></p></td>
+            <td><code>is_external</code></td>
+            <td><code>Boolean</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>slider_positions</code></p></td>
-            <td><p>``</p></td>
+            <td><code>slider_positions</code></td>
+            <td><code></code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>flags</code></p></td>
-            <td><p><code>Strings</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>flags</code></td>
+            <td><code>Strings</code></td>
+            <td><em>255 символов</em> </td>
         </tr>
     </tbody>
 </table>

@@ -8,9 +8,9 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>amount</code></p></td>
-            <td><p><code>Decimal</code></p></td>
-            <td><p>Сумма перевода</p></td>
+            <td><code>amount</code></td>
+            <td><code>Decimal</code></td>
+            <td><br />Сумма перевода</td>
         </tr>
     </tbody>
 </table>

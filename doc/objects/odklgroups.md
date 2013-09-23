@@ -9,18 +9,17 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Уникальный целочисленный идентификатор</p></td>
+            <td><code>id</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Уникальный целочисленный идентификатор</td>
         </tr><tr>
-            <td><p><code>title</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Название группы</p></td>
+            <td><code>title</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Название группы</td>
         </tr><tr>
-            <td><p><code>participants</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Количество участников</p></td>
+            <td><code>participants</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Количество участников</td>
         </tr>
     </tbody>
 </table>

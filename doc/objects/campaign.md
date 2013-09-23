@@ -9,169 +9,166 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Идентификатор кампании</p></td>
+            <td><code>id</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Идентификатор кампании</td>
         </tr><tr>
-            <td><p><code>name</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>40 символов</em>
-Имя кампании</p></td>
+            <td><code>name</code></td>
+            <td><code>String</code></td>
+            <td><em>40 символов</em> <br />Имя кампании</td>
         </tr><tr>
-            <td><p><code>status</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-<em>active, deleted, blocked</em></p></td>
+            <td><code>status</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <em>active, deleted, blocked</em></td>
         </tr><tr>
-            <td><p><code>system_status</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-<em>active, deleted, blocked</em></p></td>
+            <td><code>system_status</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <em>active, deleted, blocked</em></td>
         </tr><tr>
-            <td><p><code>created</code></p></td>
-            <td><p><code>DateTime</code></p></td>
-            <td><p>Время создания</p></td>
+            <td><code>created</code></td>
+            <td><code>DateTime</code></td>
+            <td><br />Время создания</td>
         </tr><tr>
-            <td><p><code>updated</code></p></td>
-            <td><p><code>DateTime</code></p></td>
-            <td><p>Время последнего обновления</p></td>
+            <td><code>updated</code></td>
+            <td><code>DateTime</code></td>
+            <td><br />Время последнего обновления</td>
         </tr><tr>
-            <td><p><code>date_start</code></p></td>
-            <td><p><code>Date</code></p></td>
-            <td><p>Время старта кампании</p></td>
+            <td><code>date_start</code></td>
+            <td><code>Date</code></td>
+            <td><br />Время старта кампании</td>
         </tr><tr>
-            <td><p><code>date_end</code></p></td>
-            <td><p><code>Date</code></p></td>
-            <td><p>Время окончания кампании</p></td>
+            <td><code>date_end</code></td>
+            <td><code>Date</code></td>
+            <td><br />Время окончания кампании</td>
         </tr><tr>
-            <td><p><code>package</code></p></td>
-            <td><p><code>[Package](package)</code></p></td>
-            <td><p>Структура пакета</p></td>
+            <td><code>package</code></td>
+            <td><code>[Package](package)</code></td>
+            <td><br />Структура пакета</td>
         </tr><tr>
-            <td><p><code>price_per_show</code></p></td>
-            <td><p><code>Decimal</code></p></td>
-            <td><p>Цена за показ в рублях</p></td>
+            <td><code>price_per_show</code></td>
+            <td><code>Decimal</code></td>
+            <td><br />Цена за показ в рублях</td>
         </tr><tr>
-            <td><p><code>price_per_click</code></p></td>
-            <td><p><code>Decimal</code></p></td>
-            <td><p>Цена за клик в рублях</p></td>
+            <td><code>price_per_click</code></td>
+            <td><code>Decimal</code></td>
+            <td><br />Цена за клик в рублях</td>
         </tr><tr>
-            <td><p><code>budget_limit_day</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>32 символа</em>
-Бюджет кампании на день</p></td>
+            <td><code>budget_limit_day</code></td>
+            <td><code>String</code></td>
+            <td><em>32 символа</em> <br />Бюджет кампании на день</td>
         </tr><tr>
-            <td><p><code>budget_limit</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>32 символа</em>
-Общий бюджет кампании</p></td>
+            <td><code>budget_limit</code></td>
+            <td><code>String</code></td>
+            <td><em>32 символа</em> <br />Общий бюджет кампании</td>
         </tr><tr>
-            <td><p><code>mixing</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>64 символа</em></p></td>
+            <td><code>mixing</code></td>
+            <td><code>String</code></td>
+            <td><em>64 символа</em> </td>
         </tr><tr>
-            <td><p><code>targetings</code></p></td>
-            <td><p><code>String``CampaignTargetings</code>
-    {
-      "pads": "List",
-      "age": "IntegerList",
-      "regions": "IntegerList",
-      "regions_names": "List",
-      "grouped_regions_names": "List",
-      "sex": "String",
-      "week_days": "List",
-      "day_hours": "IntegerList",
-      "education": "List",
-      "salary": "List",
-      "language": "Language",
-      "profession": "List",
-      "paid": "String",
-      "birthday": "Birthday",
-      "projects": "List",
-      "tree": "IntegerList",
-      "user_geo": "Dict",
-      "fulltime": "Fulltime",
-      "remarketing": "List",
-      "current_game": "Boolean",
-      "current_group": "Boolean",
-      "gaming_paid": "String",
-      "thematics": "IntegerList",
-      "mobile_types": "List",
-      "mobile_operation_systems": "IntegerList",
-      "mobile_operators": "IntegerList",
-      "mobile_vendors": "IntegerList",
-      "phrases": "Dict",
-      "binmask": ""
-    }</p></td>
-            <td><p>Структура таргетингов</p></td>
+            <td><code>targetings</code></td>
+            <td><code>String</code><code>CampaignTargetings</code>
+```json
+{
+  "pads": "List",
+  "age": "IntegerList",
+  "regions": "IntegerList",
+  "regions_names": "List",
+  "grouped_regions_names": "List",
+  "sex": "String",
+  "week_days": "List",
+  "day_hours": "IntegerList",
+  "education": "List",
+  "salary": "List",
+  "language": "Language",
+  "profession": "List",
+  "paid": "String",
+  "birthday": "Birthday",
+  "projects": "List",
+  "tree": "IntegerList",
+  "user_geo": "Dict",
+  "fulltime": "Fulltime",
+  "remarketing": "List",
+  "current_game": "Boolean",
+  "current_group": "Boolean",
+  "gaming_paid": "String",
+  "thematics": "IntegerList",
+  "mobile_types": "List",
+  "mobile_operation_systems": "IntegerList",
+  "mobile_operators": "IntegerList",
+  "mobile_vendors": "IntegerList",
+  "phrases": "Dict",
+  "binmask": ""
+}
+```
+</td>
+            <td><br />Структура таргетингов</td>
         </tr><tr>
-            <td><p><code>url</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>1024 символа</em></p></td>
+            <td><code>url</code></td>
+            <td><code>String</code></td>
+            <td><em>1024 символа</em> </td>
         </tr><tr>
-            <td><p><code>edit_url</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>1024 символа</em></p></td>
+            <td><code>edit_url</code></td>
+            <td><code>String</code></td>
+            <td><em>1024 символа</em> </td>
         </tr><tr>
-            <td><p><code>banners_url</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>1024 символа</em></p></td>
+            <td><code>banners_url</code></td>
+            <td><code>String</code></td>
+            <td><em>1024 символа</em> </td>
         </tr><tr>
-            <td><p><code>banners_count</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Число баннеров в кампании</p></td>
+            <td><code>banners_count</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Число баннеров в кампании</td>
         </tr><tr>
-            <td><p><code>gamers</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>gamers</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr><tr>
-            <td><p><code>group_members</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>group_members</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr><tr>
-            <td><p><code>autobidding_mode</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Аукционная стратегия</p></td>
+            <td><code>autobidding_mode</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Аукционная стратегия</td>
         </tr><tr>
-            <td><p><code>append_utm</code></p></td>
-            <td><p><code>Boolean</code></p></td>
+            <td><code>append_utm</code></td>
+            <td><code>Boolean</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>slider_positions</code></p></td>
-            <td><p>``</p></td>
+            <td><code>slider_positions</code></td>
+            <td><code></code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>banners</code></p></td>
-            <td><p><code>[Banners](banner)</code></p></td>
+            <td><code>banners</code></td>
+            <td><code>[Banners](banner)</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>last_updated</code></p></td>
-            <td><p><code>DateTime</code></p></td>
-            <td><p>Время последнего изменения (включая баннеры)</p></td>
+            <td><code>last_updated</code></td>
+            <td><code>DateTime</code></td>
+            <td><br />Время последнего изменения (включая баннеры)</td>
         </tr><tr>
-            <td><p><code>stats</code></p></td>
-            <td><p><code>[PeriodStat](periodstat)</code></p></td>
+            <td><code>stats</code></td>
+            <td><code>[PeriodStat](periodstat)</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>stats_today</code></p></td>
-            <td><p><code>[PeriodStat](periodstat)</code></p></td>
+            <td><code>stats_today</code></td>
+            <td><code>[PeriodStat](periodstat)</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>stats_yesterday</code></p></td>
-            <td><p><code>[PeriodStat](periodstat)</code></p></td>
+            <td><code>stats_yesterday</code></td>
+            <td><code>[PeriodStat](periodstat)</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>stats_full</code></p></td>
-            <td><p><code>[PeriodStats](periodstat)</code></p></td>
-            <td><p>Статистика за последние 2 недели</p></td>
+            <td><code>stats_full</code></td>
+            <td><code>[PeriodStats](periodstat)</code></td>
+            <td><br />Статистика за последние 2 недели</td>
         </tr><tr>
-            <td><p><code>last_stats_updated</code></p></td>
-            <td><p><code>DateTime</code></p></td>
-            <td><p>Время последней статистики</p></td>
+            <td><code>last_stats_updated</code></td>
+            <td><code>DateTime</code></td>
+            <td><br />Время последней статистики</td>
         </tr><tr>
-            <td><p><code>extended_age</code></p></td>
-            <td><p><code>Boolean</code></p></td>
+            <td><code>extended_age</code></td>
+            <td><code>Boolean</code></td>
             <td></td>
         </tr>
     </tbody>

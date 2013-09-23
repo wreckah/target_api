@@ -8,30 +8,25 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>name</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Имя и фамилия</p></td>
+            <td><code>name</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Имя и фамилия</td>
         </tr><tr>
-            <td><p><code>email</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Email</p></td>
+            <td><code>email</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Email</td>
         </tr><tr>
-            <td><p><code>phone</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Телефон</p></td>
+            <td><code>phone</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Телефон</td>
         </tr><tr>
-            <td><p><code>address</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Адрес</p></td>
+            <td><code>address</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Адрес</td>
         </tr><tr>
-            <td><p><code>client_name</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Название клиента</p></td>
+            <td><code>client_name</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Название клиента</td>
         </tr>
     </tbody>
 </table>

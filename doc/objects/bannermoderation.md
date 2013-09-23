@@ -8,13 +8,13 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>moderation_comment</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>2048 символов</em></p></td>
+            <td><code>moderation_comment</code></td>
+            <td><code>String</code></td>
+            <td><em>2048 символов</em> </td>
         </tr><tr>
-            <td><p><code>moderation_reason</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>moderation_reason</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr>
     </tbody>
 </table>

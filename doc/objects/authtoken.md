@@ -9,29 +9,25 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>access_id</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>64 символа</em>
-Идентификатор, передающийся в запросах в открытом виде</p></td>
+            <td><code>access_id</code></td>
+            <td><code>String</code></td>
+            <td><em>64 символа</em> <br />Идентификатор, передающийся в запросах в открытом виде</td>
         </tr><tr>
-            <td><p><code>private_key</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>64 символа</em>
-Секретный ключ для подписи запросов</p></td>
+            <td><code>private_key</code></td>
+            <td><code>String</code></td>
+            <td><em>64 символа</em> <br />Секретный ключ для подписи запросов</td>
         </tr><tr>
-            <td><p><code>username</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>64 символа</em>
-Имя пользователя</p></td>
+            <td><code>username</code></td>
+            <td><code>String</code></td>
+            <td><em>64 символа</em> <br />Имя пользователя</td>
         </tr><tr>
-            <td><p><code>status</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em>
-Статус</p></td>
+            <td><code>status</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> <br />Статус</td>
         </tr><tr>
-            <td><p><code>created</code></p></td>
-            <td><p><code>DateTime</code></p></td>
-            <td><p>Дата и время создания</p></td>
+            <td><code>created</code></td>
+            <td><code>DateTime</code></td>
+            <td><br />Дата и время создания</td>
         </tr>
     </tbody>
 </table>

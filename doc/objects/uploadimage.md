@@ -9,41 +9,41 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>width</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Длина изображения (нужно указывать не размер исходного
+            <td><code>width</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Длина изображения (нужно указывать не размер исходного
 изображения, а значение из свойства banner_format пакета, в рамках
-которого будет создано объявление, использующее это изображение</p></td>
+которого будет создано объявление, использующее это изображение</td>
         </tr><tr>
-            <td><p><code>height</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Высота изображения (пара <code>width</code> и <code>height</code> или
-<code>banner_format_id</code> являются обязательными)</p></td>
+            <td><code>height</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Высота изображения (пара `width` и `height` или
+`banner_format_id` являются обязательными)</td>
         </tr><tr>
-            <td><p><code>banner_format_id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Идентификатор формата объявлений (вместо длины и высоты изображения можно указать его)</p></td>
+            <td><code>banner_format_id</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Идентификатор формата объявлений (вместо длины и высоты изображения можно указать его)</td>
         </tr><tr>
-            <td><p><code>x1</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Координата X верхнего левого угла для кропа исходного
-изображения</p></td>
+            <td><code>x1</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Координата X верхнего левого угла для кропа исходного
+изображения</td>
         </tr><tr>
-            <td><p><code>x2</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Координата X нижнего правого угла для кропа</p></td>
+            <td><code>x2</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Координата X нижнего правого угла для кропа</td>
         </tr><tr>
-            <td><p><code>y1</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Координата Y верхнего левого угла для кропа</p></td>
+            <td><code>y1</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Координата Y верхнего левого угла для кропа</td>
         </tr><tr>
-            <td><p><code>y2</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p>Координата Y нижнего правого угла для кропа</p></td>
+            <td><code>y2</code></td>
+            <td><code>Integer</code></td>
+            <td><br />Координата Y нижнего правого угла для кропа</td>
         </tr><tr>
-            <td><p><code>rollover</code></p></td>
-            <td><p><code>Boolean</code></p></td>
-            <td><p>Позволяет создать спойлер для анимированных изображений</p></td>
+            <td><code>rollover</code></td>
+            <td><code>Boolean</code></td>
+            <td><br />Позволяет создать спойлер для анимированных изображений</td>
         </tr>
     </tbody>
 </table>

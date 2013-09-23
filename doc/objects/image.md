@@ -8,37 +8,37 @@
     </thead>
     <tbody>
         <tr>
-            <td><p><code>id</code></p></td>
-            <td><p><code>Integer</code></p></td>
-            <td><p><em>Обязательный</em></p></td>
+            <td><code>id</code></td>
+            <td><code>Integer</code></td>
+            <td><em>Обязательный</em> </td>
         </tr><tr>
-            <td><p><code>height</code></p></td>
-            <td><p><code>Integer</code></p></td>
+            <td><code>height</code></td>
+            <td><code>Integer</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>width</code></p></td>
-            <td><p><code>Integer</code></p></td>
+            <td><code>width</code></td>
+            <td><code>Integer</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>size</code></p></td>
-            <td><p><code>Integer</code></p></td>
+            <td><code>size</code></td>
+            <td><code>Integer</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>is_animated</code></p></td>
-            <td><p><code>Boolean</code></p></td>
+            <td><code>is_animated</code></td>
+            <td><code>Boolean</code></td>
             <td></td>
         </tr><tr>
-            <td><p><code>type</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>type</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr><tr>
-            <td><p><code>url</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>url</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr><tr>
-            <td><p><code>preview_url</code></p></td>
-            <td><p><code>String</code></p></td>
-            <td><p><em>255 символов</em></p></td>
+            <td><code>preview_url</code></td>
+            <td><code>String</code></td>
+            <td><em>255 символов</em> </td>
         </tr>
     </tbody>
 </table>
