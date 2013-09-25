@@ -26,7 +26,11 @@
         </tr><tr>
             <td><code>client_name</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <br />Название клиента</p></td>
+            <td><p><em>255 символов</em> <br />Название клиента агентства</p></td>
+        </tr><tr>
+            <td><code>client_info</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />Информация о клиенте агентства</p></td>
         </tr>
     </tbody>
 </table>

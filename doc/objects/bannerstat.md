@@ -53,6 +53,10 @@
             <td><code>URL</code></td>
             <td><p><em>1024 символа</em> <br />Ссылка в баннере</p></td>
         </tr><tr>
+            <td><code>url_types</code></td>
+            <td><code>Strings</code></td>
+            <td><p><em>255 символов</em> <br />Типы ссылки</p></td>
+        </tr><tr>
             <td><code>json_url</code></td>
             <td><code>String</code></td>
             <td><p><em>1024 символа</em> </p></td>
