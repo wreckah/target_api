@@ -63,7 +63,11 @@
         </tr><tr>
             <td><code>mixing</code></td>
             <td><code>String</code></td>
-            <td><p><em>64 символа</em> </p></td>
+            <td><p><em>64 символа</em> <em>fastest, recommended</em><br />Распределение бюджета:</p>
+<ul>
+<li><code>default</code> — рекомендуемое;</li>
+<li><code>fastest</code> — быстрое.</li>
+</ul></td>
         </tr><tr>
             <td><code>targetings</code></td>
             <td><code>String</code><code>CampaignTargetings</code>
@@ -129,7 +133,15 @@
         </tr><tr>
             <td><code>autobidding_mode</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <br />Аукционная стратегия</p></td>
+            <td><p><em>255 символов</em> <em>fixed, second_price, second_price_mean</em><br />Аукционная стратегия:</p>
+<ul>
+<li>Фиксированная ставка, <code>fixed</code> — переходы будут оплачиваться по указанной
+  ставке, независимо от конкурентной ситуации</li>
+<li>Минимальный расход, <code>second_price</code> — указывается максимальная ставка, если
+  позволяет конкуренция, сервис автоматически её понижает;</li>
+<li>Максимальное число переходов, <code>second_price_mean</code> — указывается средняя
+  ставка, сервис обеспечит максимальное число переходов.</li>
+</ul></td>
         </tr><tr>
             <td><code>append_utm</code></td>
             <td><code>Boolean</code></td>
@@ -170,6 +182,10 @@
             <td><code>extended_age</code></td>
             <td><code>Boolean</code></td>
             <td></td>
+        </tr><tr>
+            <td><code>extended_pads</code></td>
+            <td><code>Boolean</code></td>
+            <td><p><br />Транслировать объявления на всех площадках подходящего формата (по умолчанию включено)</p></td>
         </tr>
     </tbody>
 </table>
