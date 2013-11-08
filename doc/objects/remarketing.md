@@ -27,7 +27,9 @@
   "remarketing_game_players": "List",
   "remarketing_payers": "List",
   "remarketing_players": "List",
-  "remarketing_groups": "List"
+  "remarketing_groups": "List",
+  "remarketing_users_lists": "List",
+  "remarketing_context_phrases": "List"
 }
 ```
 </td>
@@ -36,6 +38,8 @@
 позволяет указать, в свою очередь, от одного до пяти таргетингов, которые
 срабатывают по принципу «каждый» (логическая конъюнкция):</p>
 <ul>
+<li><code>remarketing_context_phrases</code> — посетители искавшие заданные фразы из ранее загруженного списка
+в виде списка объектов <a href="#object_remarketingcontextphrases">RemarketingContextPhrases</a>;</li>
 <li><code>remarketing_counters</code> — посетители на основании данных ремаркетинговых
 счётчиков в виде списка объектов <a href="#object_remarketingcounterinterval">RemarketingCounterInterval</a>;</li>
 <li><code>remarketing_game_payers</code> — посетители, платившие за приложение в соцсетях
@@ -54,6 +58,8 @@
 <li><code>remarketing_group</code> — посетители, являющиеся участниками групп в соцсети
 <a href="http://odnoklassniki.ru/">Одноклассники</a>, в виде списка объектов
 <a href="#object_remarketinggroupmembership">RemarketingGroupMembership</a>.</li>
+<li><code>remarketing_users_list</code> — посетители входящие в загруженные списки
+в виде списка объектов <a href="#object_remarketinguserslist">RemarketingUsersList</a></li>
 </ul></td>
         </tr><tr>
             <td><code>campaigns</code></td>

@@ -192,6 +192,7 @@ JSON (тип ответа-ошибки — ``application/json``).
 #### Ссылки
 * [Подробная документация по методам и ресурсам](/api/doc/detailed/)
 * [Примерные реализации клиентов на разных языках программирования](https://github.com/wreckah/target_api)
+* [Получение подписи для аутентификации запросов к API](/api/doc/signature/)
 
 *[HMAC]: Hash-based Message Authentication Code
 *[HTTP]: HyperText Transfer Protocol

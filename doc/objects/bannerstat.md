@@ -49,14 +49,6 @@
             <td><code>String</code></td>
             <td><p><em>255 символов</em> <br />Название компании</p></td>
         </tr><tr>
-            <td><code>category</code></td>
-            <td><code>String</code></td>
-            <td><p><em>255 символов</em> <br />Категория объявления</p></td>
-        </tr><tr>
-            <td><code>promo_image</code></td>
-            <td><code>[Image](image)</code></td>
-            <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
-        </tr><tr>
             <td><code>url</code></td>
             <td><code>URL</code></td>
             <td><p><em>1024 символа</em> <br />Ссылка в объявлении</p></td>
@@ -104,6 +96,10 @@
 </td>
             <td><p><br />Кампания объявления</p></td>
         </tr><tr>
+            <td><code>category</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />Категория объявления</p></td>
+        </tr><tr>
             <td><code>moderation_reason_display</code></td>
             <td><code>String</code></td>
             <td><p><em>1024 символа</em> <br />Причина модерации</p></td>
@@ -115,6 +111,10 @@
             <td><code>image</code></td>
             <td><code>[Image](image)</code></td>
             <td><p><br />Изображение, отображающееся в объявлении</p></td>
+        </tr><tr>
+            <td><code>promo_image</code></td>
+            <td><code>[Image](image)</code></td>
+            <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
         </tr><tr>
             <td><code>banner_fields</code></td>
             <td><code>Strings</code></td>

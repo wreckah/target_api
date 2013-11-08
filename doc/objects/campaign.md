@@ -63,11 +63,7 @@
         </tr><tr>
             <td><code>mixing</code></td>
             <td><code>String</code></td>
-            <td><p><em>64 символа</em> <em>fastest, recommended</em><br />Распределение бюджета:</p>
-<ul>
-<li><code>default</code> — рекомендуемое;</li>
-<li><code>fastest</code> — быстрое.</li>
-</ul></td>
+            <td><p><em>64 символа</em> <em>fastest, recommended</em><br />Распределение бюджета</p></td>
         </tr><tr>
             <td><code>targetings</code></td>
             <td><code>String</code><code>CampaignTargetings</code>
@@ -101,7 +97,8 @@
   "mobile_operators": "IntegerList",
   "mobile_vendors": "IntegerList",
   "phrases": "Dict",
-  "binmask": ""
+  "binmask": "",
+  "custom": ""
 }
 ```
 </td>
@@ -133,19 +130,15 @@
         </tr><tr>
             <td><code>autobidding_mode</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <em>fixed, second_price, second_price_mean</em><br />Аукционная стратегия:</p>
-<ul>
-<li>Фиксированная ставка, <code>fixed</code> — переходы будут оплачиваться по указанной
-  ставке, независимо от конкурентной ситуации</li>
-<li>Минимальный расход, <code>second_price</code> — указывается максимальная ставка, если
-  позволяет конкуренция, сервис автоматически её понижает;</li>
-<li>Максимальное число переходов, <code>second_price_mean</code> — указывается средняя
-  ставка, сервис обеспечит максимальное число переходов.</li>
-</ul></td>
+            <td><p><em>255 символов</em> <em>fixed, second_price, second_price_mean</em><br />Аукционная стратегия</p></td>
         </tr><tr>
             <td><code>append_utm</code></td>
             <td><code>Boolean</code></td>
             <td></td>
+        </tr><tr>
+            <td><code>age_restrictions</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>slider_positions</code></td>
             <td><code></code></td>
