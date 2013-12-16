@@ -90,7 +90,6 @@ Curl-запрос:
       "date_end": "",
       "date_start": "",
       "edit_url": "/ads/campaigns/334646/edit/",
-      "gamers": "all",
       "group_members": "all",
       "id": 334646,
       "max_api_ctr": 0.0,
@@ -169,11 +168,9 @@ Curl-запрос:
             "mixing": {}
           },
           "targetings": [
-            "+gamers",
             "-regions"
           ],
           "targetings_": [
-            "gamers",
             "age",
             "grouped_regions_names",
             "pads",
@@ -279,7 +276,6 @@ Curl-запрос:
           "tue": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
           "wed": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
         },
-        "gaming_paid": "all",
         "grouped_regions_names": [],
         "language": {
           "english": [],
@@ -361,7 +357,6 @@ Curl-запрос:
       "date_end": "",
       "date_start": "",
       "edit_url": "/ads/campaigns/334648/edit/",
-      "gamers": null,
       "group_members": "all",
       "id": 334648,
       "last_updated": "2013-06-28 13:07:09",
@@ -535,7 +530,6 @@ Curl-запрос:
           "tue": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
           "wed": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
         },
-        "gaming_paid": "all",
         "grouped_regions_names": [
           "Россия"
         ],
@@ -623,4 +617,23 @@ Curl-запрос:
       "status": "active",
       "system_status": "active"
     }
+
+
+### Экспорт кампании в CSV
+`GET /api/v1/campaigns/{campaign_id}.{extension}`
+
+Экспорт рекламной кампании вместе со всеми объявлениями в формате CSV или
+в виде ZIP-файла, содержащего помимо CSV-файла ещё и изображения
+объявлений. Возможные значения `extension`: `csv` и `zip`.
+
+
+### Импорт кампании из CSV
+`POST /api/v1/import/campaigns.json`
+
+Метод принимает на вход CSV-файл или ZIP-архив (CSV-файл с описанием
+рекламной кампании и объявлений вместе с файлами изображений). В случае
+успешного разбора входных данных (если они корректны), метод возвращает
+JSON-структуру типа CampaignForm, подходящую для отправки в метод создания
+или обновления кампаний (`/api/v1/campaigns.json` или
+`POST /api/v1/campaigns/{campaign_id}.json`).
 

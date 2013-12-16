@@ -20,6 +20,10 @@
             <td><code>participants</code></td>
             <td><code>Integer</code></td>
             <td><p><br />Количество участников</p></td>
+        </tr><tr>
+            <td><code>url</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />URL группы</p></td>
         </tr>
     </tbody>
 </table>

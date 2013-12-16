@@ -11,7 +11,7 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td><p><br />Идентификатор баннера</p></td>
+            <td><p><br />Идентификатор объявления</p></td>
         </tr><tr>
             <td><code>status</code></td>
             <td><code>String</code></td>

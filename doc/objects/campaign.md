@@ -1,7 +1,7 @@
 
 ## Campaign
 
-Объект создания/модификации кампании
+Ресурс для создания/модификации рекламной кампании
 
 <table>
     <thead>
@@ -15,11 +15,11 @@
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><p><em>40 символов</em> <br />Имя кампании</p></td>
+            <td><p><em>40 символов</em> <br />Название кампании</p></td>
         </tr><tr>
             <td><code>status</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <em>active, deleted, blocked</em></p></td>
+            <td><p><em>255 символов</em> <em>active, deleted, blocked</em><br />Статус кампании</p></td>
         </tr><tr>
             <td><code>system_status</code></td>
             <td><code>String</code></td>
@@ -69,33 +69,32 @@
             <td><code>String</code><code>CampaignTargetings</code>
 ```json
 {
-  "pads": "List",
-  "age": "IntegerList",
-  "regions": "IntegerList",
+  "pads": "List, Рекламные площадки",
+  "age": "IntegerList, Возраст",
+  "regions": "IntegerList, Регионы",
   "regions_names": "List",
   "grouped_regions_names": "List",
-  "sex": "String",
+  "sex": "String, Пол",
   "week_days": "List",
   "day_hours": "IntegerList",
-  "education": "List",
-  "salary": "List",
-  "language": "Language",
-  "profession": "List",
-  "paid": "String",
-  "birthday": "Birthday",
-  "projects": "List",
+  "education": "List, Образование",
+  "salary": "List, Диапазоны заработных плат",
+  "language": "Language, Языки",
+  "profession": "List, Профессии",
+  "paid": "String, История платежей",
+  "birthday": "Birthday, День рождения",
+  "projects": "List, Тематики hh.ru",
   "tree": "IntegerList",
-  "user_geo": "Dict",
-  "fulltime": "Fulltime",
-  "remarketing": "List",
-  "current_game": "Boolean",
-  "current_group": "Boolean",
-  "gaming_paid": "String",
-  "thematics": "IntegerList",
-  "mobile_types": "List",
-  "mobile_operation_systems": "IntegerList",
-  "mobile_operators": "IntegerList",
-  "mobile_vendors": "IntegerList",
+  "user_geo": "Dict, Географическое положение, указанное пользователем",
+  "fulltime": "Fulltime, Время (дни и часы)",
+  "remarketing": "List, Вхождение в аудитории",
+  "current_game": "Boolean, Таргетинг на приложение (в Одноклассниках или Моём Мире), рекламируемого в объявлении кампании",
+  "current_group": "Boolean, Таргетинг на группу (в Одноклассниках или Моём Мире), рекламируемую в объявлении кампании",
+  "thematics": "IntegerList, Идентификаторы тематик",
+  "mobile_types": "List, Типы мобильных устройств",
+  "mobile_operation_systems": "IntegerList, Мобильные операционные системы",
+  "mobile_operators": "IntegerList, Мобильные операторы",
+  "mobile_vendors": "IntegerList, Производители мобильных устройств",
   "phrases": "Dict",
   "binmask": "",
   "custom": ""
@@ -120,10 +119,6 @@
             <td><code>Integer</code></td>
             <td><p><br />Число баннеров в кампании</p></td>
         </tr><tr>
-            <td><code>gamers</code></td>
-            <td><code>String</code></td>
-            <td><p><em>255 символов</em> </p></td>
-        </tr><tr>
             <td><code>group_members</code></td>
             <td><code>String</code></td>
             <td><p><em>255 символов</em> </p></td>
@@ -138,7 +133,7 @@
         </tr><tr>
             <td><code>age_restrictions</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> </p></td>
+            <td><p><em>255 символов</em> <br />Возрастные ограничения</p></td>
         </tr><tr>
             <td><code>slider_positions</code></td>
             <td><code></code></td>

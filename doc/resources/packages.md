@@ -102,11 +102,9 @@ Curl-запрос:
             "mixing": {}
           },
           "targetings": [
-            "+gamers",
             "-regions"
           ],
           "targetings_": [
-            "gamers",
             "age",
             "grouped_regions_names",
             "pads",
