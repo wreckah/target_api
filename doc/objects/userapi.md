@@ -1,6 +1,7 @@
 
-## User
+## UserApi
 
+Ресурс для получения и обновления данных текущего пользователя
 
 <table>
     <thead>
@@ -27,10 +28,6 @@
             <td><code>email</code></td>
             <td><code>String</code></td>
             <td><p><em>255 символов</em> <br />Email</p></td>
-        </tr><tr>
-            <td><code>types</code></td>
-            <td><code>Strings</code></td>
-            <td><p><em>255 символов</em> <br />Массив ролей пользователя</p></td>
         </tr><tr>
             <td><code>status</code></td>
             <td><code>String</code></td>
@@ -79,30 +76,6 @@
 ```
 </td>
             <td><p><br />Информация о агентском аккаунте пользователя</p></td>
-        </tr><tr>
-            <td><code>agency_username</code></td>
-            <td><code>String</code></td>
-            <td><p><em>255 символов</em> <br />Username родительского агентства, если таковое есть</p></td>
-        </tr><tr>
-            <td><code>branch_username</code></td>
-            <td><code>String</code></td>
-            <td><p><em>255 символов</em> <br />Username родительского представительства, если таковое есть</p></td>
-        </tr><tr>
-            <td><code>bf</code></td>
-            <td><code>Integer</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>flags</code></td>
-            <td><code>Strings</code></td>
-            <td><p><em>255 символов</em> </p></td>
-        </tr><tr>
-            <td><code>max_active_banners_count</code></td>
-            <td><code>Integer</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>active_banners_count</code></td>
-            <td><code>Integer</code></td>
-            <td></td>
         </tr>
     </tbody>
 </table>

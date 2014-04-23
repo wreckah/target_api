@@ -214,3 +214,72 @@ Curl-запрос:
       }
     ]
 
+
+### Получение быстрой статистики
+`GET /api/v1/statistics/faststat/{object_type}/{object_id}.json`
+
+Метод позволяет получать быструю статистику по пользователям, кампаниям, баннерам.
+Параметры:
+
+* `object_type` — задаёт тип сущности:
+    + `banners` — объявление;
+    + `campaigns` — кампания;
+    + `users` — пользователь;
+* `object_id` — целочисленный идентификатор сущности;
+
+Можно запросить статистику для нескольких сущностей в одном запросе,
+перечислив их идентификаторы через точку с запятой (`;`).
+
+#### Пример
+
+HTTP-запрос:
+
+    GET /api/v1/statistics/faststat/banners/688264;688267.json HTTP/1.1
+    Host: target-sandbox.mail.ru
+    Content-Type: application/json
+    Accept-Encoding: gzip, deflate, compress
+    Authorization: AuthHMAC Bv2BaJv95g68G39:QOlK2RvHmew/975t7uW3r6RZUGI=
+
+Curl-запрос:
+
+    curl \
+    -H 'Authorization: AuthHMAC Bv2BaJv95g68G39:QOlK2RvHmew/975t7uW3r6RZUGI=' \
+    'https://target-sandbox.mail.ru/api/v1/statistics/faststat/banners/688264;688267.json'
+
+Пример ответа:
+
+    {
+      "banners": {
+
+        "688264": {
+            "timestamp": 1379939599,
+            "total": {
+                "clicks":  [12345],
+                "shows":   [1234567],
+                "uniques": [123456]
+            },
+            "daily": {
+                "clicks":  [0,0,0,0,33,408,156],
+                "shows":   [0,0,0,0,92195,723098,320861],
+                "uniques": [0,0,0,0,56140,372031,188179],
+                "deltas":  [0,0,0,0,56140,350024,171259]
+            },
+            "hourly": {
+                // то же, по часам за 24 часа
+            },
+            "minutely": {
+                // то же, по минутам за 60 минут
+            }
+        },
+        "688267": {
+                // по другим баннерам, ...
+                }
+        }
+      "last_seen_msg_time": {
+        "ago": 30,
+        "timestamp": 1391421987,
+        "string": "2014-02-03 14:06:27"
+      }
+    }
+
+

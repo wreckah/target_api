@@ -110,7 +110,6 @@ Curl-запрос:
             "pads",
             "birthday",
             "sex",
-            "pad_type",
             "regions_names",
             "fulltime"
           ],

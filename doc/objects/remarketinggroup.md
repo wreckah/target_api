@@ -30,6 +30,10 @@
             <td><code>name</code></td>
             <td><code>String</code></td>
             <td><p><em>255 символов</em> <br />Название группы или тематики</p></td>
+        </tr><tr>
+            <td><code>users_count</code></td>
+            <td><code>Integer</code></td>
+            <td><p><br />Охват</p></td>
         </tr>
     </tbody>
 </table>

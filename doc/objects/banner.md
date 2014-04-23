@@ -120,22 +120,6 @@
             <td><code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
-            <td><code>stats</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
-            <td><p><br />Статистика за всё время</p></td>
-        </tr><tr>
-            <td><code>stats_today</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
-            <td><p><br />Статистика за сегодняшний день</p></td>
-        </tr><tr>
-            <td><code>stats_yesterday</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
-            <td><p><br />Статистика за вчерашний день</p></td>
-        </tr><tr>
-            <td><code>stats_full</code></td>
-            <td><code>[PeriodStats](periodstat)</code></td>
-            <td><p><br />Статистика за последние 2 недели</p></td>
-        </tr><tr>
             <td><code>ctr_status</code></td>
             <td><code>String</code></td>
             <td><p><em>60 символов</em> <br />CTR-статус</p></td>
