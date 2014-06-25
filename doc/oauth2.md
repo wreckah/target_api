@@ -4,7 +4,7 @@
 используется протокол OAuth2. Основным его преимуществом над используемым в
 первой версии способом аутентификации является то, что он по факту совмещает
 аутентификацию и авторизацию, включая возможность выполнения операций одним
-пользователем от имени другого (в нашем случае агенства от имени клиента и
+пользователем от имени другого (в нашем случае агентства от имени клиента и
 платформы от имени прямого рекламодателя).
 
 Именно поэтому мы реализовали две схемы (flow) из спецификации OAuth2:
@@ -19,7 +19,7 @@ Authorization Code Grant используется для получения до
 (приложение).
 
 Регистрация клиентов для работы с API через OAuth2 пока осуществляется в ручном
-режиме по заявке [менеджеру](mailto:d.shkolnikov@corp.mail.ru).
+режиме по заявке в саппорт из интерфейса сервиса.
 
 ### Client Credentials Grant
 
@@ -27,10 +27,28 @@ Authorization Code Grant используется для получения до
 Для пользователя создаётся клиент с параметрами `client_id` и `client_secret`,
 пользуясь которыми он сам получает access-токен для аутентификации в API.
 
-На данный момент доступ к API выдаётся в ручном режиме, поэтому при создании
-клиента типа «пользователь» ему сразу генерируется access-токен. И срок действия
-такого токена пока также не ограничен. Таким образом, для аутентификации
-запросов клиенту достаточно передавать этот токен в HTTP-заголовке:
+Чтобы получить access-токен, нужно послать запрос вида:
+
+    POST /api/v2/oauth2/token.json HTTP/1.1
+    Host: target.mail.ru
+    Content-Type: application/x-www-form-urlencoded
+
+    grant_type=client_credentials&client_id={client_id}&client_secret={client_secret}
+
+В случае успешного выполнения ответ будет выглядеть следующим образом:
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=UTF-8
+
+    {
+      "access_token": "{access_token}",
+      "token_type": "bearer",
+      "scope": "{scope}",
+      "expires_in": "86400",
+      "refresh_token": "{refresh_token}"
+    }
+
+Далее, полученный access-токен можно использовать при отправке запросов к API Target@Mail.Ru:
 
     GET /api/v2/campaigns.json HTTP/1.1
     Host: target.mail.ru
@@ -61,7 +79,7 @@ https://target.mail.ru/oauth2/authorize, указав параметры `respon
 `state` (переданный в первоначальном запросе):
 
     GET {redirect_uri:path}?code={code}&state={state} HTTP/1.1
-    Hosts: <redirect_uri:host>
+    Host: <redirect_uri:host>
 
 Получив параметр `code`, клиент может запросить `access_token` для дальнейшей
 работы с API от имени пользователя. Для этого нужно послать запрос на
@@ -83,7 +101,9 @@ https://target.mail.ru/oauth2/authorize, указав параметры `respon
     {
       "access_token": "{access_token}",
       "token_type": "bearer",
-      "scope": "{scope}"
+      "scope": "{scope}",
+      "expires_in": "86400",
+      "refresh_token": "{refresh_token}"
     }
 
 Полученный `access_token` используется для аутентификации запросов, посылаемых
@@ -106,7 +126,7 @@ https://target.mail.ru/oauth2/authorize, указав параметры `respon
 * `create_ads` — создание и редактирование настроек РК, баннеров, аудиторий
     (ставки, статус, таргетинги и т.п.).
 
-Для пользователей-агенств и пользователей-представительств:
+Для пользователей-агентств и пользователей-представительств:
 
 *  `create_clients` — создание новых клиентов;
 *  `read_clients` — просмотр клиентов и операции от их имени;
@@ -114,4 +134,45 @@ https://target.mail.ru/oauth2/authorize, указав параметры `respon
 
 ### Истечение срока действия access-токена
 
-Пока не реализовано, и все выдаваемые access-токены действуют бессрочно.
+Каждый полученный access-токен является действительным в течение суток.
+На это указывает свойство `expires_in` в ответе на запрос access-токена.
+Там же указывается `refresh_token` — специальный токен для получения нового
+access-токена. За это отвечает схема
+[Refreshing an Access Token](http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-6)
+в протоколе OAuth2.
+
+Запрос на обновление access-токена:
+
+    POST /api/v2/oauth2/token.json HTTP/1.1
+    Host: target.mail.ru
+    Content-Type: application/x-www-form-urlencoded
+
+    grant_type=refresh_token&refresh_token={refresh_token}&client_id={client_id}&client_secret={client_secret}
+
+Пример ответа:
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=UTF-8
+
+    {
+      "access_token": "{new_access_token}",
+      "token_type": "bearer",
+      "scope": "{scope}",
+      "expires_in": "86400",
+      "refresh_token": "{new_refresh_token}"
+    }
+
+### Agency Client Credentials Grant
+
+Эта схема протокола OAuth2 не является стандартной. Она была реализована для
+того, чтобы дать возможность агентствам создавать access-токены для своих
+клиентов напрямую (без подтверждения от клиента). Схема очень похожа на
+стандартную Client Credentials Grant за исключением того, что в запросе
+нужно передавать дополнительный параметр agency_client_name (имя пользователя
+клиента):
+
+    POST /api/v2/oauth2/token.json HTTP/1.1
+    Host: target.mail.ru
+    Content-Type: application/x-www-form-urlencoded
+
+    grant_type=agency_client_credentials&client_id={client_id}&client_secret={client_secret}&agency_client_name={client_username}

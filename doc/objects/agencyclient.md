@@ -26,7 +26,8 @@
 {
   "id": "Integer",
   "balance": "Decimal",
-  "flags": "List"
+  "flags": "List",
+  "type": "String"
 }
 ```
 </td>

@@ -284,6 +284,7 @@ Curl-запрос:
         "mobile_operation_systems": [],
         "mobile_region": [],
         "mobile_vendors": [],
+        "interests": [],
         "pads": [
           {
             "description": "\u0414\u0440\u0443\u0433\u0438\u0435 \u043f\u0440\u043e\u0435\u043a\u0442\u044b",
@@ -298,7 +299,6 @@ Curl-запрос:
         ],
         "paid": "all",
         "profession": [],
-        "projects": [],
         "regions": [],
         "regions_names": [],
         "remarketing": [],
@@ -442,7 +442,6 @@ Curl-запрос:
             "birthday",
             "fulltime",
             "remarketing",
-            "projects",
             "regions_names",
             "thematics"
           ],
@@ -540,6 +539,7 @@ Curl-запрос:
         "mobile_operation_systems": [],
         "mobile_region": [],
         "mobile_vendors": [],
+        "interests": [],
         "pads": [
           {
             "description": "Социальные сети и сервисы (Одноклассники.Ру, МойМир@Mail.Ru, Почта@Mail.ru и др.)",
@@ -554,7 +554,6 @@ Curl-запрос:
         ],
         "paid": "all",
         "profession": [],
-        "projects": [],
         "regions": [
           188
         ],

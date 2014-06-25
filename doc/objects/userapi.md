@@ -51,7 +51,8 @@
 {
   "id": "Integer",
   "balance": "Decimal",
-  "flags": "List"
+  "flags": "List",
+  "type": "String"
 }
 ```
 </td>
@@ -63,7 +64,8 @@
 {
   "id": "Integer",
   "balance": "Decimal",
-  "flags": "List"
+  "flags": "List",
+  "type": "String"
 }
 ```
 <code>Agency</code>
@@ -76,6 +78,14 @@
 ```
 </td>
             <td><p><br />Информация о агентском аккаунте пользователя</p></td>
+        </tr><tr>
+            <td><code>append_utm</code></td>
+            <td><code>Boolean</code></td>
+            <td><p><br />Признак простановки UTM-меток</p></td>
+        </tr><tr>
+            <td><code>show_compact_view</code></td>
+            <td><code>Boolean</code></td>
+            <td><p><br />Компактное представление страницы "Объявления"</p></td>
         </tr>
     </tbody>
 </table>
