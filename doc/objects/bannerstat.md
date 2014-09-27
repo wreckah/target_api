@@ -77,7 +77,7 @@
         </tr><tr>
             <td><code>campaign</code></td>
             <td>partial <code>CampaignBase</code><br />
-(<code>id, url</code>)
+(<code>id</code>, <code>url</code>)
 </td>
             <td><p><br />Кампания объявления</p></td>
         </tr><tr>
@@ -90,15 +90,15 @@
             <td><p><em>1024 символа</em> <br />Причина модерации</p></td>
         </tr><tr>
             <td><code>banner_moderation</code></td>
-            <td><code>[BannerModeration](bannermoderation)</code></td>
+            <td><a href="bannermoderation.md"><code>BannerModeration</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>image</code></td>
-            <td><code>[Image](image)</code></td>
+            <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Изображение, отображающееся в объявлении</p></td>
         </tr><tr>
             <td><code>promo_image</code></td>
-            <td><code>[Image](image)</code></td>
+            <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
         </tr><tr>
             <td><code>banner_fields</code></td>
@@ -110,19 +110,19 @@
             <td><p><em>60 символов</em> <br />CTR-статус</p></td>
         </tr><tr>
             <td><code>stats</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td><p><br />Статистика за всё время</p></td>
         </tr><tr>
             <td><code>stats_today</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td><p><br />Статистика за сегодняшний день</p></td>
         </tr><tr>
             <td><code>stats_yesterday</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td><p><br />Статистика за вчерашний день</p></td>
         </tr><tr>
             <td><code>stats_full</code></td>
-            <td><code>[PeriodStats](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStats</code></a></td>
             <td><p><br />Статистика за последние 2 недели</p></td>
         </tr>
     </tbody>

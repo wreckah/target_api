@@ -10,12 +10,12 @@
         <tr>
             <td><code>pads</code></td>
             <td>List of partial <code>Pads</code><br />
-(<code>id, name, description, eye_url</code>)
+(<code>id</code>, <code>name</code>, <code>description</code>, <code>eye_url</code>)
 </td>
             <td><p><br />Рекламные площадки (для создания кампании достаточно передать только идентификаторы площадок)</p></td>
         </tr><tr>
             <td><code>remarketing</code></td>
-            <td><code>[RemarketingTargetings](remarketingtargeting)</code></td>
+            <td><a href="remarketingtargeting.md"><code>RemarketingTargetings</code></a></td>
             <td><p><br />Вхождение в аудитории</p></td>
         </tr><tr>
             <td><code>age</code></td>
@@ -31,7 +31,7 @@
             <td><p><em>3 символа</em> <br />Пол (сочетания <code>M</code> — мужской, <code>F</code> — женский, <code>U</code> — не указан)</p></td>
         </tr><tr>
             <td><code>fulltime</code></td>
-            <td><code>[Fulltime](fulltime)</code></td>
+            <td><a href="fulltime.md"><code>Fulltime</code></a></td>
             <td><p><br />Время (дни и часы)</p></td>
         </tr><tr>
             <td><code>education</code></td>
@@ -47,11 +47,11 @@
             <td><p><em>255 символов</em> <br />Профессии</p></td>
         </tr><tr>
             <td><code>language</code></td>
-            <td><code>[Language](language)</code></td>
+            <td><a href="language.md"><code>Language</code></a></td>
             <td><p><br />Языки</p></td>
         </tr><tr>
             <td><code>birthday</code></td>
-            <td><code>[Birthday](birthday)</code></td>
+            <td><a href="birthday.md"><code>Birthday</code></a></td>
             <td><p><br />День рождения</p></td>
         </tr><tr>
             <td><code>user_geo</code></td>

@@ -22,12 +22,12 @@
         </tr><tr>
             <td><code>pad_group</code></td>
             <td>partial <code>PadGroup</code><br />
-(<code>id, description, slot_id</code>)
+(<code>id</code>, <code>description</code>, <code>slot_id</code>)
 </td>
             <td></td>
         </tr><tr>
             <td><code>eye_url</code></td>
-            <td><code>[EyeUrl](eyeurl)</code></td>
+            <td><a href="eyeurl.md"><code>EyeUrl</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>show_self_apps</code></td>
@@ -43,15 +43,15 @@
             <td><p><em>1024 символа</em> </p></td>
         </tr><tr>
             <td><code>stats</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>stats_today</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>stats_yesterday</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>status</code></td>

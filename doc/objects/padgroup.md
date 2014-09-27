@@ -25,11 +25,11 @@
             <td><p><em>255 символов</em> <em>active, deleted, blocked</em></p></td>
         </tr><tr>
             <td><code>platform</code></td>
-            <td><code>[Platform](platform)</code></td>
+            <td><a href="platform.md"><code>Platform</code></a></td>
             <td><p><em>Обязательный</em> </p></td>
         </tr><tr>
             <td><code>pads</code></td>
-            <td><code>[PadForPadGroups](padforpadgroup)</code></td>
+            <td><a href="padforpadgroup.md"><code>PadForPadGroups</code></a></td>
             <td></td>
         </tr>
     </tbody>

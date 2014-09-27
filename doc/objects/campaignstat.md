@@ -42,7 +42,7 @@
             <td><p><br />Время окончания кампании</p></td>
         </tr><tr>
             <td><code>package</code></td>
-            <td><code>[Package](package)</code></td>
+            <td><a href="package.md"><code>Package</code></a></td>
             <td><p><br />Структура пакета</p></td>
         </tr><tr>
             <td><code>price_per_show</code></td>
@@ -66,7 +66,7 @@
             <td><p><em>64 символа</em> <em>fastest, recommended</em><br />Распределение бюджета</p></td>
         </tr><tr>
             <td><code>targetings</code></td>
-            <td><code>[CampaignTargetings](campaigntargetings)</code></td>
+            <td><a href="campaigntargetings.md"><code>CampaignTargetings</code></a></td>
             <td><p><br />Структура таргетингов</p></td>
         </tr><tr>
             <td><code>url</code></td>
@@ -136,23 +136,23 @@
             <td></td>
         </tr><tr>
             <td><code>banners</code></td>
-            <td><code>[BannerStats](bannerstat)</code></td>
+            <td><a href="bannerstat.md"><code>BannerStats</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>stats</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td><p><br />Статистика за всё время</p></td>
         </tr><tr>
             <td><code>stats_today</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td><p><br />Статистика за сегодняшний день</p></td>
         </tr><tr>
             <td><code>stats_yesterday</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td><p><br />Статистика за вчерашний день</p></td>
         </tr><tr>
             <td><code>stats_full</code></td>
-            <td><code>[PeriodStats](periodstat)</code></td>
+            <td><a href="periodstat.md"><code>PeriodStats</code></a></td>
             <td><p><br />Статистика за последние 2 недели</p></td>
         </tr><tr>
             <td><code>last_stats_updated</code></td>

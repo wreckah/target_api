@@ -14,11 +14,11 @@
             <td><p><br />Целочисленный идентификатор</p></td>
         </tr><tr>
             <td><code>total</code></td>
-            <td><code>[BaseStat](basestat)</code></td>
+            <td><a href="basestat.md"><code>BaseStat</code></a></td>
             <td><p><br />Суммарная статистика за весь запрашиваемый период</p></td>
         </tr><tr>
             <td><code>detailed_stat</code></td>
-            <td><code>[DateHourStats](datehourstat)</code></td>
+            <td><a href="datehourstat.md"><code>DateHourStats</code></a></td>
             <td><p><br />Детализация статистики по запрашиваемому периоду</p></td>
         </tr><tr>
             <td><code>name</code></td>

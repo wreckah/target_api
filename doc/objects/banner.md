@@ -77,7 +77,7 @@
         </tr><tr>
             <td><code>campaign</code></td>
             <td>partial <code>CampaignBase</code><br />
-(<code>id, url</code>)
+(<code>id</code>, <code>url</code>)
 </td>
             <td><p><br />Кампания объявления</p></td>
         </tr><tr>
@@ -90,15 +90,15 @@
             <td><p><em>1024 символа</em> <br />Причина модерации</p></td>
         </tr><tr>
             <td><code>banner_moderation</code></td>
-            <td><code>[BannerModeration](bannermoderation)</code></td>
+            <td><a href="bannermoderation.md"><code>BannerModeration</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>image</code></td>
-            <td><code>[Image](image)</code></td>
+            <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Изображение, отображающееся в объявлении</p></td>
         </tr><tr>
             <td><code>promo_image</code></td>
-            <td><code>[Image](image)</code></td>
+            <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
         </tr><tr>
             <td><code>banner_fields</code></td>

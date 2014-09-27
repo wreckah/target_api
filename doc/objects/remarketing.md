@@ -20,7 +20,7 @@
         </tr><tr>
             <td><code>disjunctions</code></td>
             <td>List of partial <code>Targetings</code><br />
-(<code>remarketing_counters, remarketing_game_payers, remarketing_game_players, remarketing_payers, remarketing_players, remarketing_groups, remarketing_users_lists, remarketing_context_phrases, remarketing_pricelists</code>)
+(<code>remarketing_counters</code>, <code>remarketing_game_payers</code>, <code>remarketing_game_players</code>, <code>remarketing_payers</code>, <code>remarketing_players</code>, <code>remarketing_groups</code>, <code>remarketing_users_lists</code>, <code>remarketing_context_phrases</code>, <code>remarketing_pricelists</code>)
 </td>
             <td><p><br />Список таргетингов аудитории, которые срабатывают по
 принципу «хотя бы один» (логическая дизъюнкция). Каждый из элементов списка
@@ -53,7 +53,7 @@
         </tr><tr>
             <td><code>campaigns</code></td>
             <td>List of partial <code>Campaigns</code><br />
-(<code>id, name, edit_url, status</code>)
+(<code>id</code>, <code>name</code>, <code>edit_url</code>, <code>status</code>)
 </td>
             <td><p><br />Список рекламных кампаний, в которых используется аудитория</p></td>
         </tr><tr>

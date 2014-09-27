@@ -17,12 +17,12 @@
             <td><p><em>255 символов</em> <br />Имя пользователя. Может не совпадать с email</p></td>
         </tr><tr>
             <td><code>additional_info</code></td>
-            <td><code>[AdditionalUserInfo](additionaluserinfo)</code></td>
+            <td><a href="additionaluserinfo.md"><code>AdditionalUserInfo</code></a></td>
             <td><p><br />Объект <a href="#object_additionaluserinfo">AdditionalUserInfo</a></p></td>
         </tr><tr>
             <td><code>account</code></td>
             <td>partial <code>UserAccount</code><br />
-(<code>id, balance, flags, type</code>)
+(<code>id</code>, <code>balance</code>, <code>flags</code>, <code>type</code>)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>

@@ -37,7 +37,7 @@
             <td><p><em>255 символов</em> <em>active, deleted, blocked</em><br />Статус</p></td>
         </tr><tr>
             <td><code>additional_info</code></td>
-            <td><code>[AdditionalUserInfo](additionaluserinfo)</code></td>
+            <td><a href="additionaluserinfo.md"><code>AdditionalUserInfo</code></a></td>
             <td><p><br />Объект <a href="#object_additionaluserinfo">AdditionalUserInfo</a></p></td>
         </tr><tr>
             <td><code>mailings</code></td>
@@ -50,13 +50,13 @@
         </tr><tr>
             <td><code>account</code></td>
             <td>partial <code>UserAccount</code><br />
-(<code>id, balance, flags, type</code>)
+(<code>id</code>, <code>balance</code>, <code>flags</code>, <code>type</code>)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
             <td><code>agency</code></td>
             <td>partial <code>Agency</code><br />
-(<code>is_buyer, buyer_commission, overriding_commission</code>)
+(<code>is_buyer</code>, <code>buyer_commission</code>, <code>overriding_commission</code>)
 </td>
             <td><p><br />Информация о агентском аккаунте пользователя</p></td>
         </tr><tr>
