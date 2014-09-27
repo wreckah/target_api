@@ -21,8 +21,8 @@
             <td><p><br />Объект <a href="#object_additionaluserinfo">AdditionalUserInfo</a></p></td>
         </tr><tr>
             <td><code>account</code></td>
-            <td><code>[AdditionalUserInfo](additionaluserinfo)</code><code>partial UserAccount</code><br />
-(id, balance, flags, type)
+            <td>partial <code>UserAccount</code><br />
+(<code>id, balance, flags, type</code>)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>

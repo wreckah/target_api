@@ -9,8 +9,8 @@
     <tbody>
         <tr>
             <td><code>pads</code></td>
-            <td>List of <code>partial Pads</code><br />
-(id, name, description, eye_url)
+            <td>List of partial <code>Pads</code><br />
+(<code>id, name, description, eye_url</code>)
 </td>
             <td><p><br />Рекламные площадки (для создания кампании достаточно передать только идентификаторы площадок)</p></td>
         </tr><tr>

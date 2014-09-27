@@ -70,16 +70,14 @@
             <td><p><em>1024 символа</em> </p></td>
         </tr><tr>
             <td><code>user</code></td>
-            <td><code>String</code><code>partial User</code><br />
-(id)
+            <td>partial <code>User</code><br />
+(<code>id</code>)
 </td>
             <td><p><br />Пользователь-владелец объявления</p></td>
         </tr><tr>
             <td><code>campaign</code></td>
-            <td><code>String</code><code>partial User</code><br />
-(id)
-<code>partial CampaignBase</code><br />
-(id, url)
+            <td>partial <code>CampaignBase</code><br />
+(<code>id, url</code>)
 </td>
             <td><p><br />Кампания объявления</p></td>
         </tr><tr>

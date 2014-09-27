@@ -50,8 +50,8 @@
             <td><p><br />Формат баннера</p></td>
         </tr><tr>
             <td><code>targetings</code></td>
-            <td><code></code><code>partial Targetings</code><br />
-(pads)
+            <td>partial <code>Targetings</code><br />
+(<code>pads</code>)
 </td>
             <td><p><br />Доступные таргетинги</p></td>
         </tr><tr>

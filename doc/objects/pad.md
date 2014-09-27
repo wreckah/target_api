@@ -21,8 +21,8 @@
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>pad_group</code></td>
-            <td><code>String</code><code>partial PadGroup</code><br />
-(id, description, slot_id)
+            <td>partial <code>PadGroup</code><br />
+(<code>id, description, slot_id</code>)
 </td>
             <td></td>
         </tr><tr>

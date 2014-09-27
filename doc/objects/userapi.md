@@ -46,16 +46,14 @@
             <td><p><br />Список прав пользователя</p></td>
         </tr><tr>
             <td><code>account</code></td>
-            <td><code></code><code>partial UserAccount</code><br />
-(id, balance, flags, type)
+            <td>partial <code>UserAccount</code><br />
+(<code>id, balance, flags, type</code>)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
             <td><code>agency</code></td>
-            <td><code></code><code>partial UserAccount</code><br />
-(id, balance, flags, type)
-<code>partial Agency</code><br />
-(is_buyer, buyer_commission, overriding_commission)
+            <td>partial <code>Agency</code><br />
+(<code>is_buyer, buyer_commission, overriding_commission</code>)
 </td>
             <td><p><br />Информация о агентском аккаунте пользователя</p></td>
         </tr><tr>
