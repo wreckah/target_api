@@ -1,7 +1,7 @@
 
-## RemarketingInterval
+## RemarketingPricelistInterval
 
-Временной интервал для ремаркетинга.
+Временной интервал для ремаркетинга на основании данных о посещении.
 
 <table>
     <thead>
@@ -20,6 +20,18 @@
             <td><code>type</code></td>
             <td><code>String</code></td>
             <td><p><em>Обязательный</em> <em>255 символов</em> <em>positive, negative</em><br />Условие показа объявления (попадание значения параметра в интервал, заданный <code>left</code> и <code>right</code>).</p></td>
+        </tr><tr>
+            <td><code>shop_id</code></td>
+            <td><code>Integer</code></td>
+            <td></td>
+        </tr><tr>
+            <td><code>feed_id</code></td>
+            <td><code>Integer</code></td>
+            <td></td>
+        </tr><tr>
+            <td><code>pricelist_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><em>Обязательный</em> </p></td>
         </tr>
     </tbody>
 </table>

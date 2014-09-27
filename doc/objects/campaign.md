@@ -66,40 +66,7 @@
             <td><p><em>64 символа</em> <em>fastest, recommended</em><br />Распределение бюджета</p></td>
         </tr><tr>
             <td><code>targetings</code></td>
-            <td><code>String</code><code>CampaignTargetings</code>
-```json
-{
-  "pads": "List, Рекламные площадки",
-  "age": "IntegerList, Возраст",
-  "regions": "IntegerList, Регионы",
-  "regions_names": "List",
-  "grouped_regions_names": "List",
-  "sex": "String, Пол",
-  "week_days": "List",
-  "day_hours": "IntegerList",
-  "education": "List, Образование",
-  "salary": "List, Диапазоны заработных плат",
-  "language": "Language, Языки",
-  "profession": "List, Профессии",
-  "paid": "String, История платежей",
-  "birthday": "Birthday, День рождения",
-  "tree": "IntegerList",
-  "user_geo": "Dict, Географическое положение, указанное пользователем",
-  "fulltime": "Fulltime, Время (дни и часы)",
-  "remarketing": "List, Вхождение в аудитории",
-  "current_game": "Boolean, Таргетинг на приложение (в Одноклассниках или Моём Мире), рекламируемого в объявлении кампании",
-  "current_group": "Boolean, Таргетинг на группу (в Одноклассниках или Моём Мире), рекламируемую в объявлении кампании",
-  "thematics": "IntegerList",
-  "mobile_types": "List, Типы мобильных устройств",
-  "mobile_operation_systems": "IntegerList, Мобильные операционные системы",
-  "mobile_operators": "IntegerList, Мобильные операторы",
-  "mobile_vendors": "IntegerList, Производители мобильных устройств",
-  "interests": "IntegerList, Интересы пользователей",
-  "binmask": "",
-  "custom": ""
-}
-```
-</td>
+            <td><code>[CampaignTargetings](campaigntargetings)</code></td>
             <td><p><br />Структура таргетингов</p></td>
         </tr><tr>
             <td><code>url</code></td>
@@ -134,6 +101,12 @@
             <td><code>String</code></td>
             <td><p><em>255 символов</em> <em>, 0+, 6+, 12+, 16+, 18+</em><br />Возрастные ограничения</p></td>
         </tr><tr>
+            <td><code>pricelist</code></td>
+            <td><code>String</code><code>partial RemarketingPricelist</code><br />
+(id)
+</td>
+            <td></td>
+        </tr><tr>
             <td><code>slider_positions</code></td>
             <td><code></code></td>
             <td></td>
@@ -153,6 +126,18 @@
             <td><code>extended_pads</code></td>
             <td><code>Boolean</code></td>
             <td><p><br />Транслировать объявления на всех площадках подходящего формата (по умолчанию включено)</p></td>
+        </tr><tr>
+            <td><code>enable_recombination</code></td>
+            <td><code>Boolean</code></td>
+            <td></td>
+        </tr><tr>
+            <td><code>enable_utm</code></td>
+            <td><code>Boolean</code></td>
+            <td></td>
+        </tr><tr>
+            <td><code>utm</code></td>
+            <td><code>Text</code></td>
+            <td></td>
         </tr>
     </tbody>
 </table>

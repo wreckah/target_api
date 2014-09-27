@@ -21,15 +21,8 @@
             <td><p><br />Объект <a href="#object_additionaluserinfo">AdditionalUserInfo</a></p></td>
         </tr><tr>
             <td><code>account</code></td>
-            <td><code>[AdditionalUserInfo](additionaluserinfo)</code><code>UserAccount</code>
-```json
-{
-  "id": "Integer",
-  "balance": "Decimal",
-  "flags": "List",
-  "type": "String"
-}
-```
+            <td><code>[AdditionalUserInfo](additionaluserinfo)</code><code>partial UserAccount</code><br />
+(id, balance, flags, type)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>

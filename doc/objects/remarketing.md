@@ -19,19 +19,8 @@
             <td><p><em>Обязательный</em> <em>255 символов</em> <br />Название аудитории</p></td>
         </tr><tr>
             <td><code>disjunctions</code></td>
-            <td>List of <code>Targetings</code>
-```json
-{
-  "remarketing_counters": "List",
-  "remarketing_game_payers": "List",
-  "remarketing_game_players": "List",
-  "remarketing_payers": "List",
-  "remarketing_players": "List",
-  "remarketing_groups": "List",
-  "remarketing_users_lists": "List",
-  "remarketing_context_phrases": "List"
-}
-```
+            <td>List of <code>partial Targetings</code><br />
+(remarketing_counters, remarketing_game_payers, remarketing_game_players, remarketing_payers, remarketing_players, remarketing_groups, remarketing_users_lists, remarketing_context_phrases, remarketing_pricelists)
 </td>
             <td><p><br />Список таргетингов аудитории, которые срабатывают по
 принципу «хотя бы один» (логическая дизъюнкция). Каждый из элементов списка
@@ -63,15 +52,8 @@
 </ul></td>
         </tr><tr>
             <td><code>campaigns</code></td>
-            <td>List of <code>Campaigns</code>
-```json
-{
-  "id": "Integer, Идентификатор кампании",
-  "name": "String, Название кампании",
-  "edit_url": "String",
-  "status": "String, Статус кампании"
-}
-```
+            <td>List of <code>partial Campaigns</code><br />
+(id, name, edit_url, status)
 </td>
             <td><p><br />Список рекламных кампаний, в которых используется аудитория</p></td>
         </tr><tr>

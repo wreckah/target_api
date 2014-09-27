@@ -70,29 +70,16 @@
             <td><p><em>1024 символа</em> </p></td>
         </tr><tr>
             <td><code>user</code></td>
-            <td><code>String</code><code>User</code>
-```json
-{
-  "id": "Integer, Идентификатор пользователя"
-}
-```
+            <td><code>String</code><code>partial User</code><br />
+(id)
 </td>
             <td><p><br />Пользователь-владелец объявления</p></td>
         </tr><tr>
             <td><code>campaign</code></td>
-            <td><code>String</code><code>User</code>
-```json
-{
-  "id": "Integer, Идентификатор пользователя"
-}
-```
-<code>CampaignBase</code>
-```json
-{
-  "id": "Integer, Идентификатор кампании",
-  "url": "String"
-}
-```
+            <td><code>String</code><code>partial User</code><br />
+(id)
+<code>partial CampaignBase</code><br />
+(id, url)
 </td>
             <td><p><br />Кампания объявления</p></td>
         </tr><tr>

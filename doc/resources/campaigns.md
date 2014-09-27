@@ -79,10 +79,8 @@ Curl-запрос:
 
     {
       "autobidding_mode": "fixed",
-      "avg_api_ctr": 0.0,
       "avg_ctr": 0.0,
       "banners_count": 0,
-      "banners_ctr_api_list": [],
       "banners_url": "/api/v1/campaigns/334646/banners.json",
       "budget_limit": "",
       "budget_limit_day": "",
@@ -92,9 +90,7 @@ Curl-запрос:
       "edit_url": "/ads/campaigns/334646/edit/",
       "group_members": "all",
       "id": 334646,
-      "max_api_ctr": 0.0,
       "max_ctr": 0.0,
-      "min_api_ctr": 0.0,
       "min_ctr": 0.0,
       "mixing": "recommended",
       "name": "Test campaign",

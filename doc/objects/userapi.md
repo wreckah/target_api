@@ -46,36 +46,16 @@
             <td><p><br />Список прав пользователя</p></td>
         </tr><tr>
             <td><code>account</code></td>
-            <td><code></code><code>UserAccount</code>
-```json
-{
-  "id": "Integer",
-  "balance": "Decimal",
-  "flags": "List",
-  "type": "String"
-}
-```
+            <td><code></code><code>partial UserAccount</code><br />
+(id, balance, flags, type)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
             <td><code>agency</code></td>
-            <td><code></code><code>UserAccount</code>
-```json
-{
-  "id": "Integer",
-  "balance": "Decimal",
-  "flags": "List",
-  "type": "String"
-}
-```
-<code>Agency</code>
-```json
-{
-  "is_buyer": "Boolean",
-  "buyer_commission": "Decimal",
-  "overriding_commission": "Decimal"
-}
-```
+            <td><code></code><code>partial UserAccount</code><br />
+(id, balance, flags, type)
+<code>partial Agency</code><br />
+(is_buyer, buyer_commission, overriding_commission)
 </td>
             <td><p><br />Информация о агентском аккаунте пользователя</p></td>
         </tr><tr>
@@ -86,6 +66,10 @@
             <td><code>show_compact_view</code></td>
             <td><code>Boolean</code></td>
             <td><p><br />Компактное представление страницы "Объявления"</p></td>
+        </tr><tr>
+            <td><code>types</code></td>
+            <td><code>Strings</code></td>
+            <td><p><em>25 символов</em> <em>advert, agency, agency_client, branch, branch_client, partner, manager, readonly, fin_readonly, ads_readony</em><br />Тип (типы) пользователя</p></td>
         </tr>
     </tbody>
 </table>

@@ -1,7 +1,7 @@
 
-## CampaignStat
+## CampaignBase
 
-Объект с полной информацией о кампании (совместно со статистикой)
+Базовая форма кампании
 
 <table>
     <thead>
@@ -106,58 +106,6 @@
 (id)
 </td>
             <td></td>
-        </tr><tr>
-            <td><code>slider_positions</code></td>
-            <td><code></code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>last_updated</code></td>
-            <td><code>DateTime</code></td>
-            <td><p><br />Время последнего изменения (включая баннеры)</p></td>
-        </tr><tr>
-            <td><code>extended_age</code></td>
-            <td><code>Boolean</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>extended_pads</code></td>
-            <td><code>Boolean</code></td>
-            <td><p><br />Транслировать объявления на всех площадках подходящего формата (по умолчанию включено)</p></td>
-        </tr><tr>
-            <td><code>enable_recombination</code></td>
-            <td><code>Boolean</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>enable_utm</code></td>
-            <td><code>Boolean</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>utm</code></td>
-            <td><code>Text</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>banners</code></td>
-            <td><code>[BannerStats](bannerstat)</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>stats</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
-            <td><p><br />Статистика за всё время</p></td>
-        </tr><tr>
-            <td><code>stats_today</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
-            <td><p><br />Статистика за сегодняшний день</p></td>
-        </tr><tr>
-            <td><code>stats_yesterday</code></td>
-            <td><code>[PeriodStat](periodstat)</code></td>
-            <td><p><br />Статистика за вчерашний день</p></td>
-        </tr><tr>
-            <td><code>stats_full</code></td>
-            <td><code>[PeriodStats](periodstat)</code></td>
-            <td><p><br />Статистика за последние 2 недели</p></td>
-        </tr><tr>
-            <td><code>last_stats_updated</code></td>
-            <td><code>DateTime</code></td>
-            <td><p><br />Время последней статистики</p></td>
         </tr>
     </tbody>
 </table>

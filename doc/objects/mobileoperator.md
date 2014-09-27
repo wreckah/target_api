@@ -1,6 +1,7 @@
 
-## EyeUrl
+## MobileOperator
 
+Мобильные операторы
 
 <table>
     <thead>
@@ -10,15 +11,11 @@
         <tr>
             <td><code>id</code></td>
             <td><code>Integer</code></td>
-            <td></td>
+            <td><p><br />Идентификатор</p></td>
         </tr><tr>
-            <td><code>url</code></td>
+            <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> </p></td>
-        </tr><tr>
-            <td><code>description</code></td>
-            <td><code>String</code></td>
-            <td><p><em>255 символов</em> </p></td>
+            <td><p><em>255 символов</em> <br />Название</p></td>
         </tr>
     </tbody>
 </table>

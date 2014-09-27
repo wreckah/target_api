@@ -10,33 +10,25 @@
     </thead>
     <tbody>
         <tr>
-            <td>`left`</td>
-            <td>`Integer`</td>
-            <td>*Обязательный*
-<p>Минимальное значение параметра для показа объявления (левая граница временного интервала, дней назад)</p></td>
+            <td><code>left</code></td>
+            <td><code>Integer</code></td>
+            <td><p><em>Обязательный</em> <br />Минимальное значение параметра для показа объявления (левая граница временного интервала, дней назад)</p></td>
         </tr><tr>
-            <td>`right`</td>
-            <td>`Integer`</td>
-            <td>*Обязательный*
-<p>Максимальное значение параметра для показа объявления (правая граница интервала временного интервала, дней назад)</p></td>
+            <td><code>right</code></td>
+            <td><code>Integer</code></td>
+            <td><p><em>Обязательный</em> <br />Максимальное значение параметра для показа объявления (правая граница интервала временного интервала, дней назад)</p></td>
         </tr><tr>
-            <td>`type`</td>
-            <td>`String`</td>
-            <td>*Обязательный*
-*255 символов*
-*positive, negative*
-<p>Условие показа объявления (попадание значения параметра в интервал, заданный <code>left</code> и <code>right</code>).</p></td>
+            <td><code>type</code></td>
+            <td><code>String</code></td>
+            <td><p><em>Обязательный</em> <em>255 символов</em> <em>positive, negative</em><br />Условие показа объявления (попадание значения параметра в интервал, заданный <code>left</code> и <code>right</code>).</p></td>
         </tr><tr>
-            <td>`counter_id`</td>
-            <td>`Integer`</td>
-            <td>*Обязательный*
-<p>Уникальный целочисленный идентификатор счётчика в системе <a href="http://top.mail.ru/">top.mail.ru</a></p></td>
+            <td><code>counter_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><em>Обязательный</em> <br />Уникальный целочисленный идентификатор счётчика в системе <a href="http://top.mail.ru/">top.mail.ru</a></p></td>
         </tr><tr>
-            <td>`goal_id`</td>
-            <td>`String`</td>
-            <td>*Обязательный*
-*10240 символов*
-<p>Идентификатор цели счётчика в системе <a href="http://top.mail.ru/">top.mail.ru</a></p></td>
+            <td><code>goal_id</code></td>
+            <td><code>String</code></td>
+            <td><p><em>Обязательный</em> <em>10240 символов</em> <br />Идентификатор цели счётчика в системе <a href="http://top.mail.ru/">top.mail.ru</a></p></td>
         </tr>
     </tbody>
 </table>

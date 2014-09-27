@@ -216,7 +216,7 @@ Curl-запрос:
 
 
 ### Получение быстрой статистики
-`GET /api/v1/statistics/faststat/{object_type}/{object_id}.json`
+`GET /api/v1/statistics/{api}/{object_type}/{object_id}.json`
 
 Метод позволяет получать быструю статистику по пользователям, кампаниям, баннерам.
 Параметры:

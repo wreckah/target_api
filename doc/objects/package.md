@@ -50,12 +50,8 @@
             <td><p><br />Формат баннера</p></td>
         </tr><tr>
             <td><code>targetings</code></td>
-            <td><code></code><code>Targetings</code>
-```json
-{
-  "pads": "List, Рекламные площадки"
-}
-```
+            <td><code></code><code>partial Targetings</code><br />
+(pads)
 </td>
             <td><p><br />Доступные таргетинги</p></td>
         </tr><tr>

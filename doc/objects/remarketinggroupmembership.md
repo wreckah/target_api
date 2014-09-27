@@ -12,21 +12,18 @@
     </thead>
     <tbody>
         <tr>
-            <td>`type`</td>
-            <td>`String`</td>
-            <td>*Обязательный*
-*255 символов*
-*positive, negative*
-<p>Условие показа объявления (членство в группе)</p></td>
+            <td><code>type</code></td>
+            <td><code>String</code></td>
+            <td><p><em>Обязательный</em> <em>255 символов</em> <em>positive, negative</em><br />Условие показа объявления (членство в группе)</p></td>
         </tr><tr>
-            <td>`group_id`</td>
-            <td>`Integer`</td>
-            <td><p>Целочисленный идентификатор группы в соцсети
+            <td><code>group_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><br />Целочисленный идентификатор группы в соцсети
 <a href="http://odnoklassniki.ru/">Одноклассники</a>.</p></td>
         </tr><tr>
-            <td>`scope_id`</td>
-            <td>`Integer`</td>
-            <td><p>Целочисленный идентификатор тематики групп в соцсети
+            <td><code>scope_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><br />Целочисленный идентификатор тематики групп в соцсети
 <a href="http://odnoklassniki.ru/">Одноклассники</a></p></td>
         </tr>
     </tbody>
