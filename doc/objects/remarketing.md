@@ -19,7 +19,7 @@
             <td><p><em>Обязательный</em> <em>255 символов</em> <br />Название аудитории</p></td>
         </tr><tr>
             <td><code>disjunctions</code></td>
-            <td>List of partial <code>Targetings</code><br />
+            <td>List of partial <a href="targetings.md"><code>Targetings</code></a><br />
 (<code>remarketing_counters</code>, <code>remarketing_game_payers</code>, <code>remarketing_game_players</code>, <code>remarketing_payers</code>, <code>remarketing_players</code>, <code>remarketing_groups</code>, <code>remarketing_users_lists</code>, <code>remarketing_context_phrases</code>, <code>remarketing_pricelists</code>)
 </td>
             <td><p><br />Список таргетингов аудитории, которые срабатывают по
@@ -52,7 +52,7 @@
 </ul></td>
         </tr><tr>
             <td><code>campaigns</code></td>
-            <td>List of partial <code>Campaigns</code><br />
+            <td>List of partial <a href="campaign.md"><code>Campaigns</code></a><br />
 (<code>id</code>, <code>name</code>, <code>edit_url</code>, <code>status</code>)
 </td>
             <td><p><br />Список рекламных кампаний, в которых используется аудитория</p></td>

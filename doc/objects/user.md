@@ -49,13 +49,13 @@
             <td><p><br />Список прав пользователя</p></td>
         </tr><tr>
             <td><code>account</code></td>
-            <td>partial <code>UserAccount</code><br />
+            <td>partial <a href="useraccount.md"><code>UserAccount</code></a><br />
 (<code>id</code>, <code>balance</code>, <code>flags</code>, <code>type</code>)
 </td>
             <td><p><br />Информация о финансовом аккаунте пользователя</p></td>
         </tr><tr>
             <td><code>agency</code></td>
-            <td>partial <code>Agency</code><br />
+            <td>partial <a href="agency.md"><code>Agency</code></a><br />
 (<code>is_buyer</code>, <code>buyer_commission</code>, <code>overriding_commission</code>)
 </td>
             <td><p><br />Информация о агентском аккаунте пользователя</p></td>

@@ -50,7 +50,7 @@
             <td><p><br />Формат баннера</p></td>
         </tr><tr>
             <td><code>targetings</code></td>
-            <td>partial <code>Targetings</code><br />
+            <td>partial <a href="targetings.md"><code>Targetings</code></a><br />
 (<code>pads</code>)
 </td>
             <td><p><br />Доступные таргетинги</p></td>

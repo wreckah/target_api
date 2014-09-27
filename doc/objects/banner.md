@@ -70,13 +70,13 @@
             <td><p><em>1024 символа</em> </p></td>
         </tr><tr>
             <td><code>user</code></td>
-            <td>partial <code>User</code><br />
+            <td>partial <a href="user.md"><code>User</code></a><br />
 (<code>id</code>)
 </td>
             <td><p><br />Пользователь-владелец объявления</p></td>
         </tr><tr>
             <td><code>campaign</code></td>
-            <td>partial <code>CampaignBase</code><br />
+            <td>partial <a href="campaignbase.md"><code>CampaignBase</code></a><br />
 (<code>id</code>, <code>url</code>)
 </td>
             <td><p><br />Кампания объявления</p></td>

@@ -21,7 +21,7 @@
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>pad_group</code></td>
-            <td>partial <code>PadGroup</code><br />
+            <td>partial <a href="padgroup.md"><code>PadGroup</code></a><br />
 (<code>id</code>, <code>description</code>, <code>slot_id</code>)
 </td>
             <td></td>

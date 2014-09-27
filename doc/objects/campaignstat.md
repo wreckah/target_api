@@ -102,7 +102,7 @@
             <td><p><em>255 символов</em> <em>, 0+, 6+, 12+, 16+, 18+</em><br />Возрастные ограничения</p></td>
         </tr><tr>
             <td><code>pricelist</code></td>
-            <td>partial <code>RemarketingPricelist</code><br />
+            <td>partial <a href="remarketingpricelist.md"><code>RemarketingPricelist</code></a><br />
 (<code>id</code>)
 </td>
             <td></td>
