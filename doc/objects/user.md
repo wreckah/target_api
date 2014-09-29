@@ -29,7 +29,7 @@
             <td><p><em>255 символов</em> <br />Email</p></td>
         </tr><tr>
             <td><code>types</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <br />Массив ролей пользователя</p></td>
         </tr><tr>
             <td><code>status</code></td>
@@ -41,7 +41,7 @@
             <td><p><br />Объект <a href="#object_additionaluserinfo">AdditionalUserInfo</a></p></td>
         </tr><tr>
             <td><code>mailings</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <em>news, finance, event, moderation, other</em><br />Список рассылок, на которые подписан пользователь</p></td>
         </tr><tr>
             <td><code>permissions</code></td>
@@ -73,7 +73,7 @@
             <td></td>
         </tr><tr>
             <td><code>flags</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>max_active_banners_count</code></td>

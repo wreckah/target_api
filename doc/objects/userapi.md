@@ -38,7 +38,7 @@
             <td><p><br />Объект <a href="#object_additionaluserinfo">AdditionalUserInfo</a></p></td>
         </tr><tr>
             <td><code>mailings</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <em>news, finance, event, moderation, other</em><br />Список рассылок, на которые подписан пользователь</p></td>
         </tr><tr>
             <td><code>permissions</code></td>
@@ -66,7 +66,7 @@
             <td><p><br />Компактное представление страницы "Объявления"</p></td>
         </tr><tr>
             <td><code>types</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>25 символов</em> <em>advert, agency, agency_client, branch, branch_client, partner, manager, readonly, fin_readonly, ads_readony</em><br />Тип (типы) пользователя</p></td>
         </tr>
     </tbody>

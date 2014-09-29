@@ -136,7 +136,7 @@
             <td></td>
         </tr><tr>
             <td><code>banners</code></td>
-            <td><a href="bannerstat.md"><code>BannerStats</code></a></td>
+            <td>List of <a href="bannerstat.md"><code>BannerStats</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>stats</code></td>
@@ -152,7 +152,7 @@
             <td><p><br />Статистика за вчерашний день</p></td>
         </tr><tr>
             <td><code>stats_full</code></td>
-            <td><a href="periodstat.md"><code>PeriodStats</code></a></td>
+            <td>List of <a href="periodstat.md"><code>PeriodStats</code></a></td>
             <td><p><br />Статистика за последние 2 недели</p></td>
         </tr><tr>
             <td><code>last_stats_updated</code></td>

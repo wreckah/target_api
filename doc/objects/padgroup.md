@@ -29,7 +29,7 @@
             <td><p><em>Обязательный</em> </p></td>
         </tr><tr>
             <td><code>pads</code></td>
-            <td><a href="padforpadgroup.md"><code>PadForPadGroups</code></a></td>
+            <td>List of <a href="padforpadgroup.md"><code>PadForPadGroups</code></a></td>
             <td></td>
         </tr>
     </tbody>

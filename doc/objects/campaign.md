@@ -112,7 +112,7 @@
             <td></td>
         </tr><tr>
             <td><code>banners</code></td>
-            <td><a href="banner.md"><code>Banners</code></a></td>
+            <td>List of <a href="banner.md"><code>Banners</code></a></td>
             <td></td>
         </tr><tr>
             <td><code>last_updated</code></td>

@@ -17,7 +17,7 @@
             <td></td>
         </tr><tr>
             <td><code>flags</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>type</code></td>

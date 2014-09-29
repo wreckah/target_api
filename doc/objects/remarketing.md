@@ -58,7 +58,7 @@
             <td><p><br />Список рекламных кампаний, в которых используется аудитория</p></td>
         </tr><tr>
             <td><code>flags</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <em>cross_device</em><br />Дополнительные опции</p></td>
         </tr>
     </tbody>

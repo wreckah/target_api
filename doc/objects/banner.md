@@ -54,7 +54,7 @@
             <td><p><em>1024 символа</em> <br />Ссылка в объявлении</p></td>
         </tr><tr>
             <td><code>url_types</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <br />Типы ссылки</p></td>
         </tr><tr>
             <td><code>json_url</code></td>
@@ -102,7 +102,7 @@
             <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
         </tr><tr>
             <td><code>banner_fields</code></td>
-            <td><code>Strings</code></td>
+            <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
             <td><code>ctr_status</code></td>

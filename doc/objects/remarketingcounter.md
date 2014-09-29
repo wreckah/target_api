@@ -37,7 +37,7 @@
             <td><p><br />Уникальный целочисленный идентификатор счётчика в системе top.mail.ru</p></td>
         </tr><tr>
             <td><code>goals</code></td>
-            <td><code>Dicts</code></td>
+            <td>List of <code>Dicts</code></td>
             <td><p><br />Цели счётчика</p></td>
         </tr>
     </tbody>
