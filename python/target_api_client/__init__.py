@@ -1,89 +1,146 @@
-from binascii import b2a_base64
-from hashlib import sha1
-from hmac import new
-from json import dumps, loads
-try:
-    # For Python 3.0 and later.
-    from urllib.parse import quote, urlencode
-    from urllib.request import HTTPError, Request, urlopen
-except ImportError:
-    # Fall back to Python 2's urllib2.
-    from urllib2 import HTTPError, Request, urlopen
-    from urllib import quote, urlencode
+from datetime import datetime, timedelta
+from hashlib import md5
+from json import dumps
+from random import random
+
+import requests
 
 
 class TargetApiError(Exception):
-    def __init__(self, message, code=500, fields=None):
+    def __init__(self, message, http_status=500):
         self.message = message
-        self.code = code
-        if fields:
-            self.fields = fields
+        self.http_status = http_status
 
     def __str__(self):
-        if self.code == 400:
-            return 'TargetApiError %s: %s\n  %s' % (
-                self.code,
-                self.message,
-                '\n  '.join(
-                    '#%s: %s' % (f, e) for f, e in self.fields.items()
-                )
+        return '%s (http status %s)' % (self.message, self.http_status)
+
+
+class TargetValidationError(TargetApiError):
+    def __init__(self, fields):
+        self.http_status = 400
+        self.fields = fields
+
+    def __str__(self):
+        return 'Validation failed on:\n  %s' % (
+            '\n  '.join(
+                '#%s: %s' % (f, e) for f, e in self.fields.items()
             )
-        else:
-            return 'TargetApiError %s: %s' % (self.code, self.message)
+        )
+
+
+class TargetAuthError(TargetApiError):
+    def __init__(self, message, oauth_message):
+        self.message = message
+        self.oauth_message = oauth_message
+        self.http_status = 401
+
+    def __str__(self):
+        return '%s (http status %s) %s' % (
+            self.message,
+            self.http_status,
+            self.oauth_message,
+        )
 
 
 class TargetApiClient(object):
-    HTTP_METHODS = frozenset(('GET', 'POST', 'DELETE'))
-    PRODUCTION_HOST = 'target.mail.ru'
+    PRODUCTION_HOST = 'target.my.com'
     SANDBOX_HOST = 'target-sandbox.mail.ru'
-    access_id = None
-    private_key = None
+
+    OAUTH_TOKEN_URL = 'v2/oauth2/token.json'
+    OAUTH_USER_URL = '/oauth2/authorize'
+    GRANT_CLIENT = 'client_credentials'
+    GRANT_RERFESH = 'refresh_token'
+    GRANT_AUTH_CODE = 'authorization_code'
+    OAUTH_ADS_SCOPES = ('read_ads', 'read_payments', 'create_ads')
+    OAUTH_AGENCY_SCOPES = (
+        'create_clients', 'read_clients', 'create_agency_payments'
+    )
+    OAUTH_MANAGER_SCOPES = (
+        'read_manager_clients', 'edit_manager_clients', 'read_payments'
+    )
+
+    client_id = None
+    client_secret = None
     url = None
 
-    def __init__(self, access_id, private_key, is_sandbox=True, version=1):
-        self.access_id = access_id
-        self.private_key = private_key.encode()
-        host = self.SANDBOX_HOST if is_sandbox else self.PRODUCTION_HOST
-        self.url = 'https://%s/api/v%d/' % (host, version)
+    def __init__(self, client_id, client_secret, is_sandbox=True):
+        self.client_id = client_id
+        self.client_secret = client_secret
+        self.host = self.SANDBOX_HOST if is_sandbox else self.PRODUCTION_HOST
+        self.url = 'https://%s/api/' % self.host
 
-    def request(self, resource, method='GET', post_data=None, get_params=None):
-        method = method.upper()
-        assert method in self.HTTP_METHODS, \
-            'Unsupported HTTP method: %s. Supported methods are: %s' % (
-                method,
-                ', '.join(self.HTTP_METHODS)
-            )
+    def request(self, resource, access_token, data=None, params=None,
+                files=None, http_method=None):
+        """
+        Performs HTTP request to Target API.
+        """
+        resource = resource.lstrip('/')
+        if not resource.startswith('v'):
+            resource = 'v1/' + resource
+        url = self.url + resource
 
-        # Prepare authentication signature.
-        data = dumps(post_data) if post_data else ''
-        url = self.url + resource.lstrip('/')
-        string = '%s&%s&%s' % (
-            method,
-            quote(url, safe='~'),
-            quote(data, safe='~')
+        req= {
+            'headers': {'Authorization': 'Bearer ' + access_token},
+            'params': params,
+        }
+        if data is not None:
+            if http_method is None:
+                http_method = 'post'
+            req['data'] = dumps(data)
+            req['headers']['Content-Type'] = 'application/json'
+        if files:
+            if http_method is None:
+                http_method = 'post'
+            req['files'] = files
+
+        resp = getattr(requests, http_method or 'get')(url, **req)
+        if resp.status_code == 200:
+            return resp.json()
+        elif resp.status_code == 204:
+            return True
+        self._process_error(resp)
+
+    def _process_error(self, resp):
+        body = resp.json()
+        if resp.status_code == 400:
+            raise TargetValidationError(body)
+        if resp.status_code == 401:
+            raise TargetAuthError(body, resp.headers['WWW-Authenticate'])
+        raise TargetApiError(body, resp.status_code)
+
+    def _request_oauth_token(self, scheme=GRANT_CLIENT, **extra):
+        params = {
+            'grant_type': scheme,
+            'client_id': self.client_id,
+            'client_secret': self.client_secret,
+        }
+        if extra:
+            params.update(extra)
+
+        resp = requests.post(self.url + self.OAUTH_TOKEN_URL, data=params)
+        if resp.status_code == 200:
+            return resp.json()
+        self._process_error(resp)
+
+    def refresh_access_token(self, refresh_token):
+        return self._request_oauth_token(
+            self.GRANT_RERFESH,
+            refresh_token=refresh_token,
         )
-        signature = b2a_base64(
-            new(self.private_key, string.encode(), sha1).digest()
-        ).decode().rstrip('\n')
 
-        # Perform HTTP request.
-        if get_params:
-            url += '?' + urlencode(get_params)
-        req = Request(url, data.encode() if data else None)
-        req.add_header(
-            'Authorization',
-            'AuthHMAC %s:%s' % (self.access_id, signature)
+    def request_client_token(self):
+        return self._request_oauth_token()
+
+    def request_app_user_token(self, code):
+        return self._request_oauth_token(self.GRANT_AUTH_CODE, code=code)
+
+    def get_oauth_authorize_url(self, scopes=OAUTH_ADS_SCOPES, state=None):
+        if not state:
+            state = md5(str(random())).hexdigest()
+        url =  '%s?response_type=code&client_id=%s&state=%s&scope=%s' % (
+            self.OAUTH_USER_URL,
+            self.client_id,
+            state,
+            scopes,
         )
-        if data:
-            req.add_header('Content-Type', 'application/json')
-        try:
-            return loads(urlopen(req).read().decode())
-        except HTTPError as e:
-            message = loads(e.read().decode())
-            if e.code == 400:
-                raise TargetApiError(
-                    'ValidationError',
-                    code=400,
-                    fields=message
-                )
-            raise TargetApiError(message, e.code)
+        return {'state': state, 'url': url}

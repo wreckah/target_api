@@ -8,4 +8,5 @@ setup(
     author='Alexander Pokatilov',
     author_email='wreckah@ya.ru',
     packages = find_packages(),
+    install_requires = ['requests >= 2.5.0'],
 )
