@@ -1,3 +1,3 @@
-# API of Target @ Mail.Ru
+# API of Target.my.com
 
-API documentation and clients for different platforms.
+API documentation and a reference clients for different platforms.
