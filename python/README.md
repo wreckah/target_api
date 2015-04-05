@@ -7,7 +7,7 @@ import target_api_client
 client_id = 'Yu1ES2t2VuPBYQ2f'
 client_secret = '8rhRaKLEnv*****IdqmkaiQkqO8HUYL2TObVB'
 
-client = target_api_client.TargetApiClient(client_id, client_secret)
+client = target_api_client.TargetApiClient(client_id, client_secret, is_sandbox=True)
 ```
 
 ### Obtaining an access token
