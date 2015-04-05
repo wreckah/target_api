@@ -1,3 +1,5 @@
+**OUTDATED :(**
+
 ## Using
 
 Initializing client:
