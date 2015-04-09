@@ -18,12 +18,12 @@ HTTP-запрос:
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:obZYc8pJH+Y1a9SFOHUptSHvaxE=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:obZYc8pJH+Y1a9SFOHUptSHvaxE=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/odkl_group_scopes.json'
 
 Пример ответа:

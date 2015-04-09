@@ -20,6 +20,26 @@
             <td><code>String</code></td>
             <td><p><em>255 символов</em> </p></td>
         </tr><tr>
+            <td><code>icon_url</code></td>
+            <td><code>String</code></td>
+            <td><p><em>1024 символа</em> </p></td>
+        </tr><tr>
+            <td><code>slot_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><br />Слот</p></td>
+        </tr><tr>
+            <td><code>status</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> </p></td>
+        </tr><tr>
+            <td><code>show_self_apps</code></td>
+            <td><code>Boolean</code></td>
+            <td></td>
+        </tr><tr>
+            <td><code>show_foreign_apps</code></td>
+            <td><code>Boolean</code></td>
+            <td></td>
+        </tr><tr>
             <td><code>pad_group</code></td>
             <td>partial <a href="padgroup.md"><code>PadGroup</code></a><br />
 (<code>id</code>, <code>description</code>, <code>slot_id</code>)
@@ -30,17 +50,9 @@
             <td><a href="eyeurl.md"><code>EyeUrl</code></a></td>
             <td></td>
         </tr><tr>
-            <td><code>show_self_apps</code></td>
-            <td><code>Boolean</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>show_foreign_apps</code></td>
-            <td><code>Boolean</code></td>
-            <td></td>
-        </tr><tr>
-            <td><code>icon_url</code></td>
+            <td><code>pad_md5</code></td>
             <td><code>String</code></td>
-            <td><p><em>1024 символа</em> </p></td>
+            <td><p><em>32 символа</em> </p></td>
         </tr><tr>
             <td><code>stats</code></td>
             <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
@@ -54,13 +66,9 @@
             <td><a href="periodstat.md"><code>PeriodStat</code></a></td>
             <td></td>
         </tr><tr>
-            <td><code>status</code></td>
-            <td><code>String</code></td>
-            <td><p><em>255 символов</em> </p></td>
-        </tr><tr>
-            <td><code>pad_md5</code></td>
-            <td><code>String</code></td>
-            <td><p><em>32 символа</em> </p></td>
+            <td><code>code_block</code></td>
+            <td><code>Text</code></td>
+            <td></td>
         </tr>
     </tbody>
 </table>

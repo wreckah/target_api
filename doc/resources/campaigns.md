@@ -27,12 +27,12 @@ HTTP-запрос:
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:/Sgea5u8hApgEHQ/hPwQFF8mgXM=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:/Sgea5u8hApgEHQ/hPwQFF8mgXM=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/campaigns.json?status=active&fields=id,name,created,budget_limit'
 
 Пример ответа:
@@ -64,7 +64,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 136
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:/Sgea5u8hApgEHQ/hPwQFF8mgXM=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"name": "Test campaign", "package": {"id": 18}, "targetings": {"regions": [188], "sex": "MF", "age": [20, 21], "pads": [{"id": 5206}]}}
 
@@ -72,7 +72,7 @@ Curl-запрос:
 
     curl \
     -d '{"name": "Test campaign", "package": {"id": 18}, "targetings": {"regions": [188], "sex": "MF", "age": [20, 21], "pads": [{"id": 5206}]}}' \
-    -H 'Authorization: AuthHMAC Bv2BaJv95g68G39:j8bVRc445dgH6S9MO9+/y6zUeQE=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/campaigns.json'
 
 Пример ответа:
@@ -301,7 +301,6 @@ Curl-запрос:
         "salary": [],
         "sex": "FMU",
         "thematics": [],
-        "tree": [],
         "user_geo": null,
         "week_days": [
           "mon",
@@ -332,12 +331,12 @@ HTTP-запрос:
     GET /api/v1/campaigns/334648.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:OTPf3hv2pdkVhVrk6TlrmqJcISQ=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:OTPf3hv2pdkVhVrk6TlrmqJcISQ=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/campaigns/334648.json'
 
 Пример ответа:
@@ -560,7 +559,6 @@ Curl-запрос:
         "salary": [],
         "sex": "FMU",
         "thematics": [],
-        "tree": [],
         "user_geo": null,
         "week_days": [
           "mon",
@@ -593,7 +591,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 37
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:1PzH+pX15ItMRGv0KcKr/sQ+tak=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"title": "\u0442\u0435\u0441\u0442"}
 
@@ -601,7 +599,7 @@ Curl-запрос:
 
     curl \
     curl -d '{"name": "Тестовая кампания №42"}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:1PzH+pX15ItMRGv0KcKr/sQ+tak=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/campaigns/334648.json'
 
 Пример ответа:

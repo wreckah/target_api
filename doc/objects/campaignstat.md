@@ -135,6 +135,22 @@
             <td><code>Text</code></td>
             <td></td>
         </tr><tr>
+            <td><code>uniq_shows_limit</code></td>
+            <td><code></code></td>
+            <td><p><br />Количество уникальных показов</p></td>
+        </tr><tr>
+            <td><code>uniq_shows_period</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />Периоды для показов</p></td>
+        </tr><tr>
+            <td><code>banner_uniq_shows_limit</code></td>
+            <td><code></code></td>
+            <td><p><br />Количество уникальных показов для баннеров</p></td>
+        </tr><tr>
+            <td><code>audit_pixels</code></td>
+            <td>List of <code>Strings</code></td>
+            <td><p><em>255 символов</em> <br />Список урлов пикселей для внешней статистики</p></td>
+        </tr><tr>
             <td><code>banners</code></td>
             <td>List of <a href="bannerstat.md"><code>BannerStats</code></a></td>
             <td></td>

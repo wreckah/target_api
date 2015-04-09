@@ -62,6 +62,14 @@
             <td><code>flags</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
+        </tr><tr>
+            <td><code>max_uniq_shows_limit</code></td>
+            <td><code>Integer</code></td>
+            <td><p><br />Максимально допустимое количество показов уникам</p></td>
+        </tr><tr>
+            <td><code>options</code></td>
+            <td><code>Options</code></td>
+            <td></td>
         </tr>
     </tbody>
 </table>

@@ -17,12 +17,12 @@ HTTP-запрос:
     GET /api/v1/remarketing_counters.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:jQMzjyCaLVC6vWotOlngHrzbv/M=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:jQMzjyCaLVC6vWotOlngHrzbv/M=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_counters.json'
 
 Пример ответа:
@@ -76,7 +76,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 23
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:ULODrcrSJItYUP+rERziZW3ONkg=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"counter_id": 2381587}
 
@@ -84,7 +84,7 @@ Curl-запрос:
 
     curl \
     -d '{"counter_id": 2381587}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:ULODrcrSJItYUP+rERziZW3ONkg=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_counters.json'
 
 Пример ответа:
@@ -121,12 +121,12 @@ HTTP-запрос:
     GET /api/v1/remarketing_counters/639.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:o5cgpk8aDEGuFbrNF1WUX0UIXHQ=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:o5cgpk8aDEGuFbrNF1WUX0UIXHQ=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_counters/639.json'
 
 Пример ответа:
@@ -166,7 +166,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 18
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:92s8jYaiPL4UDmXGrx1p13VyKos=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"name": "noname"}
 
@@ -174,7 +174,7 @@ Curl-запрос:
 
     curl \
     -d '{"name": "noname"}' \
-    -H 'Authorization: AuthHMAC Bv2BaJv95g68G39:92s8jYaiPL4UDmXGrx1p13VyKos=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_counters/639.json'
 
 Пример ответа:

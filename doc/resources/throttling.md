@@ -14,12 +14,12 @@ HTTP-запрос:
     GET /api/v1/throttling.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:yIx44nGLT7br3v728w3e0l4bHNY=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:yIx44nGLT7br3v728w3e0l4bHNY=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/throttling.json'
 
 Пример ответа:

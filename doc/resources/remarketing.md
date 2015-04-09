@@ -15,12 +15,12 @@ HTTP-запрос:
     GET /api/v1/remarketings.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:1YGhL7kq8af8k7tkNy2OIh5xAS8=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:1YGhL7kq8af8k7tkNy2OIh5xAS8=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketings.json'
 
 Пример ответа:
@@ -66,7 +66,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 141
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:B6JnyBsDE+ZHkXt90UjW1tMNdww=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"name":"Особая тестовая аудитория","disjunctions":[{"remarketing_payers":[{"left":10,"right":5,"type":"positive"}]}]}
 
@@ -74,7 +74,7 @@ Curl-запрос:
 
     curl \
     -d '{"name":"Особая тестовая аудитория","disjunctions":[{"remarketing_payers":[{"left":10,"right":5,"type":"positive"}]}]}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:B6JnyBsDE+ZHkXt90UjW1tMNdww=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketings.json'
 
 Пример ответа:
@@ -122,11 +122,11 @@ HTTP-запрос:
     DELETE /api/v1/remarketings/3.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:pASFmHlVfnzZEgezKaTsfHvbqFg=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl -X DELETE \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:pASFmHlVfnzZEgezKaTsfHvbqFg=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketings/3.json'
 

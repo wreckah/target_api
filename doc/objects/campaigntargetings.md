@@ -62,6 +62,10 @@
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <em>tablets, smartphones</em><br />Типы мобильных устройств</p></td>
         </tr><tr>
+            <td><code>mobile_prefix</code></td>
+            <td>List of <code>Strings</code></td>
+            <td><p><em>255 символов</em> <em>mts, beeline, megafon</em><br />Мобильные префиксы</p></td>
+        </tr><tr>
             <td><code>mobile_operation_systems</code></td>
             <td>List of <code>Integers</code></td>
             <td><p><br />Мобильные операционные системы (список идентификаторов объектов <a href="#object_mobileoperationsystem">MobileOperationSystem</a>)</p></td>

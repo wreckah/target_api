@@ -21,12 +21,12 @@ HTTP-запрос:
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:m65W22YBk9B69Prc/u+AUl79EHs=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:m65W22YBk9B69Prc/u+AUl79EHs=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/packages.json'
 
 Пример ответа:

@@ -31,6 +31,14 @@
             <td><code>pads</code></td>
             <td>List of <a href="padforpadgroup.md"><code>PadForPadGroups</code></a></td>
             <td></td>
+        </tr><tr>
+            <td><code>moderation_status</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />Статус модерации</p></td>
+        </tr><tr>
+            <td><code>moderation_reason_display</code></td>
+            <td><code>String</code></td>
+            <td><p><em>1024 символа</em> <br />Причина модерации</p></td>
         </tr>
     </tbody>
 </table>

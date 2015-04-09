@@ -33,12 +33,12 @@
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:84h5h8j+aQR1xC0CZvXILnv0bEE=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:84h5h8j+aQR1xC0CZvXILnv0bEE=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/statistics/campaigns/334789/hour.json'
 
 Пример ответа:
@@ -218,7 +218,8 @@ Curl-запрос:
 ### Получение быстрой статистики
 `GET /api/v1/statistics/{api}/{object_type}/{object_id}.json`
 
-Метод позволяет получать быструю статистику по пользователям, кампаниям, баннерам.
+Метод позволяет получать быструю статистику по пользователям, кампаниям,
+баннерам.
 Параметры:
 
 * `object_type` — задаёт тип сущности:
@@ -238,12 +239,12 @@ HTTP-запрос:
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC Bv2BaJv95g68G39:QOlK2RvHmew/975t7uW3r6RZUGI=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC Bv2BaJv95g68G39:QOlK2RvHmew/975t7uW3r6RZUGI=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/statistics/faststat/banners/688264;688267.json'
 
 Пример ответа:

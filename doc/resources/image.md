@@ -10,12 +10,6 @@
 `image` объекта объявления «как есть». На данный момент поддерживаются
 форматы JPEG, GIF, PNG, SWF.
 
-Алгоритм подписи запроса на загрузку изображения немного отличается от
-стандартного. В запросе необходимо передать HTTP-заголовок `X-Trg-Chksum`,
-который содержит хэш-сумму от загружаемого изображения, полученную по
-алгоритму `MD5`. Кроме того, при создании подписи вместо тела POST-запроса
-нужно использовать эту же хэш-сумму.
-
 В отличие от других POST-запросов к API, имеющих тип `application/json`,
 запрос на загрузку изображения должен иметь тип `multipart/form-data`.
 Само изображение для загрузки нужно передавать как часть multipart-запроса
@@ -38,8 +32,7 @@ HTTP-запрос:
     Content-Type: multipart/form-data; boundary=----------------------------284bab249df5
     Content-Length: 1991
     Accept-Encoding: gzip, deflate, compress
-    X-Trg-Chksum: 094c464e6d5666254ff123d60e618cbe
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:Y68uooAYiSyzZeU/nMTiXA5mFkY=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     ------------------------------284bab249df5
     Content-Disposition: form-data; name="width"
@@ -59,8 +52,7 @@ HTTP-запрос:
 Curl-запрос:
 
     curl -F width=60 -F height=15 -F image_file=@logo_wide.v2.png \
-    -H 'X-Trg-Chksum: 094c464e6d5666254ff123d60e618cbe' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:Y68uooAYiSyzZeU/nMTiXA5mFkY=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/images.json'
 
 Пример ответа:

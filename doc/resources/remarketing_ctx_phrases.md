@@ -15,12 +15,12 @@ HTTP-запрос:
     DELETE /api/v1/remarketing_context_phrases/639.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:FF1jn812BNwhUP5EF6+J68lbtvE=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl -X DELETE \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:FF1jn812BNwhUP5EF6+J68lbtvE=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_context_phrases/639.json'
 
 
@@ -38,12 +38,12 @@ HTTP-запрос:
     GET /api/v1/remarketing_context_phrases.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:S/EG1ZDUcql3G3n4KVcYX0YI4s8=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:S/EG1ZDUcql3G3n4KVcYX0YI4s8=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_context_phrases.json'
 
 Пример ответа:
@@ -71,12 +71,6 @@ Curl-запрос:
 для ремаркетинга. В случае успешной загрузки возвращается объект типа
 RemarketingContextPhrasesForm.
 
-Алгоритм подписи запроса на загрузку файла немного отличается от
-стандартного. В запросе необходимо передать HTTP-заголовок `X-Trg-Chksum`,
-который содержит хэш-сумму от загружаемого файла, полученную по
-алгоритму `MD5`. Кроме того, при создании подписи вместо тела POST-запроса
-нужно использовать эту же хэш-сумму.
-
 В отличие от других POST-запросов к API, имеющих тип `application/json`,
 запрос на загрузку файла с фразами должен иметь тип `multipart/form-data`.
 Сам файл для загрузки нужно передавать как часть multipart-запроса
@@ -91,8 +85,7 @@ HTTP-запрос:
 
     POST /api/v1/remarketing_context_phrases.json HTTP/1.1
     Host: target-sandbox.mail.ru
-    X-Trg-Chksum: 416f1b5e2e694ed5716666c694a2bdf4
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:mdU/UuTRjdXecT41c4g6zr5AiH0=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
     Content-Length: 294
     Content-Type: multipart/form-data; boundary=------------------------6f6445c8f1dc5d8e
 
@@ -100,8 +93,7 @@ HTTP-запрос:
 Curl-запрос:
 
     curl -F file=@test.txt  -F name=test \
-    -H 'X-Trg-Chksum: 416f1b5e2e694ed5716666c694a2bdf4' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:mdU/UuTRjdXecT41c4g6zr5AiH0=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_context_phrases.json'
 
 Пример ответа:

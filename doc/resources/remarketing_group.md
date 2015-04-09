@@ -22,7 +22,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 43
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:79KjpYKwux4uUlWe8QjebjX5Sd4=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"object_id":43065395314877,"type":"group"}
 
@@ -30,7 +30,7 @@ Curl-запрос:
 
     curl \
     -d '{"object_id":43065395314877,"type":"group"}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:79KjpYKwux4uUlWe8QjebjX5Sd4=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_groups.json'
 
 Пример ответа:
@@ -57,12 +57,12 @@ HTTP-запрос:
     GET /api/v1/remarketing_groups.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:oArysqPpqRzm37Wf/IkWIPRC8RM=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:oArysqPpqRzm37Wf/IkWIPRC8RM=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_groups.json'
 
 Пример ответа:
@@ -94,11 +94,11 @@ HTTP-запрос:
     DELETE /api/v1/remarketing_groups/3.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:8OCll48b+8g2t/2VxNy6d6KAO9U=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl -X DELETE \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:8OCll48b+8g2t/2VxNy6d6KAO9U=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_groups/3.json'
 

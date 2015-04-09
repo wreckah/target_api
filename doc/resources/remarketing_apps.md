@@ -23,7 +23,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 40
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:et9e1cuhgd9aH5Gd2PJZaVyXFoQ=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"app_id":"259003","app_type":"mir_app"}
 
@@ -31,7 +31,7 @@ Curl-запрос:
 
     curl \
     -d '{"app_id":"259003","app_type":"mir_app"}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:et9e1cuhgd9aH5Gd2PJZaVyXFoQ=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_apps.json'
 
 Пример ответа:
@@ -58,12 +58,12 @@ HTTP-запрос:
     GET /api/v1/remarketing_apps.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:3WmDbatsLGb98ojNBJoerAE2aWs=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:3WmDbatsLGb98ojNBJoerAE2aWs=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_apps.json'
 
 Пример ответа:
@@ -95,11 +95,11 @@ HTTP-запрос:
     DELETE /api/v1/remarketing_apps/378.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:3WmDbatsLGb98ojNBJoerAE2aWs=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl -X DELETE \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:3WmDbatsLGb98ojNBJoerAE2aWs=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/remarketing_apps/378.json'
 

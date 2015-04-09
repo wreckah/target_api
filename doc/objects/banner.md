@@ -101,13 +101,17 @@
             <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
         </tr><tr>
+            <td><code>background_image</code></td>
+            <td><a href="image.md"><code>Image</code></a></td>
+            <td><p><br />Изображение подложки для видеофайла</p></td>
+        </tr><tr>
+            <td><code>video_params</code></td>
+            <td><a href="videoparams.md"><code>VideoParams</code></a></td>
+            <td></td>
+        </tr><tr>
             <td><code>banner_fields</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
-        </tr><tr>
-            <td><code>ctr_status</code></td>
-            <td><code>String</code></td>
-            <td><p><em>60 символов</em> <br />CTR-статус</p></td>
         </tr>
     </tbody>
 </table>

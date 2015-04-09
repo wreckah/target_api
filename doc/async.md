@@ -1,7 +1,7 @@
-## Асинхронный API Таргет@Mail.Ru
+## Асинхронный API
 
 Асинхронный API предоставляет возможность поставить запрос к обычному API
-Таргет@Mail.Ru в очередь на выполнение. Когда запрос будет выполнен получить
+в очередь на выполнение. Когда запрос будет выполнен получить
 его результаты можно будет отдельным запросом. Факт выполнения запроса можно
 определить, отправляя постоянные запросы для проверки статуса, или же указать
 в изначальном запросе URL для вызова уведомления о выполнении запроса.
@@ -16,7 +16,7 @@
 заменить в URL-адресе вызова `/api/` на `/async_api/`:
 
     POST /async_api/v2/campaigns.json HTTP/1.1
-    Host: target.mail.ru
+    Host: target.my.com
     Authorization: Bearer {oauth2_access_token}
     X-Callback-Location: http://client.com/callback
     X-Callback-Method: GET
@@ -50,7 +50,7 @@ HTTP-заголовок `Location` содержит URL-адрес для пол
 
     GET /async_api/v2/requests/{id}.json HTTP/1.1
     Authorization: Bearer {oauth2_access_token}
-    Host: target.mail.ru
+    Host: target.my.com
 
 Пример ответа:
 

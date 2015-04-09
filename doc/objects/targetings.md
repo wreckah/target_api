@@ -94,9 +94,17 @@
             <td>List of <a href="remarketingcontextphrases.md"><code>RemarketingContextPhraseses</code></a></td>
             <td></td>
         </tr><tr>
+            <td><code>remarketing_mobile_apps</code></td>
+            <td>List of <a href="remarketingmobileapps.md"><code>RemarketingMobileAppss</code></a></td>
+            <td></td>
+        </tr><tr>
             <td><code>mobile_types</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <em>tablets, smartphones</em><br />Типы мобильных устройств</p></td>
+        </tr><tr>
+            <td><code>mobile_prefix</code></td>
+            <td>List of <code>Strings</code></td>
+            <td><p><em>255 символов</em> <em>mts, beeline, megafon</em><br />Мобильные префиксы</p></td>
         </tr><tr>
             <td><code>mobile_operation_systems</code></td>
             <td>List of <code>Integers</code></td>

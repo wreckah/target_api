@@ -20,12 +20,12 @@ HTTP-запрос:
     GET /api/v1/banners/687419.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:SuIoHIpS7PXhc//eJFO+T0477/I=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:SuIoHIpS7PXhc//eJFO+T0477/I=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/banners/687419.json'
 
 Пример ответа:
@@ -47,7 +47,6 @@ Curl-запрос:
       },
       "company_name": "",
       "created": "2013-06-27 13:50:09",
-      "ctr_status": "bad_start_cpm",
       "edit_url": "/ads/banners/687419/edit/",
       "id": 687419,
       "image": {
@@ -115,7 +114,7 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 37
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:ZmgUiT8huKqRkPhaSa/bZuuytAY=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"title": "\u0442\u0435\u0441\u0442"}
 
@@ -123,7 +122,7 @@ Curl-запрос:
 
     curl \
     -d '{"title": "\u0442\u0435\u0441\u0442"}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:ZmgUiT8huKqRkPhaSa/bZuuytAY=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/banners/687419.json'
 
 Пример ответа:
@@ -155,12 +154,12 @@ HTTP-запрос:
     GET /api/v1/campaigns/334648/banners.json HTTP/1.1
     Host: target-sandbox.mail.ru
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:P36bjwx5Il9jxuc/ODx0UyKiV4Y=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:P36bjwx5Il9jxuc/ODx0UyKiV4Y=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/campaigns/334648/banners.json'
 
 Пример ответа:
@@ -275,15 +274,15 @@ HTTP-запрос:
     Content-Type: application/json
     Content-Length: 671
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:FnZwoO5Iin+Hwe8734HQ9f3LYSQ=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
-    {"text":"тестовое объявление","title":"тест","preview_image_url":"https://rb.mail.ru/img/36/6C4A7E.jpg","edit_url":"","company_name":"","telephone":"","ctr_status":"good","moderation_status":"new","image":{"height":45,"width":60,"preview_url":"https://rb.mail.ru/img/36/6C4A7E.jpg","url":"http://r.mail.ru/img/36/6C4A7E.jpg","size":1607,"is_animated":false,"id":24512,"type":"static"},"url":"http://test.ru/","banner_moderation":{"moderation_comment":null,"moderation_reason":null},"stats":{"clicks":0,"shows":0},"stats_today":{"clicks":0,"shows":0},"stats_yesterday":{"clicks":0,"shows":0},"moderation_reason_display":null,"campaign":{"id":334648}}
+    {"text":"тестовое объявление","title":"тест","image":{"id":24512},"url":"http://test.ru/"}
 
 Curl-запрос:
 
     curl \
-    -d '{"text":"тестовое объявление","title":"тест","preview_image_url":"https://rb.mail.ru/img/36/6C4A7E.jpg","edit_url":"","company_name":"","telephone":"","ctr_status":"good","moderation_status":"new","image":{"height":45,"width":60,"preview_url":"https://rb.mail.ru/img/36/6C4A7E.jpg","url":"http://r.mail.ru/img/36/6C4A7E.jpg","size":1607,"is_animated":false,"id":24512,"type":"static"},"url":"http://test.ru/","banner_moderation":{"moderation_comment":null,"moderation_reason":null},"stats":{"clicks":0,"shows":0},"stats_today":{"clicks":0,"shows":0},"stats_yesterday":{"clicks":0,"shows":0},"moderation_reason_display":null,"campaign":{"id":334648}}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:FnZwoO5Iin+Hwe8734HQ9f3LYSQ=' \
+    -d '{"text":"тестовое объявление","title":"тест","image":{"id":24512},"url":"http://test.ru/"}' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/campaigns/334648/banners.json'
 
 Пример ответа:
@@ -358,12 +357,12 @@ HTTP-запрос:
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
-    Authorization: AuthHMAC Bv2BaJv95g68G39:Rv7DHZoSDfwHYgzAOBcaVwp54UI=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
 Curl-запрос:
 
     curl \
-    -H 'Authorization: AuthHMAC Bv2BaJv95g68G39:Rv7DHZoSDfwHYgzAOBcaVwp54UI=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/banners.json'
 
 Пример ответа:
@@ -386,7 +385,6 @@ Curl-запрос:
         },
         "company_name": "",
         "created": "2011-09-08 17:23:43",
-        "ctr_status": "good",
         "edit_url": "/ads/banners/529397/edit/",
         "id": 529397,
         "image": {

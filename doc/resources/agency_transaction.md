@@ -21,7 +21,7 @@ HTTP-запрос:
     Host: target-sandbox.mail.ru
     Content-Type: application/json
     Content-Length: 19
-    Authorization: AuthHMAC 9dEOYqb3sEmwKG9:hViM17RQNg1Izv8pwmmZktMkoHQ=
+    Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
     {"amount": "10000"}
 
@@ -29,6 +29,6 @@ Curl-запрос:
 
     curl \
     -d '{"amount": "10000"}' \
-    -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:hViM17RQNg1Izv8pwmmZktMkoHQ=' \
+    -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
     'https://target-sandbox.mail.ru/api/v1/transactions/to/username@mail.ru.json'
 

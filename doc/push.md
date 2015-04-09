@@ -1,4 +1,4 @@
-## Push-уведомления в API Таргет@Mail.Ru
+## Push-уведомления в API
 
 Этот инструмент позволяет пользователям API узнавать об изменении ресурсов API,
 используя push- вместо pull-модели.
@@ -34,13 +34,10 @@
 
     /api/v2/subscriptions.json
 
-Поскольку подписка реализована в API v2, для аутентификации нужно использовать
-OAuth2, старый механизм с токенами работать не будет.
-
 Чтобы подписаться на уведомления об изменении ресурса нужно послать запрос вида:
 
     POST /api/v2/subscriptions.json HTTP/1.1
-    Host: target.mail.ru
+    Host: target.my.com
     Content-Type: application/json
 
     {"callback_url": "http://mysuperhost.com/callback", "resource": "CAMPAIGN", "resource_id": 123}
@@ -51,12 +48,12 @@ OAuth2, старый механизм с токенами работать не 
 Посмотреть все подписки пользователя можно, отправив GET-запрос:
 
     GET /api/v2/subscriptions.json HTTP/1.1
-    Host: target.mail.ru
+    Host: target.my.com
 
 Удалить подписку — DELETE-запрос с идентификатором конкретной подписки:
 
     DELETE /api/v2/subscriptions/{идентификатор подписки}.json HTTP/1.1
-    Host: target.mail.ru
+    Host: target.my.com
 
 ### Поддерживаемые ресурсы
 
