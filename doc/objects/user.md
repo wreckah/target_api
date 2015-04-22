@@ -91,6 +91,10 @@
             <td><code>show_compact_view</code></td>
             <td><code>Boolean</code></td>
             <td><p><br />Компактное представление страницы "Объявления"</p></td>
+        </tr><tr>
+            <td><code>currency</code></td>
+            <td><code>String</code></td>
+            <td><p><em>3 символа</em> <br />справочная валюта пользователя</p></td>
         </tr>
     </tbody>
 </table>

@@ -32,10 +32,6 @@
             <td><code>DefaultBoolean</code></td>
             <td><p><br />зациклить видео</p></td>
         </tr><tr>
-            <td><code>no_sound</code></td>
-            <td><code>DefaultBoolean</code></td>
-            <td><p><br />без звука</p></td>
-        </tr><tr>
             <td><code>sound_delay</code></td>
             <td><code>DefaultBoolean</code></td>
             <td><p><br />звук по наведению через 3 сек</p></td>

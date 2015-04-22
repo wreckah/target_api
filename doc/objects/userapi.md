@@ -65,9 +65,21 @@
             <td><code>Boolean</code></td>
             <td><p><br />Компактное представление страницы "Объявления"</p></td>
         </tr><tr>
+            <td><code>currency</code></td>
+            <td><code>String</code></td>
+            <td><p><em>3 символа</em> <br />справочная валюта пользователя</p></td>
+        </tr><tr>
             <td><code>types</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>25 символов</em> <em>advert, agency, agency_client, branch, branch_client, partner, manager, readonly, fin_readonly, ads_readony</em><br />Тип (типы) пользователя</p></td>
+        </tr><tr>
+            <td><code>partner_is_approved</code></td>
+            <td><code>Boolean</code></td>
+            <td><p><br />Признак подтверждения статуса партнера</p></td>
+        </tr><tr>
+            <td><code>language</code></td>
+            <td><code>String</code></td>
+            <td><p><em>32 символа</em> <em>ru, en</em></p></td>
         </tr>
     </tbody>
 </table>

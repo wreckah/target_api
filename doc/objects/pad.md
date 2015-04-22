@@ -50,6 +50,10 @@
             <td><a href="eyeurl.md"><code>EyeUrl</code></a></td>
             <td></td>
         </tr><tr>
+            <td><code>format_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><em>Обязательный</em> </p></td>
+        </tr><tr>
             <td><code>pad_md5</code></td>
             <td><code>String</code></td>
             <td><p><em>32 символа</em> </p></td>

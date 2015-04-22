@@ -24,8 +24,8 @@
             <td><code>String</code></td>
             <td><p><em>255 символов</em> <em>active, deleted, blocked</em></p></td>
         </tr><tr>
-            <td><code>platform</code></td>
-            <td><a href="platform.md"><code>Platform</code></a></td>
+            <td><code>platform_id</code></td>
+            <td><code>Integer</code></td>
             <td><p><em>Обязательный</em> </p></td>
         </tr><tr>
             <td><code>pads</code></td>

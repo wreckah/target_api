@@ -19,6 +19,10 @@
             <td><code>status</code></td>
             <td><code>String</code></td>
             <td><p><em>255 символов</em> </p></td>
+        </tr><tr>
+            <td><code>format_id</code></td>
+            <td><code>Integer</code></td>
+            <td><p><em>Обязательный</em> </p></td>
         </tr>
     </tbody>
 </table>
