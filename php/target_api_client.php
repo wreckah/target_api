@@ -61,7 +61,7 @@ class Client
 {
     protected static $HTTP_METHODS = array('GET', 'POST', 'DELETE');
     protected static $productionHost = 'target.mail.ru';
-    protected static $sandboxHost = 'target-sandbox.mail.ru';
+    protected static $sandboxHost = 'target-sandbox.my.com';
     protected $accessId;
     protected $privateKey;
     protected $url;

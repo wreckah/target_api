@@ -44,7 +44,7 @@ class TargetAuthError(TargetApiError):
 
 class TargetApiClient(object):
     PRODUCTION_HOST = 'target.my.com'
-    SANDBOX_HOST = 'target-sandbox.mail.ru'
+    SANDBOX_HOST = 'target-sandbox.my.com'
 
     OAUTH_TOKEN_URL = 'v2/oauth2/token.json'
     OAUTH_USER_URL = '/oauth2/authorize'
