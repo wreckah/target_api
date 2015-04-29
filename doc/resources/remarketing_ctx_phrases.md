@@ -13,7 +13,7 @@
 HTTP-запрос:
 
     DELETE /api/v1/remarketing_context_phrases/639.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -21,7 +21,7 @@ Curl-запрос:
 
     curl -X DELETE \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_context_phrases/639.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_context_phrases/639.json'
 
 
 ### Получение списка загруженных списков поисковых фраз
@@ -36,7 +36,7 @@ Curl-запрос:
 HTTP-запрос:
 
     GET /api/v1/remarketing_context_phrases.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -44,7 +44,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_context_phrases.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_context_phrases.json'
 
 Пример ответа:
 
@@ -84,7 +84,7 @@ multipart-виде.
 HTTP-запрос:
 
     POST /api/v1/remarketing_context_phrases.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
     Content-Length: 294
     Content-Type: multipart/form-data; boundary=------------------------6f6445c8f1dc5d8e
@@ -94,7 +94,7 @@ Curl-запрос:
 
     curl -F file=@test.txt  -F name=test \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_context_phrases.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_context_phrases.json'
 
 Пример ответа:
 

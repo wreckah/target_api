@@ -24,7 +24,7 @@ CampaignStatForm.
 HTTP-запрос:
 
     GET /api/v1/campaigns.json?status=active&fields=id%2Cname%2Ccreated%2Cbudget_limit HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
@@ -33,7 +33,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/campaigns.json?status=active&fields=id,name,created,budget_limit'
+    'https://target-sandbox.my.com/api/v1/campaigns.json?status=active&fields=id,name,created,budget_limit'
 
 Пример ответа:
 
@@ -60,7 +60,7 @@ CampaignForm. Одним из обязательных параметров яв
 HTTP-запрос:
 
     POST /api/v1/campaigns.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 136
     Accept-Encoding: gzip, deflate, compress
@@ -73,7 +73,7 @@ Curl-запрос:
     curl \
     -d '{"name": "Test campaign", "package": {"id": 18}, "targetings": {"regions": [188], "sex": "MF", "age": [20, 21], "pads": [{"id": 5206}]}}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/campaigns.json'
+    'https://target-sandbox.my.com/api/v1/campaigns.json'
 
 Пример ответа:
 
@@ -329,7 +329,7 @@ CampaignStatForm. Возможно передать несколько знач�
 HTTP-запрос:
 
     GET /api/v1/campaigns/334648.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -337,7 +337,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/campaigns/334648.json'
+    'https://target-sandbox.my.com/api/v1/campaigns/334648.json'
 
 Пример ответа:
 
@@ -587,7 +587,7 @@ CampaignForm с изменёнными параметрами.
 HTTP-запрос:
 
     POST /api/v1/campaigns/334648.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 37
     Accept-Encoding: gzip, deflate, compress
@@ -600,7 +600,7 @@ Curl-запрос:
     curl \
     curl -d '{"name": "Тестовая кампания №42"}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/campaigns/334648.json'
+    'https://target-sandbox.my.com/api/v1/campaigns/334648.json'
 
 Пример ответа:
 

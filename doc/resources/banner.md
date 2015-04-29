@@ -18,7 +18,7 @@ BannerStatForm.
 HTTP-запрос:
 
     GET /api/v1/banners/687419.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -26,7 +26,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/banners/687419.json'
+    'https://target-sandbox.my.com/api/v1/banners/687419.json'
 
 Пример ответа:
 
@@ -110,7 +110,7 @@ BannerForm с изменёнными параметрами.
 HTTP-запрос:
 
     POST /api/v1/banners/687419.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 37
     Accept-Encoding: gzip, deflate, compress
@@ -123,7 +123,7 @@ Curl-запрос:
     curl \
     -d '{"title": "\u0442\u0435\u0441\u0442"}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/banners/687419.json'
+    'https://target-sandbox.my.com/api/v1/banners/687419.json'
 
 Пример ответа:
 
@@ -152,7 +152,7 @@ Curl-запрос:
 HTTP-запрос:
 
     GET /api/v1/campaigns/334648/banners.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -160,7 +160,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/campaigns/334648/banners.json'
+    'https://target-sandbox.my.com/api/v1/campaigns/334648/banners.json'
 
 Пример ответа:
 
@@ -270,7 +270,7 @@ Curl-запрос:
 HTTP-запрос:
 
     POST /api/v1/campaigns/334648/banners.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 671
     Accept-Encoding: gzip, deflate, compress
@@ -283,7 +283,7 @@ Curl-запрос:
     curl \
     -d '{"text":"тестовое объявление","title":"тест","image":{"id":24512},"url":"http://test.ru/"}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/campaigns/334648/banners.json'
+    'https://target-sandbox.my.com/api/v1/campaigns/334648/banners.json'
 
 Пример ответа:
 
@@ -354,7 +354,7 @@ BannerStatForm), принадлежащих текущему пользоват�
 HTTP-запрос:
 
     GET /api/v1/banners.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
@@ -363,7 +363,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/banners.json'
+    'https://target-sandbox.my.com/api/v1/banners.json'
 
 Пример ответа:
 

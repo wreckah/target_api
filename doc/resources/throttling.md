@@ -12,7 +12,7 @@
 HTTP-запрос:
 
     GET /api/v1/throttling.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -20,7 +20,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/throttling.json'
+    'https://target-sandbox.my.com/api/v1/throttling.json'
 
 Пример ответа:
 

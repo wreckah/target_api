@@ -18,7 +18,7 @@ RemarketingGroupForm. Он же возвращается в случае усп�
 HTTP-запрос:
 
     POST /api/v1/remarketing_groups.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 43
     Accept-Encoding: gzip, deflate, compress
@@ -31,7 +31,7 @@ Curl-запрос:
     curl \
     -d '{"object_id":43065395314877,"type":"group"}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_groups.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_groups.json'
 
 Пример ответа:
 
@@ -55,7 +55,7 @@ RemarketingGroupForm.
 HTTP-запрос:
 
     GET /api/v1/remarketing_groups.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -63,7 +63,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_groups.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_groups.json'
 
 Пример ответа:
 
@@ -92,7 +92,7 @@ Curl-запрос:
 HTTP-запрос:
 
     DELETE /api/v1/remarketing_groups/3.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -100,5 +100,5 @@ Curl-запрос:
 
     curl -X DELETE \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_groups/3.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_groups/3.json'
 

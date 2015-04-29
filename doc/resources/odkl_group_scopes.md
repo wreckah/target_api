@@ -15,7 +15,7 @@ OdklGroupScopeForm для дальнейшего использования их
 HTTP-запрос:
 
     GET /api/v1/odkl_group_scopes.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
@@ -24,7 +24,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/odkl_group_scopes.json'
+    'https://target-sandbox.my.com/api/v1/odkl_group_scopes.json'
 
 Пример ответа:
 

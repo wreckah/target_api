@@ -21,7 +21,7 @@ OdklGroupsForm для дальнейшего использования их в 
 HTTP-запрос:
 
     GET /api/v1/odkl_groups.json?q=mail.ru HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: AuthHMAC 9dEOYqb3sEmwKG9:A2m1j3ogy9fT0Ww+qb8/X2KhwgU=
@@ -30,7 +30,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:A2m1j3ogy9fT0Ww+qb8/X2KhwgU=' \
-    'https://target-sandbox.mail.ru/api/v1/odkl_groups.json?q=mail.ru'
+    'https://target-sandbox.my.com/api/v1/odkl_groups.json?q=mail.ru'
 
 Пример ответа:
 

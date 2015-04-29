@@ -28,7 +28,7 @@ multipart-виде. Возможные параметры описывает о�
 HTTP-запрос:
 
     POST /api/v1/images.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: multipart/form-data; boundary=----------------------------284bab249df5
     Content-Length: 1991
     Accept-Encoding: gzip, deflate, compress
@@ -53,7 +53,7 @@ Curl-запрос:
 
     curl -F width=60 -F height=15 -F image_file=@logo_wide.v2.png \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/images.json'
+    'https://target-sandbox.my.com/api/v1/images.json'
 
 Пример ответа:
 

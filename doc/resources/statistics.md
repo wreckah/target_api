@@ -30,7 +30,7 @@
 Статистика по кампании с почасовой агрегацией без указания дат, HTTP-запрос:
 
     GET /api/v1/statistics/campaigns/334789/hour.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
@@ -39,7 +39,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/statistics/campaigns/334789/hour.json'
+    'https://target-sandbox.my.com/api/v1/statistics/campaigns/334789/hour.json'
 
 Пример ответа:
 
@@ -81,7 +81,7 @@ Curl-запрос:
 Статистика по кампании с агрегацией по дням и указанием дат, HTTP-запрос:
 
     GET /api/v1/statistics/campaigns/334789/day/01.08.2013-01.08.2013.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: AuthHMAC 9dEOYqb3sEmwKG9:84h5h8j+aQR1xC0CZvXILnv0bEE=
@@ -90,7 +90,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:84h5h8j+aQR1xC0CZvXILnv0bEE=' \
-    'https://target-sandbox.mail.ru/api/v1/statistics/campaigns/334789/day/01.08.2013-01.08.2013.json'
+    'https://target-sandbox.my.com/api/v1/statistics/campaigns/334789/day/01.08.2013-01.08.2013.json'
 
 Пример ответа:
 
@@ -117,7 +117,7 @@ Curl-запрос:
 Статистика по объявлению с почасовой агрегацией и указанием дат, HTTP-запрос:
 
     GET /api/v1/statistics/banners/688264/hour/01.08.2013-01.08.2013.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: AuthHMAC 9dEOYqb3sEmwKG9:O2NdGLbT9RF5NYOu4RaWpe65EVc=
@@ -126,7 +126,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:O2NdGLbT9RF5NYOu4RaWpe65EVc=' \
-    'https://target-sandbox.mail.ru/api/v1/statistics/banners/688264/hour/01.08.2013-01.08.2013.json'
+    'https://target-sandbox.my.com/api/v1/statistics/banners/688264/hour/01.08.2013-01.08.2013.json'
 
 Пример ответа:
 
@@ -161,7 +161,7 @@ Curl-запрос:
 Статистика по нескольким объявлениям с агрегацией по дням без указания дат, HTTP-запрос:
 
     GET /api/v1/statistics/banners/688264;688267/day.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: AuthHMAC 9dEOYqb3sEmwKG9:O2NdGLbT9RF5NYOu4RaWpe65EVc=
@@ -170,7 +170,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: AuthHMAC 9dEOYqb3sEmwKG9:O2NdGLbT9RF5NYOu4RaWpe65EVc=' \
-    'https://target-sandbox.mail.ru/api/v1/statistics/banners/688264;688267/day.json'
+    'https://target-sandbox.my.com/api/v1/statistics/banners/688264;688267/day.json'
 
 Пример ответа:
 
@@ -236,7 +236,7 @@ Curl-запрос:
 HTTP-запрос:
 
     GET /api/v1/statistics/faststat/banners/688264;688267.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
@@ -245,7 +245,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/statistics/faststat/banners/688264;688267.json'
+    'https://target-sandbox.my.com/api/v1/statistics/faststat/banners/688264;688267.json'
 
 Пример ответа:
 

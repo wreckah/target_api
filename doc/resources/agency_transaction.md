@@ -18,7 +18,7 @@
 HTTP-запрос:
 
     POST /api/v1/transactions/to/username@mail.ru.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 19
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
@@ -30,5 +30,5 @@ Curl-запрос:
     curl \
     -d '{"amount": "10000"}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/transactions/to/username@mail.ru.json'
+    'https://target-sandbox.my.com/api/v1/transactions/to/username@mail.ru.json'
 

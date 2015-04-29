@@ -15,7 +15,7 @@ RemarketingCounterForm.
 HTTP-запрос:
 
     GET /api/v1/remarketing_counters.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -23,7 +23,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_counters.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_counters.json'
 
 Пример ответа:
 
@@ -72,7 +72,7 @@ Curl-запрос:
 HTTP-запрос:
 
     POST /api/v1/remarketing_counters.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 23
     Accept-Encoding: gzip, deflate, compress
@@ -85,7 +85,7 @@ Curl-запрос:
     curl \
     -d '{"counter_id": 2381587}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_counters.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_counters.json'
 
 Пример ответа:
 
@@ -119,7 +119,7 @@ Curl-запрос:
 HTTP-запрос:
 
     GET /api/v1/remarketing_counters/639.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Accept-Encoding: gzip, deflate, compress
     Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18
 
@@ -127,7 +127,7 @@ Curl-запрос:
 
     curl \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_counters/639.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_counters/639.json'
 
 Пример ответа:
 
@@ -162,7 +162,7 @@ Curl-запрос:
 HTTP-запрос:
 
     POST /api/v1/remarketing_counters/639.json HTTP/1.1
-    Host: target-sandbox.mail.ru
+    Host: target-sandbox.my.com
     Content-Type: application/json
     Content-Length: 18
     Accept-Encoding: gzip, deflate, compress
@@ -175,7 +175,7 @@ Curl-запрос:
     curl \
     -d '{"name": "noname"}' \
     -H 'Authorization: Bearer Bh8kQmBUwgGDLuprqZhfMMm..7JrLbTAEFbEv74TydrC18' \
-    'https://target-sandbox.mail.ru/api/v1/remarketing_counters/639.json'
+    'https://target-sandbox.my.com/api/v1/remarketing_counters/639.json'
 
 Пример ответа:
 
