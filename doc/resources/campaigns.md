@@ -78,8 +78,11 @@ Curl-запрос:
 Пример ответа:
 
     {
+      "age_restrictions": "18+",
+      "audit_pixels": [],
       "autobidding_mode": "fixed",
       "avg_ctr": 0.0,
+      "banner_uniq_shows_limit": 3,
       "banners_count": 0,
       "banners_url": "/api/v1/campaigns/334646/banners.json",
       "budget_limit": "",
@@ -88,10 +91,13 @@ Curl-запрос:
       "date_end": "",
       "date_start": "",
       "edit_url": "/ads/campaigns/334646/edit/",
-      "group_members": "all",
+      "enable_recombination": false,
+      "enable_utm": true,
+      "extended_age": false,
+      "extended_pads": true,
       "id": 334646,
-      "max_ctr": 0.0,
-      "min_ctr": 0.0,
+      "last_stats_updated": null,
+      "last_updated": "2015-05-27 17:49:13",
       "mixing": "recommended",
       "name": "Test campaign",
       "package": {
@@ -138,17 +144,7 @@ Curl-запрос:
           },
           "name": "teaser"
         },
-        "base_cpm_limit": "2.5",
-        "base_price_per_click": "0",
-        "base_price_per_show": "0.0015",
         "description": "\u041c\u043e\u0439 \u041c\u0438\u0440: \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0435 \u0441\u0441\u044b\u043b\u043a\u0438, \u043f\u043e\u043a\u0430\u0437\u044b",
-        "eye_url": "http://my.mail.ru/community/targetmailru",
-        "eye_urls": [
-          {
-            "description": "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u043d\u0430 \u041c\u043e\u0435\u043c \u041c\u0438\u0440\u0435",
-            "url": "http://my.mail.ru/community/targetmailru"
-          }
-        ],
         "features": {
           "extended_age_targetings": true,
           "product_type": "game",
@@ -312,8 +308,11 @@ Curl-запрос:
           "sun"
         ]
       },
+      "uniq_shows_limit": null,
+      "uniq_shows_period": "day",
       "updated": "2013-06-25 21:31:05",
-      "url": "/api/v1/campaigns/334646.json"
+      "url": "/api/v1/campaigns/334646.json",
+      "utm": ""
   }
 
 
@@ -351,7 +350,6 @@ Curl-запрос:
       "date_end": "",
       "date_start": "",
       "edit_url": "/ads/campaigns/334648/edit/",
-      "group_members": "all",
       "id": 334648,
       "last_updated": "2013-06-28 13:07:09",
       "mixing": "recommended",
@@ -400,17 +398,7 @@ Curl-запрос:
           },
           "name": "teaser"
         },
-        "base_cpm_limit": "1.5",
-        "base_price_per_click": "4",
-        "base_price_per_show": "0",
         "description": "Внешние ссылки, клики",
-        "eye_url": "http://www.odnoklassniki.ru/target",
-        "eye_urls": [
-          {
-            "description": "Посмотреть на Одноклассниках",
-            "url": "http://www.odnoklassniki.ru/target"
-          }
-        ],
         "features": {
           "has_auction_strategy": true,
           "product_type": "external",

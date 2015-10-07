@@ -15,7 +15,7 @@
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><p><em>40 символов</em> <br />Название кампании</p></td>
+            <td><p><em>100 символов</em> <br />Название кампании</p></td>
         </tr><tr>
             <td><code>status</code></td>
             <td><code>String</code></td>
@@ -95,20 +95,16 @@
         </tr><tr>
             <td><code>append_utm</code></td>
             <td><code>Boolean</code></td>
-            <td></td>
+            <td><p><br />Deprecated</p></td>
         </tr><tr>
             <td><code>age_restrictions</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <em>, 0+, 6+, 12+, 16+, 18+</em><br />Возрастные ограничения</p></td>
+            <td><p><em>3 символа</em> <br />Возрастные ограничения</p></td>
         </tr><tr>
             <td><code>pricelist</code></td>
             <td>partial <a href="remarketingpricelist.md"><code>RemarketingPricelist</code></a><br />
 (<code>id</code>)
 </td>
-            <td></td>
-        </tr><tr>
-            <td><code>slider_positions</code></td>
-            <td><code></code></td>
             <td></td>
         </tr><tr>
             <td><code>last_updated</code></td>
@@ -129,11 +125,11 @@
         </tr><tr>
             <td><code>enable_utm</code></td>
             <td><code>Boolean</code></td>
-            <td></td>
+            <td><p><br />Добавлять ли UTM-метки в URL объявлений</p></td>
         </tr><tr>
             <td><code>utm</code></td>
             <td><code>Text</code></td>
-            <td></td>
+            <td><p><br />UTM-метки для добавления в URL объявлений. Если не указаны и <code>enable_utm=true</code>, то метки будут формироваться автоматически.</p></td>
         </tr><tr>
             <td><code>uniq_shows_limit</code></td>
             <td><code></code></td>
@@ -150,6 +146,10 @@
             <td><code>audit_pixels</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <br />Список урлов пикселей для внешней статистики</p></td>
+        </tr><tr>
+            <td><code>url_object_id</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />ID рекламируемого приложения</p></td>
         </tr><tr>
             <td><code>banners</code></td>
             <td>List of <a href="bannerstat.md"><code>BannerStats</code></a></td>

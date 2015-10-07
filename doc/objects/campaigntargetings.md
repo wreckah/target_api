@@ -58,6 +58,10 @@
             <td><code>Dict</code></td>
             <td><p><br />Географическое положение, указанное пользователем</p></td>
         </tr><tr>
+            <td><code>app_recommendation</code></td>
+            <td><a href="apprecommendation.md"><code>AppRecommendation</code></a></td>
+            <td></td>
+        </tr><tr>
             <td><code>mobile_types</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> <em>tablets, smartphones</em><br />Типы мобильных устройств</p></td>

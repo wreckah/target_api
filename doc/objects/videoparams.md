@@ -35,6 +35,10 @@
             <td><code>sound_delay</code></td>
             <td><code>DefaultBoolean</code></td>
             <td><p><br />звук по наведению через 3 сек</p></td>
+        </tr><tr>
+            <td><code>autoplay</code></td>
+            <td><code>DefaultBoolean</code></td>
+            <td><p><br />автоматически запускать видео</p></td>
         </tr>
     </tbody>
 </table>

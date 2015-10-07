@@ -20,7 +20,7 @@
         </tr><tr>
             <td><code>disjunctions</code></td>
             <td>List of partial <a href="targetings.md"><code>Targetings</code></a><br />
-(<code>remarketing_counters</code>, <code>remarketing_game_payers</code>, <code>remarketing_game_players</code>, <code>remarketing_payers</code>, <code>remarketing_players</code>, <code>remarketing_groups</code>, <code>remarketing_users_lists</code>, <code>remarketing_context_phrases</code>, <code>remarketing_pricelists</code>, <code>remarketing_mobile_apps</code>, <code>remarketing_custom_audiences</code>)
+(<code>remarketing_counters</code>, <code>remarketing_game_payers</code>, <code>remarketing_game_players</code>, <code>remarketing_payers</code>, <code>remarketing_players</code>, <code>remarketing_groups</code>, <code>remarketing_users_lists</code>, <code>remarketing_context_phrases</code>, <code>remarketing_pricelists</code>, <code>remarketing_mobile_apps</code>, <code>remarketing_custom_audiences</code>, <code>remarketing_vk_groups</code>, <code>remarketing_vk_apps</code>, <code>remarketing_android_categories</code>)
 </td>
             <td><p><br />Список таргетингов аудитории, которые срабатывают по
 принципу «хотя бы один» (логическая дизъюнкция). Каждый из элементов списка

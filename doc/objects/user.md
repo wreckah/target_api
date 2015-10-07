@@ -86,15 +86,19 @@
         </tr><tr>
             <td><code>append_utm</code></td>
             <td><code>Boolean</code></td>
-            <td><p><br />Признак простановки UTM-меток</p></td>
+            <td><p><br />Deprecated</p></td>
         </tr><tr>
             <td><code>show_compact_view</code></td>
             <td><code>Boolean</code></td>
             <td><p><br />Компактное представление страницы "Объявления"</p></td>
         </tr><tr>
+            <td><code>info_currency</code></td>
+            <td><code>String</code></td>
+            <td><p><em>3 символа</em> <br />Справочная валюта пользователя</p></td>
+        </tr><tr>
             <td><code>currency</code></td>
             <td><code>String</code></td>
-            <td><p><em>3 символа</em> <br />справочная валюта пользователя</p></td>
+            <td><p><em>3 символа</em> <br />Валюта пользователя</p></td>
         </tr>
     </tbody>
 </table>

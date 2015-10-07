@@ -22,7 +22,7 @@
         </tr><tr>
             <td><code>mobile_app_id</code></td>
             <td><code>Integer</code></td>
-            <td></td>
+            <td><p><em>Обязательный</em> </p></td>
         </tr><tr>
             <td><code>install_type</code></td>
             <td><code>String</code></td>

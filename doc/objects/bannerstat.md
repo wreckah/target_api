@@ -97,6 +97,10 @@
             <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Изображение, отображающееся в объявлении</p></td>
         </tr><tr>
+            <td><code>url_object_id</code></td>
+            <td><code>String</code></td>
+            <td><p><em>255 символов</em> <br />Id приложения на которое уразывает ссылка в объяльении если оно существует, иначе - домен ссылки</p></td>
+        </tr><tr>
             <td><code>promo_image</code></td>
             <td><a href="image.md"><code>Image</code></a></td>
             <td><p><br />Большое изображение, отображающееся в объявлении</p></td>
@@ -109,9 +113,17 @@
             <td><a href="videoparams.md"><code>VideoParams</code></a></td>
             <td></td>
         </tr><tr>
+            <td><code>products</code></td>
+            <td><a href="products.md"><code>Products</code></a></td>
+            <td></td>
+        </tr><tr>
             <td><code>banner_fields</code></td>
             <td>List of <code>Strings</code></td>
             <td><p><em>255 символов</em> </p></td>
+        </tr><tr>
+            <td><code>links</code></td>
+            <td><code>MultiLink</code></td>
+            <td></td>
         </tr><tr>
             <td><code>stats</code></td>
             <td><a href="periodstat.md"><code>PeriodStat</code></a></td>

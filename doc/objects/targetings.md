@@ -58,6 +58,10 @@
             <td><code>Dict</code></td>
             <td><p><br />Географическое положение, указанное пользователем</p></td>
         </tr><tr>
+            <td><code>app_recommendation</code></td>
+            <td><a href="apprecommendation.md"><code>AppRecommendation</code></a></td>
+            <td></td>
+        </tr><tr>
             <td><code>remarketing_counters</code></td>
             <td>List of <a href="remarketingcounterinterval.md"><code>RemarketingCounterIntervals</code></a></td>
             <td></td>

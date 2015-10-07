@@ -76,17 +76,7 @@ Curl-запрос:
           },
           "name": "teaser"
         },
-        "base_cpm_limit": "2.5",
-        "base_price_per_click": "0",
-        "base_price_per_show": "0.0015",
         "description": "Мой Мир: внутренние ссылки, показы",
-        "eye_url": "http://my.mail.ru/community/targetmailru",
-        "eye_urls": [
-          {
-            "description": "Посмотреть на Моем Мире",
-            "url": "http://my.mail.ru/community/targetmailru"
-          }
-        ],
         "features": {
           "extended_age_targetings": true,
           "product_type": "game",
@@ -115,7 +105,6 @@ Curl-запрос:
           ],
           "url_type": "mir_redirect"
         },
-        "highest_price_per_unit": "1.5",
         "id": 18,
         "is_external": false,
         "max_price_per_unit": "60",

@@ -15,7 +15,7 @@
         </tr><tr>
             <td><code>name</code></td>
             <td><code>String</code></td>
-            <td><p><em>40 символов</em> <br />Название кампании</p></td>
+            <td><p><em>100 символов</em> <br />Название кампании</p></td>
         </tr><tr>
             <td><code>status</code></td>
             <td><code>String</code></td>
@@ -95,11 +95,11 @@
         </tr><tr>
             <td><code>append_utm</code></td>
             <td><code>Boolean</code></td>
-            <td></td>
+            <td><p><br />Deprecated</p></td>
         </tr><tr>
             <td><code>age_restrictions</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <em>, 0+, 6+, 12+, 16+, 18+</em><br />Возрастные ограничения</p></td>
+            <td><p><em>3 символа</em> <br />Возрастные ограничения</p></td>
         </tr><tr>
             <td><code>pricelist</code></td>
             <td>partial <a href="remarketingpricelist.md"><code>RemarketingPricelist</code></a><br />

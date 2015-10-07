@@ -31,15 +31,15 @@
         </tr><tr>
             <td><code>price_per_show</code></td>
             <td><code>Decimal</code></td>
-            <td><p><br />Минимальная цена за показ</p></td>
+            <td><p><br />Минимальная цена за показ в валюте пользователя</p></td>
         </tr><tr>
             <td><code>price_per_click</code></td>
             <td><code>Decimal</code></td>
-            <td><p><br />Минимальна цена за клик</p></td>
+            <td><p><br />Минимальная цена за клик в валюте пользователя</p></td>
         </tr><tr>
             <td><code>max_price_per_unit</code></td>
             <td><code>Decimal</code></td>
-            <td></td>
+            <td><p><br />Максимальная цена за клик или тысячу показов в зависимости от типа пакета (кликовый — <code>price_per_click</code> отличен от нуля, показовый — <code>price_per_show</code>) в валюте пользователя</p></td>
         </tr><tr>
             <td><code>features</code></td>
             <td><code></code></td>
@@ -51,13 +51,9 @@
         </tr><tr>
             <td><code>targetings</code></td>
             <td>partial <a href="targetings.md"><code>Targetings</code></a><br />
-(<code>pads</code>)
+(<code>pads</code>, <code>regions</code>)
 </td>
             <td><p><br />Доступные таргетинги</p></td>
-        </tr><tr>
-            <td><code>slider_positions</code></td>
-            <td><code></code></td>
-            <td></td>
         </tr><tr>
             <td><code>flags</code></td>
             <td>List of <code>Strings</code></td>
