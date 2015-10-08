@@ -31,7 +31,7 @@
         </tr><tr>
             <td><code>moderation_status</code></td>
             <td><code>String</code></td>
-            <td><p><em>255 символов</em> <br />Статус модерации</p></td>
+            <td><p><em>255 символов</em> <em>new, changed, delayed, allowed, banned</em><br />Статус модерации</p></td>
         </tr><tr>
             <td><code>title</code></td>
             <td><code>AllowedChars</code></td>
